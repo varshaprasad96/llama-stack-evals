@@ -1,0 +1,84 @@
+# Config C: Server-Side Orchestration + Ungated Retrieval
+# No auth, no ABAC policies. Server controls the agentic loop
+# via Responses API with file_search tool.
+version: 2
+distro_name: experiment-ungated-server
+apis:
+  - inference
+  - vector_io
+  - files
+  - file_processors
+  - responses
+  - tool_runtime
+providers:
+  inference:
+    - provider_id: openai
+      provider_type: remote::openai
+      config:
+        api_key: ${env.OPENAI_API_KEY:=}
+        base_url: ${env.OPENAI_BASE_URL:=https://api.openai.com/v1}
+  vector_io:
+    - provider_id: sqlite-vec
+      provider_type: inline::sqlite-vec
+      config:
+        db_path: ${env.SQLITE_STORE_DIR:=~/.llama/distributions/experiment-c}/sqlite_vec.db
+        persistence:
+          namespace: vector_io::sqlite_vec
+          backend: kv_default
+  files:
+    - provider_id: builtin-files
+      provider_type: inline::localfs
+      config:
+        storage_dir: ${env.FILES_STORAGE_DIR:=~/.llama/distributions/experiment-c/files}
+        metadata_store:
+          table_name: files_metadata
+          backend: sql_default
+  file_processors:
+    - provider_id: pypdf
+      provider_type: inline::pypdf
+  responses:
+    - provider_id: builtin
+      provider_type: inline::builtin
+      config:
+        persistence:
+          agent_state:
+            namespace: agents
+            backend: kv_default
+          responses:
+            table_name: responses
+            backend: sql_default
+  tool_runtime:
+    - provider_id: file-search
+      provider_type: inline::file-search
+storage:
+  backends:
+    kv_default:
+      type: kv_sqlite
+      db_path: ${env.SQLITE_STORE_DIR:=~/.llama/distributions/experiment-c}/kvstore.db
+    sql_default:
+      type: sql_sqlite
+      db_path: ${env.SQLITE_STORE_DIR:=~/.llama/distributions/experiment-c}/sql_store.db
+  stores:
+    metadata:
+      namespace: registry
+      backend: kv_default
+    conversations:
+      table_name: openai_conversations
+      backend: sql_default
+registered_resources:
+  models: []
+  vector_dbs: []
+server:
+  port: 8321
+vector_stores:
+  default_provider_id: sqlite-vec
+  default_embedding_model:
+    provider_id: openai
+    model_id: text-embedding-3-small
+  file_ingestion_params:
+    default_chunk_size_tokens: 512
+    default_chunk_overlap_tokens: 128
+  chunk_retrieval_params:
+    chunk_multiplier: 5
+    max_tokens_in_context: 4000
+    default_search_mode: vector

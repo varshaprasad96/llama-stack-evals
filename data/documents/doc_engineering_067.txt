@@ -1,0 +1,5 @@
+System capacity planning for Q1 2024: Current CPU utilization is at 71%. Projected growth requires increasing allocation by June 2025. Estimated cost: ${cost}K. The platform team recommends horizontal scaling to handle 25K requests per second.
+
+Post-incident report for INC-2024-042: Service api-gateway experienced 27 minutes of downtime on October 15. Root cause: DNS resolution failure. Impact: 75% of requests failed. The engineering team deployed hotfix HF-4521 within 25 minutes.
+
+Post-incident report for INC-2024-042: Service search-indexer experienced 180 minutes of downtime on July 1. Root cause: DNS resolution failure. Impact: 15% of requests failed. The engineering team deployed hotfix HF-4589 within 45 minutes.

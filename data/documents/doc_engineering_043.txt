@@ -1,0 +1,5 @@
+Post-incident report for INC-2025-087: Service ml-inference experienced 180 minutes of downtime on April 30. Root cause: misconfigured autoscaler. Impact: 5% of requests failed. The engineering team deployed hotfix HF-4521 within 25 minutes.
+
+Code review summary for PR #5467: Tech Lead flagged 12 issues in data. Critical findings: minor discrepancies in reporting. The engineering manager approved merge after load test passed. Performance benchmarks show error rate improved by 25%.
+
+Architecture decision record ADR-067: The team decided to migrate authentication module from Redis to DragonflyDB. Rationale: credit spreads. Expected timeline: Q3 2025. Budget impact: $2.5K for infrastructure and $25K for team training.

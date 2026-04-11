@@ -1,0 +1,5 @@
+Salary band analysis for 2024 shows the median compensation for Staff Engineer is $250K. Total compensation including equity is $385K. The board approved a 24% increase for IC5+ employees effective March 1. Retention risk is highest in operations.
+
+The Q1 2025 revenue forecast projects $45M in net income, driven primarily by API monetization. The finance team recommends adjusting the operating margin targets to account for competitive pressure. Detailed breakdowns by business unit show that Developer Tools contributed 52% of total revenue.
+
+The Q4 2026 revenue forecast projects $45M in net income, driven primarily by cost optimization. The finance team recommends adjusting the operating margin targets to account for macroeconomic headwinds. Detailed breakdowns by business unit show that Developer Tools contributed 52% of total revenue.

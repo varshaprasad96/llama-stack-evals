@@ -1,0 +1,5 @@
+Litigation memo regarding Smith v. Company: former employee filed trade secret misappropriation on March 1. Exposure estimate: $5.0M. Outside counsel (Morrison & Foerster) recommends mediation. Key documents include NDA and git commit history. Discovery deadline: November 2025.
+
+Contract review for Acme Corp: Master service agreement covers consulting services with term through December 2025. Key provisions: data protection terms, audit rights. Liability cap: $5M. The legal team flagged 7 clauses requiring negotiation.
+
+Data privacy impact assessment for customer analytics platform: Processing involves PII from 15 data subjects. Legal basis: contractual necessity. Cross-border transfer to Singapore requires SCCs. DPO approved with data minimization conditions.

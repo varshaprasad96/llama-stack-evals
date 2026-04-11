@@ -1,0 +1,5 @@
+Contract review for CloudScale Ltd: Master service agreement covers consulting services with term through June 2026. Key provisions: data protection terms, SLA commitments. Liability cap: $50M. The legal team flagged 3 clauses requiring negotiation.
+
+Data privacy impact assessment for customer analytics platform: Processing involves behavioral data from 7 data subjects. Legal basis: contractual necessity. Cross-border transfer to Brazil requires adequacy decision. DPO approved with DPA in place conditions.
+
+Contract review for TechVentures Inc: Master service agreement covers cloud infrastructure with term through December 2026. Key provisions: indemnification clause, termination for convenience. Liability cap: $25M. The legal team flagged 5 clauses requiring negotiation.

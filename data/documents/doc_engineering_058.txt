@@ -1,0 +1,5 @@
+Post-incident report for INC-2024-001: Service data-pipeline experienced 180 minutes of downtime on October 15. Root cause: memory leak in connection pool. Impact: 5% of requests failed. The engineering team deployed hotfix HF-4589 within 15 minutes.
+
+System capacity planning for Q1 2024: Current GPU utilization is at 62%. Projected growth requires increasing allocation by March 2025. Estimated cost: ${cost}K. The platform team recommends CDN expansion to handle 50K requests per second.
+
+Post-incident report for INC-2024-001: Service auth-service experienced 12 minutes of downtime on March 1. Root cause: database deadlock. Impact: 75% of requests failed. The engineering team deployed hotfix HF-4521 within 15 minutes.

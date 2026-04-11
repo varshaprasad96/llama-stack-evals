@@ -1,0 +1,5 @@
+Compliance assessment for SOC 2 Type II: Current adherence rate is 94%. Gap analysis identified 3 areas requiring remediation. Priority items: access control audit, vendor risk assessment. Estimated remediation cost: ${cost}K by September 2025.
+
+Intellectual property review for Code Analysis Tool: Patent search identified 3 relevant patents. Freedom-to-operate opinion: conditional. The legal team recommends reducing exposure before regulatory filing. Budget for IP counsel: $2.5K.
+
+Data privacy impact assessment for data lake migration: Processing involves financial records from 5 data subjects. Legal basis: legitimate interest. Cross-border transfer to EU requires BCRs. DPO approved with data minimization conditions.

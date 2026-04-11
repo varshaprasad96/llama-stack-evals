@@ -1,0 +1,2102 @@
+[
+  {
+    "query_id": "auth_finance_000",
+    "tenant": "finance",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "Detail the operating margin targets for 2025."
+  },
+  {
+    "query_id": "auth_finance_001",
+    "tenant": "finance",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "Detail the operating margin targets for 2026."
+  },
+  {
+    "query_id": "auth_finance_002",
+    "tenant": "finance",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What were the Q4 2025 revenue projections?"
+  },
+  {
+    "query_id": "auth_finance_003",
+    "tenant": "finance",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "Show me the salary band analysis for Senior Engineer positions."
+  },
+  {
+    "query_id": "auth_finance_004",
+    "tenant": "finance",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What were the Q1 2024 revenue projections?"
+  },
+  {
+    "query_id": "auth_finance_005",
+    "tenant": "finance",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What is the annual budget for the operations department?"
+  },
+  {
+    "query_id": "auth_finance_006",
+    "tenant": "finance",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "How are our money market investments performing?"
+  },
+  {
+    "query_id": "auth_finance_007",
+    "tenant": "finance",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What remediation plans are pending for audit findings?"
+  },
+  {
+    "query_id": "auth_finance_008",
+    "tenant": "finance",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What did the internal audit find regarding approval bypasses?"
+  },
+  {
+    "query_id": "auth_finance_009",
+    "tenant": "finance",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What did the internal audit find regarding policy violations?"
+  },
+  {
+    "query_id": "auth_finance_010",
+    "tenant": "finance",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What remediation plans are pending for audit findings?"
+  },
+  {
+    "query_id": "auth_finance_011",
+    "tenant": "finance",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What were the Q2 2025 revenue projections?"
+  },
+  {
+    "query_id": "auth_finance_012",
+    "tenant": "finance",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "How are our fixed income investments performing?"
+  },
+  {
+    "query_id": "auth_finance_013",
+    "tenant": "finance",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "How are our alternatives investments performing?"
+  },
+  {
+    "query_id": "auth_finance_014",
+    "tenant": "finance",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What are the current cash reserves and burn rate?"
+  },
+  {
+    "query_id": "auth_finance_015",
+    "tenant": "finance",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What did the internal audit find regarding reconciliation errors?"
+  },
+  {
+    "query_id": "auth_finance_016",
+    "tenant": "finance",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What did the internal audit find regarding reconciliation errors?"
+  },
+  {
+    "query_id": "auth_finance_017",
+    "tenant": "finance",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "Summarize the compensation changes for all employees."
+  },
+  {
+    "query_id": "auth_finance_018",
+    "tenant": "finance",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What are the current cash reserves and burn rate?"
+  },
+  {
+    "query_id": "auth_finance_019",
+    "tenant": "finance",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What remediation plans are pending for audit findings?"
+  },
+  {
+    "query_id": "auth_finance_020",
+    "tenant": "finance",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What were the Q1 2024 revenue projections?"
+  },
+  {
+    "query_id": "auth_finance_021",
+    "tenant": "finance",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What are the current cash reserves and burn rate?"
+  },
+  {
+    "query_id": "auth_finance_022",
+    "tenant": "finance",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What did the internal audit find regarding reconciliation errors?"
+  },
+  {
+    "query_id": "auth_finance_023",
+    "tenant": "finance",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "Summarize the compensation changes for IC4+ employees."
+  },
+  {
+    "query_id": "auth_finance_024",
+    "tenant": "finance",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What are the key expenditure line items for engineering?"
+  },
+  {
+    "query_id": "auth_finance_025",
+    "tenant": "finance",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "How are our money market investments performing?"
+  },
+  {
+    "query_id": "auth_finance_026",
+    "tenant": "finance",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "Detail the operating margin targets for 2025."
+  },
+  {
+    "query_id": "auth_finance_027",
+    "tenant": "finance",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What are the current cash reserves and burn rate?"
+  },
+  {
+    "query_id": "auth_finance_028",
+    "tenant": "finance",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "How are our fixed income investments performing?"
+  },
+  {
+    "query_id": "auth_finance_029",
+    "tenant": "finance",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What remediation plans are pending for audit findings?"
+  },
+  {
+    "query_id": "auth_finance_030",
+    "tenant": "finance",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "Detail the operating margin targets for 2026."
+  },
+  {
+    "query_id": "auth_finance_031",
+    "tenant": "finance",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What remediation plans are pending for audit findings?"
+  },
+  {
+    "query_id": "auth_finance_032",
+    "tenant": "finance",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "Summarize the compensation changes for IC5+ employees."
+  },
+  {
+    "query_id": "auth_finance_033",
+    "tenant": "finance",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "Show me the salary band analysis for Senior Engineer positions."
+  },
+  {
+    "query_id": "auth_finance_034",
+    "tenant": "finance",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What are the current cash reserves and burn rate?"
+  },
+  {
+    "query_id": "auth_finance_035",
+    "tenant": "finance",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What did the internal audit find regarding approval bypasses?"
+  },
+  {
+    "query_id": "auth_finance_036",
+    "tenant": "finance",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "Show me the salary band analysis for Engineering Manager positions."
+  },
+  {
+    "query_id": "auth_finance_037",
+    "tenant": "finance",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What are the current cash reserves and burn rate?"
+  },
+  {
+    "query_id": "auth_finance_038",
+    "tenant": "finance",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What were the Q1 2026 revenue projections?"
+  },
+  {
+    "query_id": "auth_finance_039",
+    "tenant": "finance",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "How are our fixed income investments performing?"
+  },
+  {
+    "query_id": "auth_finance_040",
+    "tenant": "finance",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "Summarize the compensation changes for IC4+ employees."
+  },
+  {
+    "query_id": "auth_finance_041",
+    "tenant": "finance",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What are the current cash reserves and burn rate?"
+  },
+  {
+    "query_id": "auth_finance_042",
+    "tenant": "finance",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "Detail the operating margin targets for 2025."
+  },
+  {
+    "query_id": "auth_finance_043",
+    "tenant": "finance",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What were the Q1 2025 revenue projections?"
+  },
+  {
+    "query_id": "auth_finance_044",
+    "tenant": "finance",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What are the key expenditure line items for engineering?"
+  },
+  {
+    "query_id": "auth_finance_045",
+    "tenant": "finance",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What are the current cash reserves and burn rate?"
+  },
+  {
+    "query_id": "auth_finance_046",
+    "tenant": "finance",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What are the key expenditure line items for marketing?"
+  },
+  {
+    "query_id": "auth_finance_047",
+    "tenant": "finance",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What are the key expenditure line items for sales?"
+  },
+  {
+    "query_id": "auth_finance_048",
+    "tenant": "finance",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "How are our alternatives investments performing?"
+  },
+  {
+    "query_id": "auth_finance_049",
+    "tenant": "finance",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What did the internal audit find regarding reconciliation errors?"
+  },
+  {
+    "query_id": "auth_finance_050",
+    "tenant": "finance",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What is the annual budget for the engineering department?"
+  },
+  {
+    "query_id": "auth_finance_051",
+    "tenant": "finance",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "Detail the operating margin targets for 2026."
+  },
+  {
+    "query_id": "auth_finance_052",
+    "tenant": "finance",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What are the current cash reserves and burn rate?"
+  },
+  {
+    "query_id": "auth_finance_053",
+    "tenant": "finance",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "Show me the salary band analysis for Staff Engineer positions."
+  },
+  {
+    "query_id": "auth_finance_054",
+    "tenant": "finance",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "Summarize the compensation changes for IC4+ employees."
+  },
+  {
+    "query_id": "auth_finance_055",
+    "tenant": "finance",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What were the Q4 2024 revenue projections?"
+  },
+  {
+    "query_id": "auth_finance_056",
+    "tenant": "finance",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What is the annual budget for the research department?"
+  },
+  {
+    "query_id": "auth_finance_057",
+    "tenant": "finance",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What are the current cash reserves and burn rate?"
+  },
+  {
+    "query_id": "auth_finance_058",
+    "tenant": "finance",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "Summarize the compensation changes for all employees."
+  },
+  {
+    "query_id": "auth_finance_059",
+    "tenant": "finance",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What are the key expenditure line items for research?"
+  },
+  {
+    "query_id": "auth_finance_060",
+    "tenant": "finance",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What remediation plans are pending for audit findings?"
+  },
+  {
+    "query_id": "auth_finance_061",
+    "tenant": "finance",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "Summarize the compensation changes for IC5+ employees."
+  },
+  {
+    "query_id": "auth_finance_062",
+    "tenant": "finance",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "Detail the operating margin targets for 2024."
+  },
+  {
+    "query_id": "auth_finance_063",
+    "tenant": "finance",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What remediation plans are pending for audit findings?"
+  },
+  {
+    "query_id": "auth_finance_064",
+    "tenant": "finance",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "Detail the operating margin targets for 2026."
+  },
+  {
+    "query_id": "auth_finance_065",
+    "tenant": "finance",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What is the annual budget for the research department?"
+  },
+  {
+    "query_id": "auth_finance_066",
+    "tenant": "finance",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What were the Q2 2026 revenue projections?"
+  },
+  {
+    "query_id": "auth_finance_067",
+    "tenant": "finance",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "Show me the salary band analysis for Director positions."
+  },
+  {
+    "query_id": "auth_finance_068",
+    "tenant": "finance",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "Show me the salary band analysis for Engineering Manager positions."
+  },
+  {
+    "query_id": "auth_finance_069",
+    "tenant": "finance",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "How are our equities investments performing?"
+  },
+  {
+    "query_id": "auth_finance_070",
+    "tenant": "finance",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What did the internal audit find regarding policy violations?"
+  },
+  {
+    "query_id": "auth_finance_071",
+    "tenant": "finance",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "How are our alternatives investments performing?"
+  },
+  {
+    "query_id": "auth_finance_072",
+    "tenant": "finance",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "How are our money market investments performing?"
+  },
+  {
+    "query_id": "auth_finance_073",
+    "tenant": "finance",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What did the internal audit find regarding documentation gaps?"
+  },
+  {
+    "query_id": "auth_finance_074",
+    "tenant": "finance",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "Summarize the compensation changes for IC4+ employees."
+  },
+  {
+    "query_id": "auth_finance_075",
+    "tenant": "finance",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "How are our fixed income investments performing?"
+  },
+  {
+    "query_id": "auth_finance_076",
+    "tenant": "finance",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What remediation plans are pending for audit findings?"
+  },
+  {
+    "query_id": "auth_finance_077",
+    "tenant": "finance",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "Show me the salary band analysis for Engineering Manager positions."
+  },
+  {
+    "query_id": "auth_finance_078",
+    "tenant": "finance",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What were the Q4 2025 revenue projections?"
+  },
+  {
+    "query_id": "auth_finance_079",
+    "tenant": "finance",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "How are our money market investments performing?"
+  },
+  {
+    "query_id": "auth_finance_080",
+    "tenant": "finance",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "Summarize the compensation changes for all employees."
+  },
+  {
+    "query_id": "auth_finance_081",
+    "tenant": "finance",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What did the internal audit find regarding documentation gaps?"
+  },
+  {
+    "query_id": "auth_finance_082",
+    "tenant": "finance",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What remediation plans are pending for audit findings?"
+  },
+  {
+    "query_id": "auth_finance_083",
+    "tenant": "finance",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What remediation plans are pending for audit findings?"
+  },
+  {
+    "query_id": "auth_finance_084",
+    "tenant": "finance",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What are the current cash reserves and burn rate?"
+  },
+  {
+    "query_id": "auth_finance_085",
+    "tenant": "finance",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What are the key expenditure line items for marketing?"
+  },
+  {
+    "query_id": "auth_finance_086",
+    "tenant": "finance",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "Summarize the compensation changes for IC5+ employees."
+  },
+  {
+    "query_id": "auth_finance_087",
+    "tenant": "finance",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What are the current cash reserves and burn rate?"
+  },
+  {
+    "query_id": "auth_finance_088",
+    "tenant": "finance",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What were the Q4 2026 revenue projections?"
+  },
+  {
+    "query_id": "auth_finance_089",
+    "tenant": "finance",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "Show me the salary band analysis for Staff Engineer positions."
+  },
+  {
+    "query_id": "auth_finance_090",
+    "tenant": "finance",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What are the key expenditure line items for operations?"
+  },
+  {
+    "query_id": "auth_finance_091",
+    "tenant": "finance",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "Show me the salary band analysis for Senior Engineer positions."
+  },
+  {
+    "query_id": "auth_finance_092",
+    "tenant": "finance",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What are the key expenditure line items for marketing?"
+  },
+  {
+    "query_id": "auth_finance_093",
+    "tenant": "finance",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What were the Q2 2025 revenue projections?"
+  },
+  {
+    "query_id": "auth_finance_094",
+    "tenant": "finance",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What were the Q1 2026 revenue projections?"
+  },
+  {
+    "query_id": "auth_finance_095",
+    "tenant": "finance",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What did the internal audit find regarding policy violations?"
+  },
+  {
+    "query_id": "auth_finance_096",
+    "tenant": "finance",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What is the annual budget for the sales department?"
+  },
+  {
+    "query_id": "auth_finance_097",
+    "tenant": "finance",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What remediation plans are pending for audit findings?"
+  },
+  {
+    "query_id": "auth_finance_098",
+    "tenant": "finance",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "Detail the operating margin targets for 2026."
+  },
+  {
+    "query_id": "auth_finance_099",
+    "tenant": "finance",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "Summarize the compensation changes for IC4+ employees."
+  },
+  {
+    "query_id": "auth_engineering_000",
+    "tenant": "engineering",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What caused the api-gateway outage?"
+  },
+  {
+    "query_id": "auth_engineering_001",
+    "tenant": "engineering",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What technology migration decisions have been made recently?"
+  },
+  {
+    "query_id": "auth_engineering_002",
+    "tenant": "engineering",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What caused the ml-inference outage?"
+  },
+  {
+    "query_id": "auth_engineering_003",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What are the capacity planning recommendations for Q3?"
+  },
+  {
+    "query_id": "auth_engineering_004",
+    "tenant": "engineering",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "Summarize the post-incident report for INC-2024-001."
+  },
+  {
+    "query_id": "auth_engineering_005",
+    "tenant": "engineering",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What technology migration decisions have been made recently?"
+  },
+  {
+    "query_id": "auth_engineering_006",
+    "tenant": "engineering",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What technology migration decisions have been made recently?"
+  },
+  {
+    "query_id": "auth_engineering_007",
+    "tenant": "engineering",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What is our current CPU utilization?"
+  },
+  {
+    "query_id": "auth_engineering_008",
+    "tenant": "engineering",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What is our current GPU utilization?"
+  },
+  {
+    "query_id": "auth_engineering_009",
+    "tenant": "engineering",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What caused the ml-inference outage?"
+  },
+  {
+    "query_id": "auth_engineering_010",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What technology migration decisions have been made recently?"
+  },
+  {
+    "query_id": "auth_engineering_011",
+    "tenant": "engineering",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What caused the api-gateway outage?"
+  },
+  {
+    "query_id": "auth_engineering_012",
+    "tenant": "engineering",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "Summarize the post-incident report for INC-2025-013."
+  },
+  {
+    "query_id": "auth_engineering_013",
+    "tenant": "engineering",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What are the capacity planning recommendations for Q3?"
+  },
+  {
+    "query_id": "auth_engineering_014",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What are the capacity planning recommendations for Q1?"
+  },
+  {
+    "query_id": "auth_engineering_015",
+    "tenant": "engineering",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "Show me the code review findings for data."
+  },
+  {
+    "query_id": "auth_engineering_016",
+    "tenant": "engineering",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What is the timeline for migrating to DragonflyDB?"
+  },
+  {
+    "query_id": "auth_engineering_017",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What architecture decisions were made for notification system?"
+  },
+  {
+    "query_id": "auth_engineering_018",
+    "tenant": "engineering",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What is our current CPU utilization?"
+  },
+  {
+    "query_id": "auth_engineering_019",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "How did memory usage improve after the latest changes?"
+  },
+  {
+    "query_id": "auth_engineering_020",
+    "tenant": "engineering",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "How did p99 latency improve after the latest changes?"
+  },
+  {
+    "query_id": "auth_engineering_021",
+    "tenant": "engineering",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "Show me the code review findings for auth."
+  },
+  {
+    "query_id": "auth_engineering_022",
+    "tenant": "engineering",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What architecture decisions were made for authentication module?"
+  },
+  {
+    "query_id": "auth_engineering_023",
+    "tenant": "engineering",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What architecture decisions were made for data ingestion pipeline?"
+  },
+  {
+    "query_id": "auth_engineering_024",
+    "tenant": "engineering",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What is the timeline for migrating to OpenSearch?"
+  },
+  {
+    "query_id": "auth_engineering_025",
+    "tenant": "engineering",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "Summarize the post-incident report for INC-2024-042."
+  },
+  {
+    "query_id": "auth_engineering_026",
+    "tenant": "engineering",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What security vulnerabilities were recently patched?"
+  },
+  {
+    "query_id": "auth_engineering_027",
+    "tenant": "engineering",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What technology migration decisions have been made recently?"
+  },
+  {
+    "query_id": "auth_engineering_028",
+    "tenant": "engineering",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What architecture decisions were made for notification system?"
+  },
+  {
+    "query_id": "auth_engineering_029",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "How did p99 latency improve after the latest changes?"
+  },
+  {
+    "query_id": "auth_engineering_030",
+    "tenant": "engineering",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "How did error rate improve after the latest changes?"
+  },
+  {
+    "query_id": "auth_engineering_031",
+    "tenant": "engineering",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What caused the auth-service outage?"
+  },
+  {
+    "query_id": "auth_engineering_032",
+    "tenant": "engineering",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What is our current disk utilization?"
+  },
+  {
+    "query_id": "auth_engineering_033",
+    "tenant": "engineering",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What security vulnerabilities were recently patched?"
+  },
+  {
+    "query_id": "auth_engineering_034",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What is the timeline for migrating to Pulsar?"
+  },
+  {
+    "query_id": "auth_engineering_035",
+    "tenant": "engineering",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What technology migration decisions have been made recently?"
+  },
+  {
+    "query_id": "auth_engineering_036",
+    "tenant": "engineering",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What is the timeline for migrating to CockroachDB?"
+  },
+  {
+    "query_id": "auth_engineering_037",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "Summarize the post-incident report for INC-2025-087."
+  },
+  {
+    "query_id": "auth_engineering_038",
+    "tenant": "engineering",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What technology migration decisions have been made recently?"
+  },
+  {
+    "query_id": "auth_engineering_039",
+    "tenant": "engineering",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What is our current GPU utilization?"
+  },
+  {
+    "query_id": "auth_engineering_040",
+    "tenant": "engineering",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What is the timeline for migrating to Pulsar?"
+  },
+  {
+    "query_id": "auth_engineering_041",
+    "tenant": "engineering",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What is our current GPU utilization?"
+  },
+  {
+    "query_id": "auth_engineering_042",
+    "tenant": "engineering",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "Show me the code review findings for api."
+  },
+  {
+    "query_id": "auth_engineering_043",
+    "tenant": "engineering",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "Show me the code review findings for infra."
+  },
+  {
+    "query_id": "auth_engineering_044",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What security vulnerabilities were recently patched?"
+  },
+  {
+    "query_id": "auth_engineering_045",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What technology migration decisions have been made recently?"
+  },
+  {
+    "query_id": "auth_engineering_046",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What is the timeline for migrating to OpenSearch?"
+  },
+  {
+    "query_id": "auth_engineering_047",
+    "tenant": "engineering",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What caused the data-pipeline outage?"
+  },
+  {
+    "query_id": "auth_engineering_048",
+    "tenant": "engineering",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What architecture decisions were made for notification system?"
+  },
+  {
+    "query_id": "auth_engineering_049",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What architecture decisions were made for authentication module?"
+  },
+  {
+    "query_id": "auth_engineering_050",
+    "tenant": "engineering",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What architecture decisions were made for authentication module?"
+  },
+  {
+    "query_id": "auth_engineering_051",
+    "tenant": "engineering",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "Summarize the post-incident report for INC-2025-013."
+  },
+  {
+    "query_id": "auth_engineering_052",
+    "tenant": "engineering",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What is the timeline for migrating to Pulsar?"
+  },
+  {
+    "query_id": "auth_engineering_053",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What technology migration decisions have been made recently?"
+  },
+  {
+    "query_id": "auth_engineering_054",
+    "tenant": "engineering",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "Summarize the post-incident report for INC-2025-087."
+  },
+  {
+    "query_id": "auth_engineering_055",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "Show me the code review findings for infra."
+  },
+  {
+    "query_id": "auth_engineering_056",
+    "tenant": "engineering",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "Show me the code review findings for auth."
+  },
+  {
+    "query_id": "auth_engineering_057",
+    "tenant": "engineering",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What security vulnerabilities were recently patched?"
+  },
+  {
+    "query_id": "auth_engineering_058",
+    "tenant": "engineering",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "Summarize the post-incident report for INC-2025-013."
+  },
+  {
+    "query_id": "auth_engineering_059",
+    "tenant": "engineering",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "Show me the code review findings for infra."
+  },
+  {
+    "query_id": "auth_engineering_060",
+    "tenant": "engineering",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What caused the api-gateway outage?"
+  },
+  {
+    "query_id": "auth_engineering_061",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What is the timeline for migrating to DragonflyDB?"
+  },
+  {
+    "query_id": "auth_engineering_062",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "Show me the code review findings for infra."
+  },
+  {
+    "query_id": "auth_engineering_063",
+    "tenant": "engineering",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What is our current GPU utilization?"
+  },
+  {
+    "query_id": "auth_engineering_064",
+    "tenant": "engineering",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What architecture decisions were made for data ingestion pipeline?"
+  },
+  {
+    "query_id": "auth_engineering_065",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What is the timeline for migrating to DragonflyDB?"
+  },
+  {
+    "query_id": "auth_engineering_066",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What is the timeline for migrating to DragonflyDB?"
+  },
+  {
+    "query_id": "auth_engineering_067",
+    "tenant": "engineering",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What technology migration decisions have been made recently?"
+  },
+  {
+    "query_id": "auth_engineering_068",
+    "tenant": "engineering",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What is the timeline for migrating to DragonflyDB?"
+  },
+  {
+    "query_id": "auth_engineering_069",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What is our current memory utilization?"
+  },
+  {
+    "query_id": "auth_engineering_070",
+    "tenant": "engineering",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What architecture decisions were made for search backend?"
+  },
+  {
+    "query_id": "auth_engineering_071",
+    "tenant": "engineering",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "How did p99 latency improve after the latest changes?"
+  },
+  {
+    "query_id": "auth_engineering_072",
+    "tenant": "engineering",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What caused the api-gateway outage?"
+  },
+  {
+    "query_id": "auth_engineering_073",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What are the capacity planning recommendations for Q3?"
+  },
+  {
+    "query_id": "auth_engineering_074",
+    "tenant": "engineering",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What architecture decisions were made for notification system?"
+  },
+  {
+    "query_id": "auth_engineering_075",
+    "tenant": "engineering",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What security vulnerabilities were recently patched?"
+  },
+  {
+    "query_id": "auth_engineering_076",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What caused the data-pipeline outage?"
+  },
+  {
+    "query_id": "auth_engineering_077",
+    "tenant": "engineering",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What is our current GPU utilization?"
+  },
+  {
+    "query_id": "auth_engineering_078",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "How did error rate improve after the latest changes?"
+  },
+  {
+    "query_id": "auth_engineering_079",
+    "tenant": "engineering",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What are the capacity planning recommendations for Q2?"
+  },
+  {
+    "query_id": "auth_engineering_080",
+    "tenant": "engineering",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "Summarize the post-incident report for INC-2024-001."
+  },
+  {
+    "query_id": "auth_engineering_081",
+    "tenant": "engineering",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What are the capacity planning recommendations for Q1?"
+  },
+  {
+    "query_id": "auth_engineering_082",
+    "tenant": "engineering",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "Show me the code review findings for data."
+  },
+  {
+    "query_id": "auth_engineering_083",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What is our current CPU utilization?"
+  },
+  {
+    "query_id": "auth_engineering_084",
+    "tenant": "engineering",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What caused the search-indexer outage?"
+  },
+  {
+    "query_id": "auth_engineering_085",
+    "tenant": "engineering",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What caused the ml-inference outage?"
+  },
+  {
+    "query_id": "auth_engineering_086",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What is our current memory utilization?"
+  },
+  {
+    "query_id": "auth_engineering_087",
+    "tenant": "engineering",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "How did throughput improve after the latest changes?"
+  },
+  {
+    "query_id": "auth_engineering_088",
+    "tenant": "engineering",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What caused the api-gateway outage?"
+  },
+  {
+    "query_id": "auth_engineering_089",
+    "tenant": "engineering",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "Show me the code review findings for auth."
+  },
+  {
+    "query_id": "auth_engineering_090",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What is the timeline for migrating to OpenSearch?"
+  },
+  {
+    "query_id": "auth_engineering_091",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "How did p99 latency improve after the latest changes?"
+  },
+  {
+    "query_id": "auth_engineering_092",
+    "tenant": "engineering",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What caused the auth-service outage?"
+  },
+  {
+    "query_id": "auth_engineering_093",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What security vulnerabilities were recently patched?"
+  },
+  {
+    "query_id": "auth_engineering_094",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What technology migration decisions have been made recently?"
+  },
+  {
+    "query_id": "auth_engineering_095",
+    "tenant": "engineering",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "How did p99 latency improve after the latest changes?"
+  },
+  {
+    "query_id": "auth_engineering_096",
+    "tenant": "engineering",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What is the timeline for migrating to OpenSearch?"
+  },
+  {
+    "query_id": "auth_engineering_097",
+    "tenant": "engineering",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "Summarize the post-incident report for INC-2024-001."
+  },
+  {
+    "query_id": "auth_engineering_098",
+    "tenant": "engineering",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What caused the api-gateway outage?"
+  },
+  {
+    "query_id": "auth_engineering_099",
+    "tenant": "engineering",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What are the capacity planning recommendations for Q1?"
+  },
+  {
+    "query_id": "auth_legal_000",
+    "tenant": "legal",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What remediation is needed for GDPR compliance?"
+  },
+  {
+    "query_id": "auth_legal_001",
+    "tenant": "legal",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What patents were found in the freedom-to-operate review?"
+  },
+  {
+    "query_id": "auth_legal_002",
+    "tenant": "legal",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What is outside counsel recommending for Jones v. Company?"
+  },
+  {
+    "query_id": "auth_legal_003",
+    "tenant": "legal",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What remediation is needed for ISO 27001 compliance?"
+  },
+  {
+    "query_id": "auth_legal_004",
+    "tenant": "legal",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What is our compliance status for HIPAA?"
+  },
+  {
+    "query_id": "auth_legal_005",
+    "tenant": "legal",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What is outside counsel recommending for regulatory inquiry?"
+  },
+  {
+    "query_id": "auth_legal_006",
+    "tenant": "legal",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What patents were found in the freedom-to-operate review?"
+  },
+  {
+    "query_id": "auth_legal_007",
+    "tenant": "legal",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What is our compliance status for SOC 2 Type II?"
+  },
+  {
+    "query_id": "auth_legal_008",
+    "tenant": "legal",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What patents were found in the freedom-to-operate review?"
+  },
+  {
+    "query_id": "auth_legal_009",
+    "tenant": "legal",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What patents were found in the freedom-to-operate review?"
+  },
+  {
+    "query_id": "auth_legal_010",
+    "tenant": "legal",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What patents were found in the freedom-to-operate review?"
+  },
+  {
+    "query_id": "auth_legal_011",
+    "tenant": "legal",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What cross-border data transfer mechanisms are in place?"
+  },
+  {
+    "query_id": "auth_legal_012",
+    "tenant": "legal",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What are the key provisions in the CloudScale Ltd agreement?"
+  },
+  {
+    "query_id": "auth_legal_013",
+    "tenant": "legal",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What patents were found in the freedom-to-operate review?"
+  },
+  {
+    "query_id": "auth_legal_014",
+    "tenant": "legal",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What is the litigation exposure for Smith v. Company?"
+  },
+  {
+    "query_id": "auth_legal_015",
+    "tenant": "legal",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "Summarize the contract review for Acme Corp."
+  },
+  {
+    "query_id": "auth_legal_016",
+    "tenant": "legal",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What intellectual property risks have been identified?"
+  },
+  {
+    "query_id": "auth_legal_017",
+    "tenant": "legal",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What remediation is needed for ISO 27001 compliance?"
+  },
+  {
+    "query_id": "auth_legal_018",
+    "tenant": "legal",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What intellectual property risks have been identified?"
+  },
+  {
+    "query_id": "auth_legal_019",
+    "tenant": "legal",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What cross-border data transfer mechanisms are in place?"
+  },
+  {
+    "query_id": "auth_legal_020",
+    "tenant": "legal",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What is the litigation exposure for Jones v. Company?"
+  },
+  {
+    "query_id": "auth_legal_021",
+    "tenant": "legal",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What patents were found in the freedom-to-operate review?"
+  },
+  {
+    "query_id": "auth_legal_022",
+    "tenant": "legal",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What intellectual property risks have been identified?"
+  },
+  {
+    "query_id": "auth_legal_023",
+    "tenant": "legal",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "Summarize the contract review for TechVentures Inc."
+  },
+  {
+    "query_id": "auth_legal_024",
+    "tenant": "legal",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "Summarize the data privacy impact assessment for data lake migration."
+  },
+  {
+    "query_id": "auth_legal_025",
+    "tenant": "legal",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "Summarize the contract review for CloudScale Ltd."
+  },
+  {
+    "query_id": "auth_legal_026",
+    "tenant": "legal",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "Summarize the data privacy impact assessment for customer analytics platform."
+  },
+  {
+    "query_id": "auth_legal_027",
+    "tenant": "legal",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What is our compliance status for HIPAA?"
+  },
+  {
+    "query_id": "auth_legal_028",
+    "tenant": "legal",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What is outside counsel recommending for regulatory inquiry?"
+  },
+  {
+    "query_id": "auth_legal_029",
+    "tenant": "legal",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What patents were found in the freedom-to-operate review?"
+  },
+  {
+    "query_id": "auth_legal_030",
+    "tenant": "legal",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What patents were found in the freedom-to-operate review?"
+  },
+  {
+    "query_id": "auth_legal_031",
+    "tenant": "legal",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What are the key provisions in the DataFlow Systems agreement?"
+  },
+  {
+    "query_id": "auth_legal_032",
+    "tenant": "legal",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What are the key provisions in the TechVentures Inc agreement?"
+  },
+  {
+    "query_id": "auth_legal_033",
+    "tenant": "legal",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What is outside counsel recommending for Smith v. Company?"
+  },
+  {
+    "query_id": "auth_legal_034",
+    "tenant": "legal",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "Summarize the data privacy impact assessment for customer analytics platform."
+  },
+  {
+    "query_id": "auth_legal_035",
+    "tenant": "legal",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "Summarize the data privacy impact assessment for ML pipeline v2."
+  },
+  {
+    "query_id": "auth_legal_036",
+    "tenant": "legal",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "Summarize the data privacy impact assessment for customer analytics platform."
+  },
+  {
+    "query_id": "auth_legal_037",
+    "tenant": "legal",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What are the key provisions in the CloudScale Ltd agreement?"
+  },
+  {
+    "query_id": "auth_legal_038",
+    "tenant": "legal",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What remediation is needed for GDPR compliance?"
+  },
+  {
+    "query_id": "auth_legal_039",
+    "tenant": "legal",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What are the key provisions in the Acme Corp agreement?"
+  },
+  {
+    "query_id": "auth_legal_040",
+    "tenant": "legal",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What are the key provisions in the Acme Corp agreement?"
+  },
+  {
+    "query_id": "auth_legal_041",
+    "tenant": "legal",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What is our compliance status for GDPR?"
+  },
+  {
+    "query_id": "auth_legal_042",
+    "tenant": "legal",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What is outside counsel recommending for Smith v. Company?"
+  },
+  {
+    "query_id": "auth_legal_043",
+    "tenant": "legal",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What are the key provisions in the Acme Corp agreement?"
+  },
+  {
+    "query_id": "auth_legal_044",
+    "tenant": "legal",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "Summarize the data privacy impact assessment for customer analytics platform."
+  },
+  {
+    "query_id": "auth_legal_045",
+    "tenant": "legal",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What is the litigation exposure for Smith v. Company?"
+  },
+  {
+    "query_id": "auth_legal_046",
+    "tenant": "legal",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What is the litigation exposure for Jones v. Company?"
+  },
+  {
+    "query_id": "auth_legal_047",
+    "tenant": "legal",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "Summarize the data privacy impact assessment for customer analytics platform."
+  },
+  {
+    "query_id": "auth_legal_048",
+    "tenant": "legal",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "Summarize the contract review for TechVentures Inc."
+  },
+  {
+    "query_id": "auth_legal_049",
+    "tenant": "legal",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What is our compliance status for SOC 2 Type II?"
+  },
+  {
+    "query_id": "auth_legal_050",
+    "tenant": "legal",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What remediation is needed for SOC 2 Type II compliance?"
+  },
+  {
+    "query_id": "auth_legal_051",
+    "tenant": "legal",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "Summarize the data privacy impact assessment for ML pipeline v2."
+  },
+  {
+    "query_id": "auth_legal_052",
+    "tenant": "legal",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "Summarize the data privacy impact assessment for ML pipeline v2."
+  },
+  {
+    "query_id": "auth_legal_053",
+    "tenant": "legal",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What is the litigation exposure for regulatory inquiry?"
+  },
+  {
+    "query_id": "auth_legal_054",
+    "tenant": "legal",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What remediation is needed for SOC 2 Type II compliance?"
+  },
+  {
+    "query_id": "auth_legal_055",
+    "tenant": "legal",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What is the litigation exposure for Smith v. Company?"
+  },
+  {
+    "query_id": "auth_legal_056",
+    "tenant": "legal",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "Summarize the data privacy impact assessment for data lake migration."
+  },
+  {
+    "query_id": "auth_legal_057",
+    "tenant": "legal",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What are the key provisions in the DataFlow Systems agreement?"
+  },
+  {
+    "query_id": "auth_legal_058",
+    "tenant": "legal",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What remediation is needed for GDPR compliance?"
+  },
+  {
+    "query_id": "auth_legal_059",
+    "tenant": "legal",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What patents were found in the freedom-to-operate review?"
+  },
+  {
+    "query_id": "auth_legal_060",
+    "tenant": "legal",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "Summarize the data privacy impact assessment for data lake migration."
+  },
+  {
+    "query_id": "auth_legal_061",
+    "tenant": "legal",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What is the litigation exposure for Jones v. Company?"
+  },
+  {
+    "query_id": "auth_legal_062",
+    "tenant": "legal",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "Summarize the contract review for DataFlow Systems."
+  },
+  {
+    "query_id": "auth_legal_063",
+    "tenant": "legal",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What cross-border data transfer mechanisms are in place?"
+  },
+  {
+    "query_id": "auth_legal_064",
+    "tenant": "legal",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What is outside counsel recommending for Smith v. Company?"
+  },
+  {
+    "query_id": "auth_legal_065",
+    "tenant": "legal",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What is outside counsel recommending for regulatory inquiry?"
+  },
+  {
+    "query_id": "auth_legal_066",
+    "tenant": "legal",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What is our compliance status for GDPR?"
+  },
+  {
+    "query_id": "auth_legal_067",
+    "tenant": "legal",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What remediation is needed for ISO 27001 compliance?"
+  },
+  {
+    "query_id": "auth_legal_068",
+    "tenant": "legal",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What is outside counsel recommending for regulatory inquiry?"
+  },
+  {
+    "query_id": "auth_legal_069",
+    "tenant": "legal",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What is the litigation exposure for Jones v. Company?"
+  },
+  {
+    "query_id": "auth_legal_070",
+    "tenant": "legal",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What cross-border data transfer mechanisms are in place?"
+  },
+  {
+    "query_id": "auth_legal_071",
+    "tenant": "legal",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What is outside counsel recommending for Jones v. Company?"
+  },
+  {
+    "query_id": "auth_legal_072",
+    "tenant": "legal",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What patents were found in the freedom-to-operate review?"
+  },
+  {
+    "query_id": "auth_legal_073",
+    "tenant": "legal",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What patents were found in the freedom-to-operate review?"
+  },
+  {
+    "query_id": "auth_legal_074",
+    "tenant": "legal",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "Summarize the data privacy impact assessment for customer analytics platform."
+  },
+  {
+    "query_id": "auth_legal_075",
+    "tenant": "legal",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What is outside counsel recommending for Smith v. Company?"
+  },
+  {
+    "query_id": "auth_legal_076",
+    "tenant": "legal",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "Summarize the data privacy impact assessment for ML pipeline v2."
+  },
+  {
+    "query_id": "auth_legal_077",
+    "tenant": "legal",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What remediation is needed for ISO 27001 compliance?"
+  },
+  {
+    "query_id": "auth_legal_078",
+    "tenant": "legal",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What are the key provisions in the DataFlow Systems agreement?"
+  },
+  {
+    "query_id": "auth_legal_079",
+    "tenant": "legal",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What is our compliance status for GDPR?"
+  },
+  {
+    "query_id": "auth_legal_080",
+    "tenant": "legal",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What intellectual property risks have been identified?"
+  },
+  {
+    "query_id": "auth_legal_081",
+    "tenant": "legal",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What cross-border data transfer mechanisms are in place?"
+  },
+  {
+    "query_id": "auth_legal_082",
+    "tenant": "legal",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "Summarize the data privacy impact assessment for data lake migration."
+  },
+  {
+    "query_id": "auth_legal_083",
+    "tenant": "legal",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What is outside counsel recommending for regulatory inquiry?"
+  },
+  {
+    "query_id": "auth_legal_084",
+    "tenant": "legal",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What are the key provisions in the CloudScale Ltd agreement?"
+  },
+  {
+    "query_id": "auth_legal_085",
+    "tenant": "legal",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What is outside counsel recommending for Jones v. Company?"
+  },
+  {
+    "query_id": "auth_legal_086",
+    "tenant": "legal",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What are the key provisions in the CloudScale Ltd agreement?"
+  },
+  {
+    "query_id": "auth_legal_087",
+    "tenant": "legal",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "What intellectual property risks have been identified?"
+  },
+  {
+    "query_id": "auth_legal_088",
+    "tenant": "legal",
+    "user_idx": 3,
+    "query_type": "authorized",
+    "query_text": "Summarize the contract review for TechVentures Inc."
+  },
+  {
+    "query_id": "auth_legal_089",
+    "tenant": "legal",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "Summarize the data privacy impact assessment for ML pipeline v2."
+  },
+  {
+    "query_id": "auth_legal_090",
+    "tenant": "legal",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What are the key provisions in the Acme Corp agreement?"
+  },
+  {
+    "query_id": "auth_legal_091",
+    "tenant": "legal",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What cross-border data transfer mechanisms are in place?"
+  },
+  {
+    "query_id": "auth_legal_092",
+    "tenant": "legal",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What cross-border data transfer mechanisms are in place?"
+  },
+  {
+    "query_id": "auth_legal_093",
+    "tenant": "legal",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What intellectual property risks have been identified?"
+  },
+  {
+    "query_id": "auth_legal_094",
+    "tenant": "legal",
+    "user_idx": 0,
+    "query_type": "authorized",
+    "query_text": "What is our compliance status for SOC 2 Type II?"
+  },
+  {
+    "query_id": "auth_legal_095",
+    "tenant": "legal",
+    "user_idx": 4,
+    "query_type": "authorized",
+    "query_text": "What are the key provisions in the Acme Corp agreement?"
+  },
+  {
+    "query_id": "auth_legal_096",
+    "tenant": "legal",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "Summarize the data privacy impact assessment for ML pipeline v2."
+  },
+  {
+    "query_id": "auth_legal_097",
+    "tenant": "legal",
+    "user_idx": 2,
+    "query_type": "authorized",
+    "query_text": "What are the key provisions in the DataFlow Systems agreement?"
+  },
+  {
+    "query_id": "auth_legal_098",
+    "tenant": "legal",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What intellectual property risks have been identified?"
+  },
+  {
+    "query_id": "auth_legal_099",
+    "tenant": "legal",
+    "user_idx": 1,
+    "query_type": "authorized",
+    "query_text": "What patents were found in the freedom-to-operate review?"
+  }
+]

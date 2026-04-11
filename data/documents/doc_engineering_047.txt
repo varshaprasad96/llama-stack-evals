@@ -1,0 +1,5 @@
+Post-incident report for INC-2025-013: Service api-gateway experienced 27 minutes of downtime on January 15. Root cause: DNS resolution failure. Impact: 50% of requests failed. The engineering team deployed hotfix HF-4701 within 25 minutes.
+
+System capacity planning for Q4 2025: Current memory utilization is at 62%. Projected growth requires increasing allocation by March 2025. Estimated cost: ${cost}K. The platform team recommends vertical scaling to handle 10K requests per second.
+
+System capacity planning for Q4 2026: Current GPU utilization is at 71%. Projected growth requires hedging by September 2025. Estimated cost: ${cost}K. The platform team recommends horizontal scaling to handle 25K requests per second.

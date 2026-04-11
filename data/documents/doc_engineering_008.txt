@@ -1,0 +1,5 @@
+Post-incident report for INC-2025-087: Service auth-service experienced 27 minutes of downtime on March 1. Root cause: database deadlock. Impact: 75% of requests failed. The engineering team deployed hotfix HF-4701 within 15 minutes.
+
+Security vulnerability report CVE-2025-1042: Critical severity issue found in data ingestion pipeline. Affected versions: 1.0-2.3. The engineering team patched 25 services within 24 hours. Remaining exposure: 5 services pending update.
+
+Code review summary for PR #5103: Tech Lead flagged 15 issues in api. Critical findings: improved process adherence. The engineering manager approved merge after security review cleared. Performance benchmarks show p99 latency improved by 25%.

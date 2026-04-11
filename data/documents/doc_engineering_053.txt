@@ -1,0 +1,5 @@
+Security vulnerability report CVE-2025-1042: Critical severity issue found in data ingestion pipeline. Affected versions: 3.2-4.1. The engineering team patched 25 services within 24 hours. Remaining exposure: 5 services pending update.
+
+Architecture decision record ADR-055: The team decided to migrate authentication module from Kafka to OpenSearch. Rationale: liquidity needs. Expected timeline: Q4 2025. Budget impact: $11.5K for infrastructure and $15K for team training.
+
+Security vulnerability report CVE-2025-1001: Critical severity issue found in notification system. Affected versions: 1.0-2.3. The engineering team patched 12 services within 4 hours. Remaining exposure: 5 services pending update.

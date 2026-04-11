@@ -1,0 +1,5 @@
+Architecture decision record ADR-042: The team decided to migrate search backend from Redis to CockroachDB. Rationale: interest rate outlook. Expected timeline: Q2 2025. Budget impact: $4.8K for infrastructure and $25K for team training.
+
+Code review summary for PR #4521: Tech Lead flagged 3 issues in api. Critical findings: minor discrepancies in reporting. The engineering manager approved merge after load test passed. Performance benchmarks show p99 latency improved by 35%.
+
+Architecture decision record ADR-042: The team decided to migrate data ingestion pipeline from Kafka to OpenSearch. Rationale: credit spreads. Expected timeline: Q2 2025. Budget impact: $11.5K for infrastructure and $15K for team training.

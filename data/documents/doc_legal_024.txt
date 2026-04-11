@@ -1,0 +1,5 @@
+Intellectual property review for AI Assistant: Patent search identified 7 relevant patents. Freedom-to-operate opinion: conditional. The legal team recommends increasing allocation before public launch. Budget for IP counsel: $15.3K.
+
+Data privacy impact assessment for ML pipeline v2: Processing involves behavioral data from 5 data subjects. Legal basis: consent. Cross-border transfer to UK requires SCCs. DPO approved with annual review conditions.
+
+Contract review for Acme Corp: Master service agreement covers data processing with term through June 2027. Key provisions: data protection terms, SLA commitments. Liability cap: $10M. The legal team flagged 3 clauses requiring negotiation.

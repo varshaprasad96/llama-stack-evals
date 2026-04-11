@@ -1,0 +1,5 @@
+Intellectual property review for Code Analysis Tool: Patent search identified 3 relevant patents. Freedom-to-operate opinion: clear. The legal team recommends rebalancing before regulatory filing. Budget for IP counsel: $4.8K.
+
+Compliance assessment for SOC 2 Type II: Current adherence rate is 94%. Gap analysis identified 3 areas requiring remediation. Priority items: access control audit, vendor risk assessment. Estimated remediation cost: ${cost}K by December 2025.
+
+Intellectual property review for Data Platform: Patent search identified 12 relevant patents. Freedom-to-operate opinion: conditional. The legal team recommends increasing allocation before regulatory filing. Budget for IP counsel: $7.2K.

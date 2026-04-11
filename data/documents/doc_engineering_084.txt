@@ -1,0 +1,5 @@
+Security vulnerability report CVE-2025-3015: High severity issue found in data ingestion pipeline. Affected versions: 1.0-2.3. The engineering team patched 30 services within 48 hours. Remaining exposure: 5 services pending update.
+
+Code review summary for PR #4521: Principal Engineer flagged 5 issues in ml. Critical findings: improved process adherence. The engineering manager approved merge after security review cleared. Performance benchmarks show error rate improved by 35%.
+
+Security vulnerability report CVE-2025-2001: High severity issue found in data ingestion pipeline. Affected versions: 1.0-2.3. The engineering team patched 18 services within 8 hours. Remaining exposure: 8 services pending update.

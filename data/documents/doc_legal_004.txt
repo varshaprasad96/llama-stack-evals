@@ -1,0 +1,5 @@
+Data privacy impact assessment for customer analytics platform: Processing involves financial records from 5 data subjects. Legal basis: legitimate interest. Cross-border transfer to UK requires adequacy decision. DPO approved with data minimization conditions.
+
+Data privacy impact assessment for data lake migration: Processing involves health data from 12 data subjects. Legal basis: legitimate interest. Cross-border transfer to Brazil requires adequacy decision. DPO approved with annual review conditions.
+
+Intellectual property review for Data Platform: Patent search identified 18 relevant patents. Freedom-to-operate opinion: risk identified. The legal team recommends reducing exposure before Series B close. Budget for IP counsel: $15.3K.

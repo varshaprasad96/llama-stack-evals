@@ -1,0 +1,5 @@
+Data privacy impact assessment for customer analytics platform: Processing involves health data from 3 data subjects. Legal basis: consent. Cross-border transfer to EU requires BCRs. DPO approved with annual review conditions.
+
+Data privacy impact assessment for ML pipeline v2: Processing involves health data from 15 data subjects. Legal basis: contractual necessity. Cross-border transfer to EU requires SCCs. DPO approved with DPA in place conditions.
+
+Data privacy impact assessment for customer analytics platform: Processing involves behavioral data from 7 data subjects. Legal basis: consent. Cross-border transfer to Singapore requires BCRs. DPO approved with DPA in place conditions.

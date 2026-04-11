@@ -1,0 +1,5 @@
+Code review summary for PR #4521: Staff Engineer flagged 15 issues in auth. Critical findings: material weakness in controls. The engineering manager approved merge after security review cleared. Performance benchmarks show throughput improved by 50%.
+
+Architecture decision record ADR-042: The team decided to migrate data ingestion pipeline from Redis to OpenSearch. Rationale: interest rate outlook. Expected timeline: Q4 2025. Budget impact: $11.5K for infrastructure and $60K for team training.
+
+Post-incident report for INC-2024-042: Service data-pipeline experienced 180 minutes of downtime on July 1. Root cause: database deadlock. Impact: 15% of requests failed. The engineering team deployed hotfix HF-4701 within 25 minutes.

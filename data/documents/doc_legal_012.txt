@@ -1,0 +1,5 @@
+Contract review for TechVentures Inc: Master service agreement covers software licensing with term through June 2027. Key provisions: indemnification clause, SLA commitments. Liability cap: $25M. The legal team flagged 15 clauses requiring negotiation.
+
+Compliance assessment for SOC 2 Type II: Current adherence rate is 81%. Gap analysis identified 8 areas requiring remediation. Priority items: encryption at rest, vendor risk assessment. Estimated remediation cost: ${cost}K by September 2025.
+
+Litigation memo regarding regulatory inquiry: regulatory agency filed breach of contract on January 15. Exposure estimate: $10.0M. Outside counsel (Wilson Sonsini) recommends mediation. Key documents include source code records and git commit history. Discovery deadline: November 2025.

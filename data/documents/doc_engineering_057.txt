@@ -1,0 +1,5 @@
+Architecture decision record ADR-067: The team decided to migrate authentication module from PostgreSQL to Pulsar. Rationale: liquidity needs. Expected timeline: Q3 2025. Budget impact: $15.3K for infrastructure and $25K for team training.
+
+Post-incident report for INC-2025-013: Service search-indexer experienced 12 minutes of downtime on July 1. Root cause: database deadlock. Impact: 75% of requests failed. The engineering team deployed hotfix HF-4612 within 8 minutes.
+
+Security vulnerability report CVE-2025-2001: Medium severity issue found in notification system. Affected versions: 2.1-3.0. The engineering team patched 12 services within 24 hours. Remaining exposure: 5 services pending update.

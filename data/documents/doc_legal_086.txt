@@ -1,0 +1,5 @@
+Data privacy impact assessment for ML pipeline v2: Processing involves health data from 12 data subjects. Legal basis: consent. Cross-border transfer to Singapore requires BCRs. DPO approved with DPA in place conditions.
+
+Intellectual property review for Code Analysis Tool: Patent search identified 18 relevant patents. Freedom-to-operate opinion: clear. The legal team recommends reducing exposure before regulatory filing. Budget for IP counsel: $11.5K.
+
+Compliance assessment for ISO 27001: Current adherence rate is 94%. Gap analysis identified 3 areas requiring remediation. Priority items: access control audit, vendor risk assessment. Estimated remediation cost: ${cost}K by March 2025.

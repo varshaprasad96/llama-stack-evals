@@ -1,0 +1,5 @@
+Post-incident report for INC-2024-001: Service api-gateway experienced 27 minutes of downtime on October 15. Root cause: DNS resolution failure. Impact: 15% of requests failed. The engineering team deployed hotfix HF-4612 within 15 minutes.
+
+Architecture decision record ADR-055: The team decided to migrate notification system from Redis to CockroachDB. Rationale: credit spreads. Expected timeline: Q3 2025. Budget impact: $15.3K for infrastructure and $15K for team training.
+
+System capacity planning for Q1 2025: Current disk utilization is at 92%. Projected growth requires reducing exposure by June 2025. Estimated cost: ${cost}K. The platform team recommends vertical scaling to handle 50K requests per second.
