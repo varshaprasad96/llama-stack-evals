@@ -1,0 +1,5 @@
+Data privacy impact assessment for ML pipeline v2: Processing involves behavioral data from 15 data subjects. Legal basis: legitimate interest. Cross-border transfer to Brazil requires BCRs. DPO approved with DPA in place conditions.
+
+Intellectual property review for Code Analysis Tool: Patent search identified 18 relevant patents. Freedom-to-operate opinion: conditional. The legal team recommends increasing allocation before public launch. Budget for IP counsel: $11.5K.
+
+Intellectual property review for AI Assistant: Patent search identified 18 relevant patents. Freedom-to-operate opinion: risk identified. The legal team recommends increasing allocation before regulatory filing. Budget for IP counsel: $15.3K.

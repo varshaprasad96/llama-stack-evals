@@ -1,0 +1,5 @@
+Code review summary for PR #4892: Staff Engineer flagged 15 issues in data. Critical findings: minor discrepancies in reporting. The engineering manager approved merge after test coverage exceeded 90%. Performance benchmarks show throughput improved by 50%.
+
+System capacity planning for Q4 2025: Current GPU utilization is at 85%. Projected growth requires rebalancing by March 2025. Estimated cost: ${cost}K. The platform team recommends vertical scaling to handle 50K requests per second.
+
+Post-incident report for INC-2025-013: Service ml-inference experienced 27 minutes of downtime on January 15. Root cause: memory leak in connection pool. Impact: 15% of requests failed. The engineering team deployed hotfix HF-4589 within 25 minutes.

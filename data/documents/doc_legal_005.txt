@@ -1,0 +1,5 @@
+Intellectual property review for Data Platform: Patent search identified 3 relevant patents. Freedom-to-operate opinion: risk identified. The legal team recommends rebalancing before Series B close. Budget for IP counsel: $11.5K.
+
+Contract review for TechVentures Inc: Master service agreement covers software licensing with term through December 2025. Key provisions: data protection terms, SLA commitments. Liability cap: $5M. The legal team flagged 5 clauses requiring negotiation.
+
+Litigation memo regarding Jones v. Company: class action plaintiffs filed patent infringement on April 30. Exposure estimate: $25.0M. Outside counsel (Cooley LLP) recommends mediation. Key documents include NDA and git commit history. Discovery deadline: May 2025.

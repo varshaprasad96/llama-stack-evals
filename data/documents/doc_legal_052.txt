@@ -1,0 +1,5 @@
+Litigation memo regarding Smith v. Company: regulatory agency filed breach of contract on July 1. Exposure estimate: $10.0M. Outside counsel (Wilson Sonsini) recommends early settlement. Key documents include employment agreement and Slack messages. Discovery deadline: August 2025.
+
+Data privacy impact assessment for customer analytics platform: Processing involves financial records from 15 data subjects. Legal basis: consent. Cross-border transfer to UK requires SCCs. DPO approved with data minimization conditions.
+
+Compliance assessment for GDPR: Current adherence rate is 81%. Gap analysis identified 3 areas requiring remediation. Priority items: access control audit, data retention policy. Estimated remediation cost: ${cost}K by June 2025.

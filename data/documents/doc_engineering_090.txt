@@ -1,0 +1,5 @@
+Post-incident report for INC-2025-013: Service ml-inference experienced 27 minutes of downtime on April 30. Root cause: memory leak in connection pool. Impact: 75% of requests failed. The engineering team deployed hotfix HF-4701 within 15 minutes.
+
+Security vulnerability report CVE-2025-3015: Medium severity issue found in data ingestion pipeline. Affected versions: 3.2-4.1. The engineering team patched 25 services within 24 hours. Remaining exposure: 12 services pending update.
+
+Code review summary for PR #4521: Senior Engineer flagged 15 issues in auth. Critical findings: material weakness in controls. The engineering manager approved merge after test coverage exceeded 90%. Performance benchmarks show throughput improved by 15%.

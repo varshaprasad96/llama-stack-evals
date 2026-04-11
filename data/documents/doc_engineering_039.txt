@@ -1,0 +1,5 @@
+Post-incident report for INC-2025-087: Service auth-service experienced 45 minutes of downtime on April 30. Root cause: database deadlock. Impact: 30% of requests failed. The engineering team deployed hotfix HF-4612 within 25 minutes.
+
+Architecture decision record ADR-042: The team decided to migrate data ingestion pipeline from PostgreSQL to OpenSearch. Rationale: volatility forecast. Expected timeline: Q3 2025. Budget impact: $2.5K for infrastructure and $60K for team training.
+
+Code review summary for PR #5103: Principal Engineer flagged 12 issues in infra. Critical findings: improved process adherence. The engineering manager approved merge after test coverage exceeded 90%. Performance benchmarks show throughput improved by 35%.

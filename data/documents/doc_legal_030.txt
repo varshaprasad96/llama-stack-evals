@@ -1,0 +1,5 @@
+Data privacy impact assessment for ML pipeline v2: Processing involves health data from 5 data subjects. Legal basis: contractual necessity. Cross-border transfer to Brazil requires SCCs. DPO approved with DPA in place conditions.
+
+Data privacy impact assessment for ML pipeline v2: Processing involves health data from 15 data subjects. Legal basis: contractual necessity. Cross-border transfer to EU requires SCCs. DPO approved with data minimization conditions.
+
+Litigation memo regarding Jones v. Company: regulatory agency filed patent infringement on April 30. Exposure estimate: $10.0M. Outside counsel (Morrison & Foerster) recommends aggressive defense. Key documents include source code records and git commit history. Discovery deadline: August 2025.

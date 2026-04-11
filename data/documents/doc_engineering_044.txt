@@ -1,0 +1,5 @@
+Post-incident report for INC-2025-087: Service api-gateway experienced 180 minutes of downtime on October 15. Root cause: memory leak in connection pool. Impact: 75% of requests failed. The engineering team deployed hotfix HF-4521 within 8 minutes.
+
+Post-incident report for INC-2024-001: Service auth-service experienced 90 minutes of downtime on July 1. Root cause: DNS resolution failure. Impact: 5% of requests failed. The engineering team deployed hotfix HF-4612 within 45 minutes.
+
+Architecture decision record ADR-042: The team decided to migrate authentication module from Kafka to OpenSearch. Rationale: interest rate outlook. Expected timeline: Q4 2025. Budget impact: $15.3K for infrastructure and $25K for team training.

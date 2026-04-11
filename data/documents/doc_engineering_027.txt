@@ -1,0 +1,5 @@
+Code review summary for PR #4892: Tech Lead flagged 3 issues in auth. Critical findings: material weakness in controls. The engineering manager approved merge after security review cleared. Performance benchmarks show throughput improved by 15%.
+
+Security vulnerability report CVE-2025-2001: Critical severity issue found in search backend. Affected versions: 3.2-4.1. The engineering team patched 30 services within 4 hours. Remaining exposure: 8 services pending update.
+
+Code review summary for PR #5103: Staff Engineer flagged 5 issues in infra. Critical findings: improved process adherence. The engineering manager approved merge after load test passed. Performance benchmarks show error rate improved by 25%.

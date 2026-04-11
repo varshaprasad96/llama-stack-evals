@@ -1,0 +1,5 @@
+Architecture decision record ADR-067: The team decided to migrate search backend from Redis to OpenSearch. Rationale: volatility forecast. Expected timeline: Q4 2025. Budget impact: $11.5K for infrastructure and $25K for team training.
+
+Code review summary for PR #5467: Tech Lead flagged 12 issues in api. Critical findings: material weakness in controls. The engineering manager approved merge after security review cleared. Performance benchmarks show throughput improved by 25%.
+
+Security vulnerability report CVE-2025-1001: Medium severity issue found in notification system. Affected versions: 3.2-4.1. The engineering team patched 18 services within 48 hours. Remaining exposure: 8 services pending update.

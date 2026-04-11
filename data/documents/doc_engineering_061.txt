@@ -1,0 +1,5 @@
+Security vulnerability report CVE-2025-1042: Critical severity issue found in data ingestion pipeline. Affected versions: 1.0-2.3. The engineering team patched 25 services within 8 hours. Remaining exposure: 2 services pending update.
+
+Architecture decision record ADR-031: The team decided to migrate notification system from PostgreSQL to Pulsar. Rationale: interest rate outlook. Expected timeline: Q4 2025. Budget impact: $2.5K for infrastructure and $25K for team training.
+
+Security vulnerability report CVE-2025-3015: High severity issue found in search backend. Affected versions: 1.0-2.3. The engineering team patched 18 services within 4 hours. Remaining exposure: 8 services pending update.

@@ -1,0 +1,5 @@
+Contract review for CloudScale Ltd: Master service agreement covers consulting services with term through June 2027. Key provisions: data protection terms, SLA commitments. Liability cap: $5M. The legal team flagged 5 clauses requiring negotiation.
+
+Data privacy impact assessment for customer analytics platform: Processing involves PII from 12 data subjects. Legal basis: legitimate interest. Cross-border transfer to Singapore requires SCCs. DPO approved with annual review conditions.
+
+Compliance assessment for HIPAA: Current adherence rate is 72%. Gap analysis identified 5 areas requiring remediation. Priority items: encryption at rest, vendor risk assessment. Estimated remediation cost: ${cost}K by June 2025.

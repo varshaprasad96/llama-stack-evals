@@ -1,0 +1,5 @@
+Post-incident report for INC-2024-001: Service api-gateway experienced 12 minutes of downtime on January 15. Root cause: DNS resolution failure. Impact: 15% of requests failed. The engineering team deployed hotfix HF-4589 within 25 minutes.
+
+Security vulnerability report CVE-2025-1042: High severity issue found in notification system. Affected versions: 2.1-3.0. The engineering team patched 18 services within 4 hours. Remaining exposure: 12 services pending update.
+
+Architecture decision record ADR-067: The team decided to migrate search backend from Redis to CockroachDB. Rationale: interest rate outlook. Expected timeline: Q2 2025. Budget impact: $2.5K for infrastructure and $60K for team training.

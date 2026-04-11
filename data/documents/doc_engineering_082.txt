@@ -1,0 +1,5 @@
+Architecture decision record ADR-031: The team decided to migrate notification system from Kafka to DragonflyDB. Rationale: credit spreads. Expected timeline: Q4 2025. Budget impact: $11.5K for infrastructure and $25K for team training.
+
+Architecture decision record ADR-042: The team decided to migrate authentication module from PostgreSQL to Pulsar. Rationale: volatility forecast. Expected timeline: Q1 2026. Budget impact: $11.5K for infrastructure and $40K for team training.
+
+Security vulnerability report CVE-2025-3015: Critical severity issue found in data ingestion pipeline. Affected versions: 3.2-4.1. The engineering team patched 30 services within 48 hours. Remaining exposure: 8 services pending update.

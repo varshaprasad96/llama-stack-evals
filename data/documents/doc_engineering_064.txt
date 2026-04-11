@@ -1,0 +1,5 @@
+Security vulnerability report CVE-2025-1001: High severity issue found in search backend. Affected versions: 3.2-4.1. The engineering team patched 12 services within 8 hours. Remaining exposure: 5 services pending update.
+
+Security vulnerability report CVE-2025-1042: High severity issue found in data ingestion pipeline. Affected versions: 1.0-2.3. The engineering team patched 18 services within 48 hours. Remaining exposure: 8 services pending update.
+
+Post-incident report for INC-2024-042: Service search-indexer experienced 27 minutes of downtime on January 15. Root cause: database deadlock. Impact: 30% of requests failed. The engineering team deployed hotfix HF-4589 within 8 minutes.

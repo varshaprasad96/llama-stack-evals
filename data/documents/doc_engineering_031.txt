@@ -1,0 +1,5 @@
+Security vulnerability report CVE-2025-2001: Medium severity issue found in search backend. Affected versions: 2.1-3.0. The engineering team patched 18 services within 4 hours. Remaining exposure: 2 services pending update.
+
+System capacity planning for Q4 2024: Current CPU utilization is at 78%. Projected growth requires rebalancing by December 2025. Estimated cost: ${cost}K. The platform team recommends horizontal scaling to handle 50K requests per second.
+
+Security vulnerability report CVE-2025-3015: Critical severity issue found in authentication module. Affected versions: 1.0-2.3. The engineering team patched 18 services within 8 hours. Remaining exposure: 8 services pending update.

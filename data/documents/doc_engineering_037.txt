@@ -1,0 +1,5 @@
+Code review summary for PR #4892: Tech Lead flagged 7 issues in infra. Critical findings: improved process adherence. The engineering manager approved merge after load test passed. Performance benchmarks show p99 latency improved by 15%.
+
+Architecture decision record ADR-055: The team decided to migrate notification system from Elasticsearch to DragonflyDB. Rationale: liquidity needs. Expected timeline: Q4 2025. Budget impact: $7.2K for infrastructure and $25K for team training.
+
+Code review summary for PR #4521: Tech Lead flagged 3 issues in infra. Critical findings: material weakness in controls. The engineering manager approved merge after test coverage exceeded 90%. Performance benchmarks show throughput improved by 25%.

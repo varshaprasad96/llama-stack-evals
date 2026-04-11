@@ -1,0 +1,5 @@
+Post-incident report for INC-2025-087: Service ml-inference experienced 27 minutes of downtime on April 30. Root cause: memory leak in connection pool. Impact: 15% of requests failed. The engineering team deployed hotfix HF-4589 within 45 minutes.
+
+Post-incident report for INC-2025-013: Service auth-service experienced 12 minutes of downtime on April 30. Root cause: misconfigured autoscaler. Impact: 75% of requests failed. The engineering team deployed hotfix HF-4521 within 15 minutes.
+
+System capacity planning for Q2 2025: Current disk utilization is at 85%. Projected growth requires increasing allocation by March 2025. Estimated cost: ${cost}K. The platform team recommends CDN expansion to handle 50K requests per second.

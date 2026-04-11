@@ -1,0 +1,5 @@
+System capacity planning for Q2 2026: Current memory utilization is at 78%. Projected growth requires increasing allocation by September 2025. Estimated cost: ${cost}K. The platform team recommends horizontal scaling to handle 50K requests per second.
+
+Code review summary for PR #4521: Tech Lead flagged 5 issues in auth. Critical findings: minor discrepancies in reporting. The engineering manager approved merge after security review cleared. Performance benchmarks show error rate improved by 25%.
+
+System capacity planning for Q1 2026: Current CPU utilization is at 62%. Projected growth requires increasing allocation by December 2025. Estimated cost: ${cost}K. The platform team recommends horizontal scaling to handle 25K requests per second.

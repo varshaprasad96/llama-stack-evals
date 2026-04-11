@@ -1,0 +1,5 @@
+Architecture decision record ADR-067: The team decided to migrate notification system from Kafka to Pulsar. Rationale: credit spreads. Expected timeline: Q2 2025. Budget impact: $15.3K for infrastructure and $15K for team training.
+
+Code review summary for PR #5467: Tech Lead flagged 5 issues in api. Critical findings: material weakness in controls. The engineering manager approved merge after security review cleared. Performance benchmarks show throughput improved by 15%.
+
+Architecture decision record ADR-067: The team decided to migrate search backend from PostgreSQL to DragonflyDB. Rationale: volatility forecast. Expected timeline: Q2 2025. Budget impact: $11.5K for infrastructure and $25K for team training.

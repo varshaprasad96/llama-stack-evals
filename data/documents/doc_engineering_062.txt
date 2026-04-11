@@ -1,0 +1,5 @@
+Architecture decision record ADR-055: The team decided to migrate notification system from Elasticsearch to Pulsar. Rationale: volatility forecast. Expected timeline: Q3 2025. Budget impact: $15.3K for infrastructure and $40K for team training.
+
+Code review summary for PR #5467: Staff Engineer flagged 3 issues in api. Critical findings: material weakness in controls. The engineering manager approved merge after test coverage exceeded 90%. Performance benchmarks show memory usage improved by 35%.
+
+Code review summary for PR #4892: Tech Lead flagged 12 issues in infra. Critical findings: minor discrepancies in reporting. The engineering manager approved merge after load test passed. Performance benchmarks show error rate improved by 50%.
