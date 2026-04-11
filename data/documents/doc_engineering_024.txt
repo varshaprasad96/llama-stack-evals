@@ -1,0 +1,5 @@
+Architecture decision record ADR-042: The team decided to migrate search backend from Kafka to OpenSearch. Rationale: credit spreads. Expected timeline: Q2 2025. Budget impact: $15.3K for infrastructure and $25K for team training.
+
+Code review summary for PR #5467: Principal Engineer flagged 15 issues in infra. Critical findings: material weakness in controls. The engineering manager approved merge after test coverage exceeded 90%. Performance benchmarks show error rate improved by 50%.
+
+Architecture decision record ADR-067: The team decided to migrate data ingestion pipeline from Redis to CockroachDB. Rationale: liquidity needs. Expected timeline: Q4 2025. Budget impact: $11.5K for infrastructure and $60K for team training.

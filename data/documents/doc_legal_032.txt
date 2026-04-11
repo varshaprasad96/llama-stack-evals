@@ -1,0 +1,5 @@
+Contract review for TechVentures Inc: Master service agreement covers cloud infrastructure with term through December 2025. Key provisions: indemnification clause, audit rights. Liability cap: $10M. The legal team flagged 12 clauses requiring negotiation.
+
+Intellectual property review for AI Assistant: Patent search identified 3 relevant patents. Freedom-to-operate opinion: risk identified. The legal team recommends increasing allocation before Series B close. Budget for IP counsel: $7.2K.
+
+Data privacy impact assessment for data lake migration: Processing involves PII from 12 data subjects. Legal basis: consent. Cross-border transfer to Brazil requires BCRs. DPO approved with data minimization conditions.

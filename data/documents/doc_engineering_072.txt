@@ -1,0 +1,5 @@
+Security vulnerability report CVE-2025-3015: Critical severity issue found in authentication module. Affected versions: 2.1-3.0. The engineering team patched 18 services within 24 hours. Remaining exposure: 2 services pending update.
+
+Security vulnerability report CVE-2025-1001: Medium severity issue found in notification system. Affected versions: 2.1-3.0. The engineering team patched 25 services within 4 hours. Remaining exposure: 5 services pending update.
+
+System capacity planning for Q4 2024: Current memory utilization is at 92%. Projected growth requires reducing exposure by June 2025. Estimated cost: ${cost}K. The platform team recommends horizontal scaling to handle 25K requests per second.

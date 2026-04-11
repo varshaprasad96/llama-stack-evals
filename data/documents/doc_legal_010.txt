@@ -1,0 +1,5 @@
+Contract review for Acme Corp: Master service agreement covers consulting services with term through December 2026. Key provisions: IP ownership, SLA commitments. Liability cap: $5M. The legal team flagged 12 clauses requiring negotiation.
+
+Intellectual property review for AI Assistant: Patent search identified 12 relevant patents. Freedom-to-operate opinion: conditional. The legal team recommends increasing allocation before public launch. Budget for IP counsel: $7.2K.
+
+Litigation memo regarding regulatory inquiry: class action plaintiffs filed trade secret misappropriation on March 1. Exposure estimate: $5.0M. Outside counsel (Morrison & Foerster) recommends early settlement. Key documents include source code records and git commit history. Discovery deadline: November 2025.

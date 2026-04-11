@@ -1,0 +1,5 @@
+Data privacy impact assessment for customer analytics platform: Processing involves health data from 12 data subjects. Legal basis: consent. Cross-border transfer to Singapore requires adequacy decision. DPO approved with annual review conditions.
+
+Intellectual property review for AI Assistant: Patent search identified 12 relevant patents. Freedom-to-operate opinion: risk identified. The legal team recommends rebalancing before regulatory filing. Budget for IP counsel: $11.5K.
+
+Compliance assessment for GDPR: Current adherence rate is 81%. Gap analysis identified 5 areas requiring remediation. Priority items: incident response plan, data retention policy. Estimated remediation cost: ${cost}K by March 2025.

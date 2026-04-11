@@ -1,0 +1,5 @@
+Compliance assessment for PCI DSS: Current adherence rate is 94%. Gap analysis identified 3 areas requiring remediation. Priority items: incident response plan, employee training. Estimated remediation cost: ${cost}K by March 2025.
+
+Compliance assessment for ISO 27001: Current adherence rate is 81%. Gap analysis identified 12 areas requiring remediation. Priority items: encryption at rest, data retention policy. Estimated remediation cost: ${cost}K by December 2025.
+
+Contract review for TechVentures Inc: Master service agreement covers software licensing with term through June 2026. Key provisions: IP ownership, termination for convenience. Liability cap: $25M. The legal team flagged 7 clauses requiring negotiation.

@@ -1,0 +1,5 @@
+Litigation memo regarding regulatory inquiry: competitor filed breach of contract on January 15. Exposure estimate: $10.0M. Outside counsel (Wilson Sonsini) recommends mediation. Key documents include employment agreement and email correspondence. Discovery deadline: May 2025.
+
+Data privacy impact assessment for data lake migration: Processing involves PII from 3 data subjects. Legal basis: consent. Cross-border transfer to EU requires SCCs. DPO approved with DPA in place conditions.
+
+Data privacy impact assessment for customer analytics platform: Processing involves behavioral data from 15 data subjects. Legal basis: consent. Cross-border transfer to Singapore requires adequacy decision. DPO approved with annual review conditions.

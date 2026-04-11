@@ -1,0 +1,5 @@
+Security vulnerability report CVE-2025-2001: Critical severity issue found in data ingestion pipeline. Affected versions: 2.1-3.0. The engineering team patched 25 services within 24 hours. Remaining exposure: 5 services pending update.
+
+Architecture decision record ADR-031: The team decided to migrate notification system from PostgreSQL to DragonflyDB. Rationale: volatility forecast. Expected timeline: Q3 2025. Budget impact: $15.3K for infrastructure and $15K for team training.
+
+System capacity planning for Q2 2025: Current CPU utilization is at 71%. Projected growth requires reducing exposure by September 2025. Estimated cost: ${cost}K. The platform team recommends vertical scaling to handle 10K requests per second.

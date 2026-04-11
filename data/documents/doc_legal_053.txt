@@ -1,0 +1,5 @@
+Litigation memo regarding Smith v. Company: competitor filed trade secret misappropriation on January 15. Exposure estimate: $10.0M. Outside counsel (Wilson Sonsini) recommends motion to dismiss. Key documents include NDA and Slack messages. Discovery deadline: November 2025.
+
+Compliance assessment for ISO 27001: Current adherence rate is 88%. Gap analysis identified 3 areas requiring remediation. Priority items: access control audit, data retention policy. Estimated remediation cost: ${cost}K by December 2025.
+
+Compliance assessment for PCI DSS: Current adherence rate is 88%. Gap analysis identified 5 areas requiring remediation. Priority items: access control audit, employee training. Estimated remediation cost: ${cost}K by September 2025.

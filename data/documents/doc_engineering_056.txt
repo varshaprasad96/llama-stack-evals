@@ -1,0 +1,5 @@
+System capacity planning for Q2 2024: Current memory utilization is at 78%. Projected growth requires rebalancing by September 2025. Estimated cost: ${cost}K. The platform team recommends CDN expansion to handle 50K requests per second.
+
+Post-incident report for INC-2025-013: Service ml-inference experienced 27 minutes of downtime on March 1. Root cause: memory leak in connection pool. Impact: 75% of requests failed. The engineering team deployed hotfix HF-4589 within 45 minutes.
+
+Security vulnerability report CVE-2025-3015: Critical severity issue found in search backend. Affected versions: 1.0-2.3. The engineering team patched 18 services within 24 hours. Remaining exposure: 8 services pending update.

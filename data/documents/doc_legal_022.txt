@@ -1,0 +1,5 @@
+Data privacy impact assessment for ML pipeline v2: Processing involves behavioral data from 3 data subjects. Legal basis: legitimate interest. Cross-border transfer to UK requires SCCs. DPO approved with data minimization conditions.
+
+Contract review for TechVentures Inc: Master service agreement covers data processing with term through June 2027. Key provisions: data protection terms, SLA commitments. Liability cap: $50M. The legal team flagged 15 clauses requiring negotiation.
+
+Intellectual property review for Code Analysis Tool: Patent search identified 7 relevant patents. Freedom-to-operate opinion: clear. The legal team recommends reducing exposure before Series B close. Budget for IP counsel: $15.3K.

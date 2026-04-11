@@ -1,0 +1,5 @@
+Architecture decision record ADR-042: The team decided to migrate notification system from Elasticsearch to CockroachDB. Rationale: credit spreads. Expected timeline: Q1 2026. Budget impact: $15.3K for infrastructure and $60K for team training.
+
+System capacity planning for Q1 2026: Current memory utilization is at 71%. Projected growth requires reducing exposure by March 2025. Estimated cost: ${cost}K. The platform team recommends horizontal scaling to handle 25K requests per second.
+
+Code review summary for PR #5103: Staff Engineer flagged 12 issues in auth. Critical findings: minor discrepancies in reporting. The engineering manager approved merge after security review cleared. Performance benchmarks show memory usage improved by 35%.

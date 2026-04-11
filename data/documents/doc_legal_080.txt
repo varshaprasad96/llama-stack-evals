@@ -1,0 +1,5 @@
+Compliance assessment for HIPAA: Current adherence rate is 81%. Gap analysis identified 5 areas requiring remediation. Priority items: encryption at rest, employee training. Estimated remediation cost: ${cost}K by September 2025.
+
+Data privacy impact assessment for customer analytics platform: Processing involves health data from 3 data subjects. Legal basis: consent. Cross-border transfer to Brazil requires BCRs. DPO approved with DPA in place conditions.
+
+Litigation memo regarding regulatory inquiry: class action plaintiffs filed breach of contract on March 1. Exposure estimate: $10.0M. Outside counsel (Morrison & Foerster) recommends aggressive defense. Key documents include NDA and git commit history. Discovery deadline: November 2025.

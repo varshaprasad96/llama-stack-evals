@@ -1,0 +1,5 @@
+System capacity planning for Q1 2025: Current GPU utilization is at 85%. Projected growth requires hedging by September 2025. Estimated cost: ${cost}K. The platform team recommends horizontal scaling to handle 100K requests per second.
+
+Architecture decision record ADR-055: The team decided to migrate notification system from Kafka to DragonflyDB. Rationale: liquidity needs. Expected timeline: Q2 2025. Budget impact: $7.2K for infrastructure and $60K for team training.
+
+System capacity planning for Q3 2024: Current disk utilization is at 92%. Projected growth requires rebalancing by June 2025. Estimated cost: ${cost}K. The platform team recommends horizontal scaling to handle 10K requests per second.

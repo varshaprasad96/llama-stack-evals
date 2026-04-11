@@ -1,0 +1,5 @@
+System capacity planning for Q1 2025: Current CPU utilization is at 78%. Projected growth requires increasing allocation by March 2025. Estimated cost: ${cost}K. The platform team recommends horizontal scaling to handle 25K requests per second.
+
+Post-incident report for INC-2024-042: Service search-indexer experienced 45 minutes of downtime on October 15. Root cause: database deadlock. Impact: 15% of requests failed. The engineering team deployed hotfix HF-4612 within 15 minutes.
+
+Code review summary for PR #4521: Senior Engineer flagged 7 issues in infra. Critical findings: minor discrepancies in reporting. The engineering manager approved merge after security review cleared. Performance benchmarks show p99 latency improved by 35%.

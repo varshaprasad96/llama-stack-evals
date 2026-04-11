@@ -1,0 +1,5 @@
+Contract review for CloudScale Ltd: Master service agreement covers consulting services with term through June 2027. Key provisions: data protection terms, SLA commitments. Liability cap: $25M. The legal team flagged 15 clauses requiring negotiation.
+
+Intellectual property review for Data Platform: Patent search identified 12 relevant patents. Freedom-to-operate opinion: clear. The legal team recommends hedging before regulatory filing. Budget for IP counsel: $11.5K.
+
+Data privacy impact assessment for customer analytics platform: Processing involves financial records from 7 data subjects. Legal basis: legitimate interest. Cross-border transfer to EU requires SCCs. DPO approved with annual review conditions.

@@ -1,0 +1,5 @@
+Compliance assessment for HIPAA: Current adherence rate is 88%. Gap analysis identified 5 areas requiring remediation. Priority items: encryption at rest, vendor risk assessment. Estimated remediation cost: ${cost}K by March 2025.
+
+Intellectual property review for AI Assistant: Patent search identified 12 relevant patents. Freedom-to-operate opinion: clear. The legal team recommends rebalancing before Series B close. Budget for IP counsel: $11.5K.
+
+Data privacy impact assessment for customer analytics platform: Processing involves health data from 5 data subjects. Legal basis: consent. Cross-border transfer to UK requires BCRs. DPO approved with data minimization conditions.

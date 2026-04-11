@@ -1,0 +1,5 @@
+Compliance assessment for GDPR: Current adherence rate is 88%. Gap analysis identified 8 areas requiring remediation. Priority items: incident response plan, data retention policy. Estimated remediation cost: ${cost}K by December 2025.
+
+Contract review for TechVentures Inc: Master service agreement covers software licensing with term through June 2026. Key provisions: data protection terms, SLA commitments. Liability cap: $25M. The legal team flagged 12 clauses requiring negotiation.
+
+Data privacy impact assessment for data lake migration: Processing involves PII from 15 data subjects. Legal basis: consent. Cross-border transfer to Singapore requires BCRs. DPO approved with data minimization conditions.

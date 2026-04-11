@@ -1,0 +1,5 @@
+Compliance assessment for GDPR: Current adherence rate is 72%. Gap analysis identified 8 areas requiring remediation. Priority items: access control audit, employee training. Estimated remediation cost: ${cost}K by December 2025.
+
+Compliance assessment for ISO 27001: Current adherence rate is 94%. Gap analysis identified 8 areas requiring remediation. Priority items: access control audit, data retention policy. Estimated remediation cost: ${cost}K by December 2025.
+
+Data privacy impact assessment for customer analytics platform: Processing involves financial records from 5 data subjects. Legal basis: legitimate interest. Cross-border transfer to EU requires adequacy decision. DPO approved with annual review conditions.

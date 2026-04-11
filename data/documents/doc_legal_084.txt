@@ -1,0 +1,5 @@
+Data privacy impact assessment for customer analytics platform: Processing involves PII from 7 data subjects. Legal basis: consent. Cross-border transfer to UK requires BCRs. DPO approved with DPA in place conditions.
+
+Compliance assessment for HIPAA: Current adherence rate is 94%. Gap analysis identified 3 areas requiring remediation. Priority items: access control audit, data retention policy. Estimated remediation cost: ${cost}K by June 2025.
+
+Litigation memo regarding regulatory inquiry: class action plaintiffs filed trade secret misappropriation on March 1. Exposure estimate: $25.0M. Outside counsel (Latham & Watkins) recommends aggressive defense. Key documents include employment agreement and email correspondence. Discovery deadline: November 2025.

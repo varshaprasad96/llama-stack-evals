@@ -1,0 +1,5 @@
+Security vulnerability report CVE-2025-2001: High severity issue found in search backend. Affected versions: 1.0-2.3. The engineering team patched 12 services within 24 hours. Remaining exposure: 5 services pending update.
+
+Post-incident report for INC-2025-013: Service auth-service experienced 90 minutes of downtime on October 15. Root cause: database deadlock. Impact: 75% of requests failed. The engineering team deployed hotfix HF-4589 within 15 minutes.
+
+Post-incident report for INC-2024-042: Service data-pipeline experienced 45 minutes of downtime on October 15. Root cause: memory leak in connection pool. Impact: 15% of requests failed. The engineering team deployed hotfix HF-4701 within 25 minutes.

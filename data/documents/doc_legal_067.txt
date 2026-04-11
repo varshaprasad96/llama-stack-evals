@@ -1,0 +1,5 @@
+Compliance assessment for HIPAA: Current adherence rate is 81%. Gap analysis identified 12 areas requiring remediation. Priority items: access control audit, vendor risk assessment. Estimated remediation cost: ${cost}K by December 2025.
+
+Data privacy impact assessment for ML pipeline v2: Processing involves health data from 12 data subjects. Legal basis: consent. Cross-border transfer to Brazil requires BCRs. DPO approved with data minimization conditions.
+
+Data privacy impact assessment for ML pipeline v2: Processing involves health data from 5 data subjects. Legal basis: consent. Cross-border transfer to EU requires SCCs. DPO approved with DPA in place conditions.

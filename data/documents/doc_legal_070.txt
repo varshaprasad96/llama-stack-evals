@@ -1,0 +1,5 @@
+Data privacy impact assessment for customer analytics platform: Processing involves behavioral data from 15 data subjects. Legal basis: contractual necessity. Cross-border transfer to Brazil requires adequacy decision. DPO approved with data minimization conditions.
+
+Compliance assessment for ISO 27001: Current adherence rate is 72%. Gap analysis identified 12 areas requiring remediation. Priority items: encryption at rest, data retention policy. Estimated remediation cost: ${cost}K by December 2025.
+
+Intellectual property review for Data Platform: Patent search identified 12 relevant patents. Freedom-to-operate opinion: conditional. The legal team recommends reducing exposure before public launch. Budget for IP counsel: $2.5K.

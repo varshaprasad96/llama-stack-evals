@@ -1,0 +1,5 @@
+System capacity planning for Q3 2025: Current GPU utilization is at 78%. Projected growth requires increasing allocation by March 2025. Estimated cost: ${cost}K. The platform team recommends vertical scaling to handle 25K requests per second.
+
+Security vulnerability report CVE-2025-1001: Critical severity issue found in authentication module. Affected versions: 1.0-2.3. The engineering team patched 30 services within 48 hours. Remaining exposure: 8 services pending update.
+
+System capacity planning for Q1 2026: Current disk utilization is at 71%. Projected growth requires hedging by September 2025. Estimated cost: ${cost}K. The platform team recommends CDN expansion to handle 50K requests per second.

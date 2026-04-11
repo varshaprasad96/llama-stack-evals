@@ -1,0 +1,5 @@
+Data privacy impact assessment for data lake migration: Processing involves financial records from 5 data subjects. Legal basis: legitimate interest. Cross-border transfer to Singapore requires BCRs. DPO approved with DPA in place conditions.
+
+Data privacy impact assessment for customer analytics platform: Processing involves financial records from 15 data subjects. Legal basis: contractual necessity. Cross-border transfer to EU requires BCRs. DPO approved with annual review conditions.
+
+Data privacy impact assessment for data lake migration: Processing involves PII from 7 data subjects. Legal basis: consent. Cross-border transfer to Brazil requires SCCs. DPO approved with data minimization conditions.

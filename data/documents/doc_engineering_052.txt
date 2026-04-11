@@ -1,0 +1,5 @@
+Post-incident report for INC-2025-087: Service ml-inference experienced 90 minutes of downtime on October 15. Root cause: misconfigured autoscaler. Impact: 75% of requests failed. The engineering team deployed hotfix HF-4589 within 15 minutes.
+
+Post-incident report for INC-2025-087: Service ml-inference experienced 180 minutes of downtime on April 30. Root cause: DNS resolution failure. Impact: 50% of requests failed. The engineering team deployed hotfix HF-4589 within 25 minutes.
+
+System capacity planning for Q3 2025: Current GPU utilization is at 71%. Projected growth requires increasing allocation by December 2025. Estimated cost: ${cost}K. The platform team recommends caching layer to handle 50K requests per second.
