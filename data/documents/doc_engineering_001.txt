@@ -1,5 +1,0 @@
-Post-incident report for INC-2025-087: Service search-indexer experienced 27 minutes of downtime on April 30. Root cause: misconfigured autoscaler. Impact: 30% of requests failed. The engineering team deployed hotfix HF-4589 within 45 minutes.
-
-System capacity planning for Q1 2025: Current GPU utilization is at 92%. Projected growth requires hedging by December 2025. Estimated cost: ${cost}K. The platform team recommends horizontal scaling to handle 50K requests per second.
-
-Security vulnerability report CVE-2025-1001: Critical severity issue found in data ingestion pipeline. Affected versions: 3.2-4.1. The engineering team patched 25 services within 8 hours. Remaining exposure: 2 services pending update.

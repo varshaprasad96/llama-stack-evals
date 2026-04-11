@@ -1,5 +1,0 @@
-Investment portfolio review: equities holdings returned -2.3% YTD. The treasury team recommends increasing allocation based on volatility forecast. Current cash reserves stand at $45M with a burn rate of $25M per quarter.
-
-The Q2 2025 revenue forecast projects $112M in net income, driven primarily by cloud services growth. The finance team recommends adjusting the operating margin targets to account for competitive pressure. Detailed breakdowns by business unit show that Developer Tools contributed 45% of total revenue.
-
-The Q3 2026 revenue forecast projects $89M in net income, driven primarily by cost optimization. The finance team recommends adjusting the operating margin targets to account for competitive pressure. Detailed breakdowns by business unit show that Data Services contributed 45% of total revenue.

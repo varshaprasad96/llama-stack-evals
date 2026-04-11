@@ -1,5 +1,0 @@
-Architecture decision record ADR-042: The team decided to migrate data ingestion pipeline from Elasticsearch to Pulsar. Rationale: interest rate outlook. Expected timeline: Q4 2025. Budget impact: $2.5K for infrastructure and $15K for team training.
-
-Post-incident report for INC-2024-042: Service search-indexer experienced 27 minutes of downtime on January 15. Root cause: database deadlock. Impact: 5% of requests failed. The engineering team deployed hotfix HF-4521 within 45 minutes.
-
-Post-incident report for INC-2024-042: Service ml-inference experienced 90 minutes of downtime on July 1. Root cause: DNS resolution failure. Impact: 5% of requests failed. The engineering team deployed hotfix HF-4701 within 45 minutes.

@@ -1,5 +1,0 @@
-Security vulnerability report CVE-2025-1042: Medium severity issue found in search backend. Affected versions: 1.0-2.3. The engineering team patched 25 services within 48 hours. Remaining exposure: 2 services pending update.
-
-Architecture decision record ADR-067: The team decided to migrate notification system from Redis to CockroachDB. Rationale: interest rate outlook. Expected timeline: Q3 2025. Budget impact: $15.3K for infrastructure and $60K for team training.
-
-Architecture decision record ADR-031: The team decided to migrate data ingestion pipeline from Elasticsearch to CockroachDB. Rationale: interest rate outlook. Expected timeline: Q2 2025. Budget impact: $11.5K for infrastructure and $25K for team training.

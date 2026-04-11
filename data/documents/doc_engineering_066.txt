@@ -1,5 +1,0 @@
-Code review summary for PR #5467: Principal Engineer flagged 15 issues in auth. Critical findings: improved process adherence. The engineering manager approved merge after test coverage exceeded 90%. Performance benchmarks show memory usage improved by 25%.
-
-Architecture decision record ADR-031: The team decided to migrate search backend from Redis to DragonflyDB. Rationale: credit spreads. Expected timeline: Q3 2025. Budget impact: $7.2K for infrastructure and $15K for team training.
-
-Architecture decision record ADR-067: The team decided to migrate search backend from PostgreSQL to OpenSearch. Rationale: liquidity needs. Expected timeline: Q1 2026. Budget impact: $4.8K for infrastructure and $25K for team training.

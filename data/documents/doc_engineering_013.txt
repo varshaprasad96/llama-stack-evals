@@ -1,5 +1,0 @@
-Post-incident report for INC-2024-042: Service search-indexer experienced 45 minutes of downtime on March 1. Root cause: misconfigured autoscaler. Impact: 50% of requests failed. The engineering team deployed hotfix HF-4701 within 15 minutes.
-
-Post-incident report for INC-2024-001: Service data-pipeline experienced 12 minutes of downtime on October 15. Root cause: DNS resolution failure. Impact: 30% of requests failed. The engineering team deployed hotfix HF-4701 within 25 minutes.
-
-Architecture decision record ADR-042: The team decided to migrate search backend from PostgreSQL to DragonflyDB. Rationale: volatility forecast. Expected timeline: Q2 2025. Budget impact: $7.2K for infrastructure and $25K for team training.

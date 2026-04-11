@@ -1,5 +1,0 @@
-Compliance assessment for ISO 27001: Current adherence rate is 72%. Gap analysis identified 8 areas requiring remediation. Priority items: encryption at rest, vendor risk assessment. Estimated remediation cost: ${cost}K by September 2025.
-
-Litigation memo regarding Jones v. Company: former employee filed trade secret misappropriation on January 15. Exposure estimate: $5.0M. Outside counsel (Cooley LLP) recommends mediation. Key documents include NDA and email correspondence. Discovery deadline: August 2025.
-
-Compliance assessment for PCI DSS: Current adherence rate is 81%. Gap analysis identified 3 areas requiring remediation. Priority items: encryption at rest, vendor risk assessment. Estimated remediation cost: ${cost}K by June 2025.

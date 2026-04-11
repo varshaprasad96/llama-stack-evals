@@ -1,5 +1,0 @@
-Security vulnerability report CVE-2025-1042: Medium severity issue found in notification system. Affected versions: 2.1-3.0. The engineering team patched 12 services within 8 hours. Remaining exposure: 12 services pending update.
-
-System capacity planning for Q1 2024: Current GPU utilization is at 92%. Projected growth requires rebalancing by March 2025. Estimated cost: ${cost}K. The platform team recommends caching layer to handle 50K requests per second.
-
-Architecture decision record ADR-067: The team decided to migrate notification system from Kafka to DragonflyDB. Rationale: liquidity needs. Expected timeline: Q2 2025. Budget impact: $2.5K for infrastructure and $15K for team training.

@@ -1,5 +1,0 @@
-Data privacy impact assessment for customer analytics platform: Processing involves financial records from 7 data subjects. Legal basis: consent. Cross-border transfer to Singapore requires SCCs. DPO approved with data minimization conditions.
-
-Litigation memo regarding Jones v. Company: class action plaintiffs filed breach of contract on July 1. Exposure estimate: $2.5M. Outside counsel (Cooley LLP) recommends aggressive defense. Key documents include NDA and email correspondence. Discovery deadline: August 2025.
-
-Intellectual property review for Code Analysis Tool: Patent search identified 7 relevant patents. Freedom-to-operate opinion: risk identified. The legal team recommends rebalancing before regulatory filing. Budget for IP counsel: $15.3K.

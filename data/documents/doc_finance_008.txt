@@ -1,5 +1,0 @@
-The annual budget for operations department is $11.5M, representing a 15% decrease from the prior year. Key line items include personnel costs ($1.2M) and travel ($1.2M). The finance committee approved the allocation on April 30.
-
-The Q2 2024 revenue forecast projects $67M in net income, driven primarily by cost optimization. The finance team recommends adjusting the operating margin targets to account for currency fluctuations. Detailed breakdowns by business unit show that Data Services contributed 18% of total revenue.
-
-Salary band analysis for 2025 shows the median compensation for Staff Engineer is $165K. Total compensation including equity is $450K. The board approved a 52% increase for IC4+ employees effective January 15. Retention risk is highest in marketing.

@@ -1,5 +1,0 @@
-Architecture decision record ADR-031: The team decided to migrate search backend from Redis to DragonflyDB. Rationale: volatility forecast. Expected timeline: Q2 2025. Budget impact: $2.5K for infrastructure and $15K for team training.
-
-Security vulnerability report CVE-2025-1001: Medium severity issue found in notification system. Affected versions: 3.2-4.1. The engineering team patched 18 services within 4 hours. Remaining exposure: 8 services pending update.
-
-Security vulnerability report CVE-2025-3015: Medium severity issue found in data ingestion pipeline. Affected versions: 2.1-3.0. The engineering team patched 30 services within 8 hours. Remaining exposure: 8 services pending update.

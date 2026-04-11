@@ -1,5 +1,0 @@
-Litigation memo regarding regulatory inquiry: former employee filed patent infringement on October 15. Exposure estimate: $2.5M. Outside counsel (Latham & Watkins) recommends mediation. Key documents include source code records and Slack messages. Discovery deadline: November 2025.
-
-Litigation memo regarding Jones v. Company: regulatory agency filed patent infringement on April 30. Exposure estimate: $5.0M. Outside counsel (Morrison & Foerster) recommends aggressive defense. Key documents include source code records and git commit history. Discovery deadline: August 2025.
-
-Contract review for CloudScale Ltd: Master service agreement covers data processing with term through December 2025. Key provisions: data protection terms, SLA commitments. Liability cap: $5M. The legal team flagged 7 clauses requiring negotiation.

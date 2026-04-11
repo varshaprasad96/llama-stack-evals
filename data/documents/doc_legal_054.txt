@@ -1,5 +1,0 @@
-Litigation memo regarding Jones v. Company: regulatory agency filed trade secret misappropriation on March 1. Exposure estimate: $25.0M. Outside counsel (Wilson Sonsini) recommends early settlement. Key documents include source code records and Slack messages. Discovery deadline: May 2025.
-
-Compliance assessment for ISO 27001: Current adherence rate is 72%. Gap analysis identified 8 areas requiring remediation. Priority items: access control audit, data retention policy. Estimated remediation cost: ${cost}K by June 2025.
-
-Data privacy impact assessment for ML pipeline v2: Processing involves PII from 7 data subjects. Legal basis: legitimate interest. Cross-border transfer to UK requires BCRs. DPO approved with data minimization conditions.

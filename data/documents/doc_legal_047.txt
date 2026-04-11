@@ -1,5 +1,0 @@
-Contract review for Acme Corp: Master service agreement covers software licensing with term through December 2026. Key provisions: indemnification clause, audit rights. Liability cap: $50M. The legal team flagged 15 clauses requiring negotiation.
-
-Intellectual property review for AI Assistant: Patent search identified 18 relevant patents. Freedom-to-operate opinion: conditional. The legal team recommends increasing allocation before regulatory filing. Budget for IP counsel: $11.5K.
-
-Compliance assessment for HIPAA: Current adherence rate is 94%. Gap analysis identified 3 areas requiring remediation. Priority items: incident response plan, vendor risk assessment. Estimated remediation cost: ${cost}K by December 2025.

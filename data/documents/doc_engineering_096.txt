@@ -1,5 +1,0 @@
-System capacity planning for Q4 2026: Current CPU utilization is at 71%. Projected growth requires hedging by September 2025. Estimated cost: ${cost}K. The platform team recommends CDN expansion to handle 25K requests per second.
-
-Architecture decision record ADR-055: The team decided to migrate authentication module from Elasticsearch to CockroachDB. Rationale: liquidity needs. Expected timeline: Q4 2025. Budget impact: $2.5K for infrastructure and $60K for team training.
-
-Security vulnerability report CVE-2025-3015: Medium severity issue found in data ingestion pipeline. Affected versions: 1.0-2.3. The engineering team patched 30 services within 8 hours. Remaining exposure: 12 services pending update.

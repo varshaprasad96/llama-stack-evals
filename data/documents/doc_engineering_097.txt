@@ -1,5 +1,0 @@
-Security vulnerability report CVE-2025-1042: Medium severity issue found in data ingestion pipeline. Affected versions: 1.0-2.3. The engineering team patched 12 services within 24 hours. Remaining exposure: 12 services pending update.
-
-Code review summary for PR #4521: Senior Engineer flagged 12 issues in infra. Critical findings: minor discrepancies in reporting. The engineering manager approved merge after load test passed. Performance benchmarks show throughput improved by 35%.
-
-Code review summary for PR #4521: Tech Lead flagged 5 issues in api. Critical findings: improved process adherence. The engineering manager approved merge after load test passed. Performance benchmarks show throughput improved by 50%.

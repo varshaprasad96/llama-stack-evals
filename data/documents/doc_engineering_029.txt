@@ -1,5 +1,0 @@
-Code review summary for PR #5467: Senior Engineer flagged 7 issues in data. Critical findings: material weakness in controls. The engineering manager approved merge after security review cleared. Performance benchmarks show p99 latency improved by 35%.
-
-Code review summary for PR #4521: Senior Engineer flagged 3 issues in infra. Critical findings: minor discrepancies in reporting. The engineering manager approved merge after security review cleared. Performance benchmarks show memory usage improved by 25%.
-
-System capacity planning for Q4 2025: Current disk utilization is at 92%. Projected growth requires hedging by March 2025. Estimated cost: ${cost}K. The platform team recommends CDN expansion to handle 25K requests per second.

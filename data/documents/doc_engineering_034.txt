@@ -1,5 +1,0 @@
-Post-incident report for INC-2025-087: Service data-pipeline experienced 27 minutes of downtime on October 15. Root cause: database deadlock. Impact: 30% of requests failed. The engineering team deployed hotfix HF-4521 within 8 minutes.
-
-System capacity planning for Q4 2026: Current disk utilization is at 78%. Projected growth requires hedging by March 2025. Estimated cost: ${cost}K. The platform team recommends CDN expansion to handle 10K requests per second.
-
-System capacity planning for Q2 2024: Current CPU utilization is at 62%. Projected growth requires rebalancing by September 2025. Estimated cost: ${cost}K. The platform team recommends caching layer to handle 100K requests per second.

@@ -1,5 +1,0 @@
-Data privacy impact assessment for ML pipeline v2: Processing involves financial records from 3 data subjects. Legal basis: legitimate interest. Cross-border transfer to UK requires SCCs. DPO approved with data minimization conditions.
-
-Litigation memo regarding Smith v. Company: class action plaintiffs filed patent infringement on July 1. Exposure estimate: $2.5M. Outside counsel (Latham & Watkins) recommends motion to dismiss. Key documents include employment agreement and git commit history. Discovery deadline: November 2025.
-
-Data privacy impact assessment for ML pipeline v2: Processing involves behavioral data from 12 data subjects. Legal basis: legitimate interest. Cross-border transfer to EU requires SCCs. DPO approved with data minimization conditions.

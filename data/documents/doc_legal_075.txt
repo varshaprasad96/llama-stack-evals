@@ -1,5 +1,0 @@
-Data privacy impact assessment for ML pipeline v2: Processing involves behavioral data from 15 data subjects. Legal basis: contractual necessity. Cross-border transfer to EU requires BCRs. DPO approved with annual review conditions.
-
-Litigation memo regarding Jones v. Company: competitor filed breach of contract on March 1. Exposure estimate: $10.0M. Outside counsel (Latham & Watkins) recommends mediation. Key documents include NDA and email correspondence. Discovery deadline: November 2025.
-
-Compliance assessment for PCI DSS: Current adherence rate is 88%. Gap analysis identified 8 areas requiring remediation. Priority items: incident response plan, vendor risk assessment. Estimated remediation cost: ${cost}K by September 2025.

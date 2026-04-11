@@ -1,5 +1,0 @@
-Compliance assessment for GDPR: Current adherence rate is 88%. Gap analysis identified 5 areas requiring remediation. Priority items: incident response plan, vendor risk assessment. Estimated remediation cost: ${cost}K by December 2025.
-
-Intellectual property review for Data Platform: Patent search identified 7 relevant patents. Freedom-to-operate opinion: risk identified. The legal team recommends increasing allocation before Series B close. Budget for IP counsel: $7.2K.
-
-Litigation memo regarding regulatory inquiry: class action plaintiffs filed patent infringement on January 15. Exposure estimate: $2.5M. Outside counsel (Wilson Sonsini) recommends aggressive defense. Key documents include NDA and Slack messages. Discovery deadline: November 2025.

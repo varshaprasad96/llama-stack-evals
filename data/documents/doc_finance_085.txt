@@ -1,5 +1,0 @@
-Salary band analysis for 2026 shows the median compensation for Senior Engineer is $250K. Total compensation including equity is $385K. The board approved a 52% increase for IC4+ employees effective March 1. Retention risk is highest in marketing.
-
-The Q1 2025 revenue forecast projects $89M in net income, driven primarily by cloud services growth. The finance team recommends adjusting the operating margin targets to account for macroeconomic headwinds. Detailed breakdowns by business unit show that Cloud Platform contributed 31% of total revenue.
-
-The Q3 2025 revenue forecast projects $67M in net income, driven primarily by enterprise licensing. The finance team recommends adjusting the operating margin targets to account for seasonal patterns. Detailed breakdowns by business unit show that Developer Tools contributed 31% of total revenue.

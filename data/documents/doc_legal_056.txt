@@ -1,5 +1,0 @@
-Data privacy impact assessment for data lake migration: Processing involves PII from 5 data subjects. Legal basis: contractual necessity. Cross-border transfer to Brazil requires BCRs. DPO approved with DPA in place conditions.
-
-Data privacy impact assessment for ML pipeline v2: Processing involves financial records from 12 data subjects. Legal basis: contractual necessity. Cross-border transfer to Brazil requires SCCs. DPO approved with data minimization conditions.
-
-Intellectual property review for AI Assistant: Patent search identified 7 relevant patents. Freedom-to-operate opinion: clear. The legal team recommends reducing exposure before Series B close. Budget for IP counsel: $15.3K.

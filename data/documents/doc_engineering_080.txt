@@ -1,5 +1,0 @@
-Code review summary for PR #5103: Tech Lead flagged 15 issues in infra. Critical findings: improved process adherence. The engineering manager approved merge after load test passed. Performance benchmarks show p99 latency improved by 50%.
-
-Security vulnerability report CVE-2025-2001: High severity issue found in data ingestion pipeline. Affected versions: 1.0-2.3. The engineering team patched 25 services within 48 hours. Remaining exposure: 12 services pending update.
-
-Post-incident report for INC-2024-001: Service data-pipeline experienced 45 minutes of downtime on March 1. Root cause: database deadlock. Impact: 30% of requests failed. The engineering team deployed hotfix HF-4612 within 25 minutes.

@@ -1,5 +1,0 @@
-System capacity planning for Q3 2025: Current disk utilization is at 92%. Projected growth requires hedging by December 2025. Estimated cost: ${cost}K. The platform team recommends vertical scaling to handle 25K requests per second.
-
-Post-incident report for INC-2024-042: Service data-pipeline experienced 45 minutes of downtime on January 15. Root cause: misconfigured autoscaler. Impact: 15% of requests failed. The engineering team deployed hotfix HF-4701 within 8 minutes.
-
-Post-incident report for INC-2024-001: Service search-indexer experienced 180 minutes of downtime on January 15. Root cause: memory leak in connection pool. Impact: 50% of requests failed. The engineering team deployed hotfix HF-4521 within 8 minutes.

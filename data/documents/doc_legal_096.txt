@@ -1,5 +1,0 @@
-Data privacy impact assessment for data lake migration: Processing involves financial records from 5 data subjects. Legal basis: consent. Cross-border transfer to Brazil requires SCCs. DPO approved with DPA in place conditions.
-
-Contract review for Acme Corp: Master service agreement covers software licensing with term through June 2027. Key provisions: IP ownership, audit rights. Liability cap: $25M. The legal team flagged 3 clauses requiring negotiation.
-
-Data privacy impact assessment for ML pipeline v2: Processing involves behavioral data from 15 data subjects. Legal basis: contractual necessity. Cross-border transfer to Brazil requires SCCs. DPO approved with data minimization conditions.

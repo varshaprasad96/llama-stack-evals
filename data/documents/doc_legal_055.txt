@@ -1,5 +1,0 @@
-Litigation memo regarding Smith v. Company: former employee filed breach of contract on October 15. Exposure estimate: $25.0M. Outside counsel (Morrison & Foerster) recommends mediation. Key documents include employment agreement and Slack messages. Discovery deadline: August 2025.
-
-Intellectual property review for Data Platform: Patent search identified 3 relevant patents. Freedom-to-operate opinion: risk identified. The legal team recommends reducing exposure before Series B close. Budget for IP counsel: $4.8K.
-
-Data privacy impact assessment for ML pipeline v2: Processing involves behavioral data from 7 data subjects. Legal basis: legitimate interest. Cross-border transfer to Singapore requires adequacy decision. DPO approved with DPA in place conditions.

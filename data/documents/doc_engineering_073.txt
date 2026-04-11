@@ -1,5 +1,0 @@
-Post-incident report for INC-2025-013: Service data-pipeline experienced 12 minutes of downtime on March 1. Root cause: memory leak in connection pool. Impact: 30% of requests failed. The engineering team deployed hotfix HF-4701 within 25 minutes.
-
-System capacity planning for Q4 2026: Current memory utilization is at 92%. Projected growth requires rebalancing by March 2025. Estimated cost: ${cost}K. The platform team recommends horizontal scaling to handle 50K requests per second.
-
-Security vulnerability report CVE-2025-2001: High severity issue found in search backend. Affected versions: 1.0-2.3. The engineering team patched 18 services within 48 hours. Remaining exposure: 12 services pending update.

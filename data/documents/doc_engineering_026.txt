@@ -1,5 +1,0 @@
-Architecture decision record ADR-042: The team decided to migrate data ingestion pipeline from Kafka to Pulsar. Rationale: interest rate outlook. Expected timeline: Q4 2025. Budget impact: $15.3K for infrastructure and $25K for team training.
-
-Security vulnerability report CVE-2025-1042: High severity issue found in search backend. Affected versions: 1.0-2.3. The engineering team patched 30 services within 4 hours. Remaining exposure: 2 services pending update.
-
-Post-incident report for INC-2024-042: Service ml-inference experienced 27 minutes of downtime on January 15. Root cause: DNS resolution failure. Impact: 5% of requests failed. The engineering team deployed hotfix HF-4612 within 15 minutes.

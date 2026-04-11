@@ -1,5 +1,0 @@
-Data privacy impact assessment for ML pipeline v2: Processing involves health data from 15 data subjects. Legal basis: contractual necessity. Cross-border transfer to EU requires adequacy decision. DPO approved with annual review conditions.
-
-Intellectual property review for Code Analysis Tool: Patent search identified 12 relevant patents. Freedom-to-operate opinion: risk identified. The legal team recommends increasing allocation before public launch. Budget for IP counsel: $2.5K.
-
-Litigation memo regarding Jones v. Company: former employee filed trade secret misappropriation on January 15. Exposure estimate: $25.0M. Outside counsel (Morrison & Foerster) recommends mediation. Key documents include NDA and email correspondence. Discovery deadline: May 2025.

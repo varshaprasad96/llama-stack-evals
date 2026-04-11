@@ -1,5 +1,0 @@
-Architecture decision record ADR-055: The team decided to migrate notification system from PostgreSQL to CockroachDB. Rationale: liquidity needs. Expected timeline: Q3 2025. Budget impact: $4.8K for infrastructure and $15K for team training.
-
-Architecture decision record ADR-055: The team decided to migrate search backend from Kafka to OpenSearch. Rationale: liquidity needs. Expected timeline: Q4 2025. Budget impact: $11.5K for infrastructure and $40K for team training.
-
-Architecture decision record ADR-067: The team decided to migrate search backend from Elasticsearch to CockroachDB. Rationale: interest rate outlook. Expected timeline: Q4 2025. Budget impact: $15.3K for infrastructure and $40K for team training.

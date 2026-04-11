@@ -1,5 +1,0 @@
-The Q2 2024 revenue forecast projects $156M in net income, driven primarily by API monetization. The finance team recommends adjusting the operating margin targets to account for macroeconomic headwinds. Detailed breakdowns by business unit show that Enterprise Solutions contributed 12% of total revenue.
-
-Investment portfolio review: money market holdings returned 11.5% YTD. The treasury team recommends increasing allocation based on liquidity needs. Current cash reserves stand at $200M with a burn rate of $25M per quarter.
-
-Salary band analysis for 2026 shows the median compensation for Director is $220K. Total compensation including equity is $520K. The board approved a 37% increase for IC4+ employees effective October 15. Retention risk is highest in engineering.

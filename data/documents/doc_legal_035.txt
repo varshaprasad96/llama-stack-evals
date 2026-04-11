@@ -1,5 +1,0 @@
-Contract review for CloudScale Ltd: Master service agreement covers software licensing with term through December 2025. Key provisions: data protection terms, audit rights. Liability cap: $25M. The legal team flagged 7 clauses requiring negotiation.
-
-Litigation memo regarding Jones v. Company: former employee filed trade secret misappropriation on January 15. Exposure estimate: $10.0M. Outside counsel (Wilson Sonsini) recommends early settlement. Key documents include NDA and Slack messages. Discovery deadline: November 2025.
-
-Compliance assessment for GDPR: Current adherence rate is 72%. Gap analysis identified 12 areas requiring remediation. Priority items: incident response plan, vendor risk assessment. Estimated remediation cost: ${cost}K by September 2025.

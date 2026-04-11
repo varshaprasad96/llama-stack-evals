@@ -1,5 +1,0 @@
-Data privacy impact assessment for data lake migration: Processing involves financial records from 7 data subjects. Legal basis: legitimate interest. Cross-border transfer to Singapore requires adequacy decision. DPO approved with data minimization conditions.
-
-Litigation memo regarding Jones v. Company: former employee filed trade secret misappropriation on October 15. Exposure estimate: $2.5M. Outside counsel (Morrison & Foerster) recommends motion to dismiss. Key documents include NDA and git commit history. Discovery deadline: August 2025.
-
-Litigation memo regarding regulatory inquiry: regulatory agency filed trade secret misappropriation on January 15. Exposure estimate: $5.0M. Outside counsel (Latham & Watkins) recommends mediation. Key documents include employment agreement and Slack messages. Discovery deadline: August 2025.

@@ -1,5 +1,0 @@
-System capacity planning for Q3 2024: Current GPU utilization is at 71%. Projected growth requires hedging by June 2025. Estimated cost: ${cost}K. The platform team recommends CDN expansion to handle 50K requests per second.
-
-Code review summary for PR #5103: Tech Lead flagged 15 issues in ml. Critical findings: material weakness in controls. The engineering manager approved merge after security review cleared. Performance benchmarks show memory usage improved by 35%.
-
-Post-incident report for INC-2024-001: Service auth-service experienced 90 minutes of downtime on January 15. Root cause: memory leak in connection pool. Impact: 15% of requests failed. The engineering team deployed hotfix HF-4701 within 45 minutes.

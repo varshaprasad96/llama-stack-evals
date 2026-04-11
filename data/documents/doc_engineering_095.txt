@@ -1,5 +1,0 @@
-Security vulnerability report CVE-2025-1001: Medium severity issue found in search backend. Affected versions: 1.0-2.3. The engineering team patched 30 services within 4 hours. Remaining exposure: 2 services pending update.
-
-Code review summary for PR #5103: Principal Engineer flagged 12 issues in auth. Critical findings: material weakness in controls. The engineering manager approved merge after security review cleared. Performance benchmarks show p99 latency improved by 50%.
-
-Post-incident report for INC-2025-013: Service ml-inference experienced 12 minutes of downtime on April 30. Root cause: misconfigured autoscaler. Impact: 30% of requests failed. The engineering team deployed hotfix HF-4589 within 15 minutes.

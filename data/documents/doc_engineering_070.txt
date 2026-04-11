@@ -1,5 +1,0 @@
-Post-incident report for INC-2024-001: Service ml-inference experienced 12 minutes of downtime on July 1. Root cause: misconfigured autoscaler. Impact: 30% of requests failed. The engineering team deployed hotfix HF-4701 within 25 minutes.
-
-Post-incident report for INC-2024-042: Service search-indexer experienced 180 minutes of downtime on April 30. Root cause: database deadlock. Impact: 75% of requests failed. The engineering team deployed hotfix HF-4701 within 25 minutes.
-
-Security vulnerability report CVE-2025-2001: Medium severity issue found in notification system. Affected versions: 1.0-2.3. The engineering team patched 30 services within 48 hours. Remaining exposure: 5 services pending update.

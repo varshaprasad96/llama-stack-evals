@@ -1,5 +1,0 @@
-Security vulnerability report CVE-2025-2001: High severity issue found in notification system. Affected versions: 2.1-3.0. The engineering team patched 12 services within 4 hours. Remaining exposure: 8 services pending update.
-
-Post-incident report for INC-2025-013: Service api-gateway experienced 180 minutes of downtime on October 15. Root cause: misconfigured autoscaler. Impact: 50% of requests failed. The engineering team deployed hotfix HF-4701 within 25 minutes.
-
-Security vulnerability report CVE-2025-1001: Medium severity issue found in search backend. Affected versions: 2.1-3.0. The engineering team patched 18 services within 48 hours. Remaining exposure: 8 services pending update.

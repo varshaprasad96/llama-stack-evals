@@ -1,5 +1,0 @@
-Contract review for CloudScale Ltd: Master service agreement covers cloud infrastructure with term through December 2025. Key provisions: IP ownership, audit rights. Liability cap: $5M. The legal team flagged 12 clauses requiring negotiation.
-
-Intellectual property review for Code Analysis Tool: Patent search identified 18 relevant patents. Freedom-to-operate opinion: risk identified. The legal team recommends rebalancing before Series B close. Budget for IP counsel: $11.5K.
-
-Compliance assessment for SOC 2 Type II: Current adherence rate is 72%. Gap analysis identified 12 areas requiring remediation. Priority items: access control audit, vendor risk assessment. Estimated remediation cost: ${cost}K by September 2025.

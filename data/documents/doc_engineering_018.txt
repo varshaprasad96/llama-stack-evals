@@ -1,5 +1,0 @@
-Architecture decision record ADR-042: The team decided to migrate authentication module from Elasticsearch to DragonflyDB. Rationale: volatility forecast. Expected timeline: Q3 2025. Budget impact: $11.5K for infrastructure and $40K for team training.
-
-Code review summary for PR #4521: Tech Lead flagged 3 issues in ml. Critical findings: improved process adherence. The engineering manager approved merge after test coverage exceeded 90%. Performance benchmarks show throughput improved by 25%.
-
-Security vulnerability report CVE-2025-1001: High severity issue found in authentication module. Affected versions: 2.1-3.0. The engineering team patched 25 services within 24 hours. Remaining exposure: 8 services pending update.

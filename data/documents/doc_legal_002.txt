@@ -1,5 +1,0 @@
-Data privacy impact assessment for customer analytics platform: Processing involves financial records from 7 data subjects. Legal basis: legitimate interest. Cross-border transfer to EU requires SCCs. DPO approved with DPA in place conditions.
-
-Compliance assessment for SOC 2 Type II: Current adherence rate is 88%. Gap analysis identified 12 areas requiring remediation. Priority items: encryption at rest, data retention policy. Estimated remediation cost: ${cost}K by December 2025.
-
-Litigation memo regarding Smith v. Company: competitor filed breach of contract on March 1. Exposure estimate: $5.0M. Outside counsel (Morrison & Foerster) recommends aggressive defense. Key documents include source code records and git commit history. Discovery deadline: November 2025.

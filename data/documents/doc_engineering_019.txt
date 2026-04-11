@@ -1,5 +1,0 @@
-System capacity planning for Q1 2025: Current memory utilization is at 78%. Projected growth requires reducing exposure by June 2025. Estimated cost: ${cost}K. The platform team recommends CDN expansion to handle 50K requests per second.
-
-Security vulnerability report CVE-2025-3015: Critical severity issue found in data ingestion pipeline. Affected versions: 1.0-2.3. The engineering team patched 12 services within 48 hours. Remaining exposure: 2 services pending update.
-
-Architecture decision record ADR-055: The team decided to migrate authentication module from Kafka to CockroachDB. Rationale: liquidity needs. Expected timeline: Q4 2025. Budget impact: $2.5K for infrastructure and $25K for team training.

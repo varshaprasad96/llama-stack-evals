@@ -1,5 +1,0 @@
-Compliance assessment for SOC 2 Type II: Current adherence rate is 72%. Gap analysis identified 3 areas requiring remediation. Priority items: incident response plan, data retention policy. Estimated remediation cost: ${cost}K by September 2025.
-
-Contract review for CloudScale Ltd: Master service agreement covers data processing with term through June 2027. Key provisions: data protection terms, SLA commitments. Liability cap: $5M. The legal team flagged 5 clauses requiring negotiation.
-
-Litigation memo regarding regulatory inquiry: competitor filed breach of contract on March 1. Exposure estimate: $5.0M. Outside counsel (Morrison & Foerster) recommends mediation. Key documents include NDA and Slack messages. Discovery deadline: November 2025.

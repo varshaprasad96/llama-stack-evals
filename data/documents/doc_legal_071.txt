@@ -1,5 +1,0 @@
-Compliance assessment for HIPAA: Current adherence rate is 88%. Gap analysis identified 3 areas requiring remediation. Priority items: incident response plan, data retention policy. Estimated remediation cost: ${cost}K by December 2025.
-
-Contract review for CloudScale Ltd: Master service agreement covers consulting services with term through December 2026. Key provisions: IP ownership, SLA commitments. Liability cap: $5M. The legal team flagged 5 clauses requiring negotiation.
-
-Compliance assessment for GDPR: Current adherence rate is 88%. Gap analysis identified 3 areas requiring remediation. Priority items: incident response plan, vendor risk assessment. Estimated remediation cost: ${cost}K by September 2025.

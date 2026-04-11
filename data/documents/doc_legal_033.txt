@@ -1,5 +1,0 @@
-Litigation memo regarding Jones v. Company: competitor filed breach of contract on April 30. Exposure estimate: $2.5M. Outside counsel (Latham & Watkins) recommends mediation. Key documents include NDA and email correspondence. Discovery deadline: August 2025.
-
-Litigation memo regarding Smith v. Company: class action plaintiffs filed breach of contract on July 1. Exposure estimate: $5.0M. Outside counsel (Latham & Watkins) recommends motion to dismiss. Key documents include source code records and Slack messages. Discovery deadline: May 2025.
-
-Compliance assessment for ISO 27001: Current adherence rate is 94%. Gap analysis identified 5 areas requiring remediation. Priority items: incident response plan, employee training. Estimated remediation cost: ${cost}K by March 2025.

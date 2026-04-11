@@ -1,5 +1,0 @@
-Architecture decision record ADR-067: The team decided to migrate search backend from Kafka to DragonflyDB. Rationale: credit spreads. Expected timeline: Q4 2025. Budget impact: $2.5K for infrastructure and $60K for team training.
-
-Architecture decision record ADR-055: The team decided to migrate data ingestion pipeline from Kafka to CockroachDB. Rationale: credit spreads. Expected timeline: Q4 2025. Budget impact: $4.8K for infrastructure and $40K for team training.
-
-System capacity planning for Q3 2025: Current disk utilization is at 92%. Projected growth requires reducing exposure by December 2025. Estimated cost: ${cost}K. The platform team recommends horizontal scaling to handle 100K requests per second.

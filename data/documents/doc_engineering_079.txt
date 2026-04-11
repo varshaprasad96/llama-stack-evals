@@ -1,5 +1,0 @@
-Architecture decision record ADR-055: The team decided to migrate notification system from Kafka to Pulsar. Rationale: interest rate outlook. Expected timeline: Q1 2026. Budget impact: $2.5K for infrastructure and $25K for team training.
-
-Post-incident report for INC-2024-042: Service api-gateway experienced 90 minutes of downtime on January 15. Root cause: DNS resolution failure. Impact: 30% of requests failed. The engineering team deployed hotfix HF-4612 within 25 minutes.
-
-Code review summary for PR #5103: Tech Lead flagged 3 issues in infra. Critical findings: material weakness in controls. The engineering manager approved merge after load test passed. Performance benchmarks show throughput improved by 25%.

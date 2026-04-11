@@ -1,5 +1,0 @@
-Contract review for DataFlow Systems: Master service agreement covers data processing with term through December 2025. Key provisions: indemnification clause, audit rights. Liability cap: $50M. The legal team flagged 5 clauses requiring negotiation.
-
-Data privacy impact assessment for customer analytics platform: Processing involves PII from 12 data subjects. Legal basis: contractual necessity. Cross-border transfer to Brazil requires SCCs. DPO approved with DPA in place conditions.
-
-Compliance assessment for GDPR: Current adherence rate is 94%. Gap analysis identified 5 areas requiring remediation. Priority items: encryption at rest, data retention policy. Estimated remediation cost: ${cost}K by June 2025.

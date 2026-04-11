@@ -1,5 +1,0 @@
-Compliance assessment for GDPR: Current adherence rate is 72%. Gap analysis identified 3 areas requiring remediation. Priority items: incident response plan, vendor risk assessment. Estimated remediation cost: ${cost}K by March 2025.
-
-Data privacy impact assessment for data lake migration: Processing involves PII from 5 data subjects. Legal basis: consent. Cross-border transfer to Singapore requires SCCs. DPO approved with DPA in place conditions.
-
-Intellectual property review for Data Platform: Patent search identified 3 relevant patents. Freedom-to-operate opinion: clear. The legal team recommends hedging before Series B close. Budget for IP counsel: $4.8K.

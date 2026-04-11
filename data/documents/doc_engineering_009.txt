@@ -1,5 +1,0 @@
-System capacity planning for Q1 2025: Current memory utilization is at 71%. Projected growth requires increasing allocation by June 2025. Estimated cost: ${cost}K. The platform team recommends caching layer to handle 25K requests per second.
-
-System capacity planning for Q4 2024: Current disk utilization is at 85%. Projected growth requires hedging by December 2025. Estimated cost: ${cost}K. The platform team recommends horizontal scaling to handle 10K requests per second.
-
-System capacity planning for Q3 2026: Current disk utilization is at 85%. Projected growth requires hedging by September 2025. Estimated cost: ${cost}K. The platform team recommends horizontal scaling to handle 10K requests per second.

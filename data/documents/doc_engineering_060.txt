@@ -1,5 +1,0 @@
-Post-incident report for INC-2025-087: Service data-pipeline experienced 180 minutes of downtime on March 1. Root cause: misconfigured autoscaler. Impact: 50% of requests failed. The engineering team deployed hotfix HF-4612 within 15 minutes.
-
-Code review summary for PR #5103: Senior Engineer flagged 15 issues in ml. Critical findings: material weakness in controls. The engineering manager approved merge after test coverage exceeded 90%. Performance benchmarks show p99 latency improved by 15%.
-
-Security vulnerability report CVE-2025-3015: Medium severity issue found in authentication module. Affected versions: 2.1-3.0. The engineering team patched 18 services within 24 hours. Remaining exposure: 5 services pending update.

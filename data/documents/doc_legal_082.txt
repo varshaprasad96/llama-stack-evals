@@ -1,5 +1,0 @@
-Compliance assessment for PCI DSS: Current adherence rate is 94%. Gap analysis identified 5 areas requiring remediation. Priority items: access control audit, vendor risk assessment. Estimated remediation cost: ${cost}K by June 2025.
-
-Contract review for CloudScale Ltd: Master service agreement covers data processing with term through December 2026. Key provisions: data protection terms, termination for convenience. Liability cap: $5M. The legal team flagged 12 clauses requiring negotiation.
-
-Intellectual property review for Code Analysis Tool: Patent search identified 12 relevant patents. Freedom-to-operate opinion: clear. The legal team recommends rebalancing before Series B close. Budget for IP counsel: $4.8K.

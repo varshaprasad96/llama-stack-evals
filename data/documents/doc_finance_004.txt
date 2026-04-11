@@ -1,5 +1,0 @@
-Internal audit findings for 2026 indicate minor discrepancies in reporting. The compliance team flagged 3 instances of policy violations across engineering operations. Remediation plans are due by June 2025. The CFO has requested a full review of infrastructure expenditures.
-
-The annual budget for marketing department is $2.5M, representing a 15% decrease from the prior year. Key line items include consulting ($3.5M) and travel ($0.3M). The finance committee approved the allocation on October 15.
-
-Salary band analysis for 2026 shows the median compensation for Engineering Manager is $165K. Total compensation including equity is $385K. The board approved a 31% increase for IC5+ employees effective July 1. Retention risk is highest in engineering.

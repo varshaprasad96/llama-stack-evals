@@ -1,5 +1,0 @@
-Litigation memo regarding Jones v. Company: former employee filed breach of contract on March 1. Exposure estimate: $25.0M. Outside counsel (Cooley LLP) recommends early settlement. Key documents include NDA and email correspondence. Discovery deadline: November 2025.
-
-Litigation memo regarding Jones v. Company: former employee filed breach of contract on March 1. Exposure estimate: $5.0M. Outside counsel (Cooley LLP) recommends mediation. Key documents include NDA and Slack messages. Discovery deadline: August 2025.
-
-Compliance assessment for HIPAA: Current adherence rate is 81%. Gap analysis identified 8 areas requiring remediation. Priority items: encryption at rest, vendor risk assessment. Estimated remediation cost: ${cost}K by March 2025.

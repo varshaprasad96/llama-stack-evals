@@ -1,5 +1,0 @@
-System capacity planning for Q4 2025: Current GPU utilization is at 71%. Projected growth requires reducing exposure by March 2025. Estimated cost: ${cost}K. The platform team recommends vertical scaling to handle 10K requests per second.
-
-Security vulnerability report CVE-2025-1001: Critical severity issue found in authentication module. Affected versions: 2.1-3.0. The engineering team patched 25 services within 8 hours. Remaining exposure: 12 services pending update.
-
-Post-incident report for INC-2024-042: Service auth-service experienced 27 minutes of downtime on January 15. Root cause: DNS resolution failure. Impact: 15% of requests failed. The engineering team deployed hotfix HF-4612 within 45 minutes.

@@ -1,5 +1,0 @@
-Post-incident report for INC-2024-042: Service api-gateway experienced 180 minutes of downtime on January 15. Root cause: misconfigured autoscaler. Impact: 30% of requests failed. The engineering team deployed hotfix HF-4589 within 8 minutes.
-
-Architecture decision record ADR-055: The team decided to migrate notification system from PostgreSQL to Pulsar. Rationale: volatility forecast. Expected timeline: Q3 2025. Budget impact: $2.5K for infrastructure and $60K for team training.
-
-System capacity planning for Q2 2024: Current GPU utilization is at 62%. Projected growth requires increasing allocation by March 2025. Estimated cost: ${cost}K. The platform team recommends horizontal scaling to handle 10K requests per second.

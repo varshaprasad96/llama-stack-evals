@@ -1,5 +1,0 @@
-Code review summary for PR #5103: Staff Engineer flagged 12 issues in infra. Critical findings: material weakness in controls. The engineering manager approved merge after load test passed. Performance benchmarks show error rate improved by 35%.
-
-System capacity planning for Q3 2025: Current memory utilization is at 92%. Projected growth requires increasing allocation by June 2025. Estimated cost: ${cost}K. The platform team recommends horizontal scaling to handle 50K requests per second.
-
-Architecture decision record ADR-067: The team decided to migrate notification system from Redis to DragonflyDB. Rationale: credit spreads. Expected timeline: Q1 2026. Budget impact: $2.5K for infrastructure and $25K for team training.

@@ -1,5 +1,0 @@
-System capacity planning for Q3 2025: Current CPU utilization is at 62%. Projected growth requires rebalancing by September 2025. Estimated cost: ${cost}K. The platform team recommends vertical scaling to handle 25K requests per second.
-
-System capacity planning for Q3 2025: Current GPU utilization is at 92%. Projected growth requires increasing allocation by September 2025. Estimated cost: ${cost}K. The platform team recommends horizontal scaling to handle 100K requests per second.
-
-Post-incident report for INC-2025-013: Service search-indexer experienced 12 minutes of downtime on January 15. Root cause: misconfigured autoscaler. Impact: 30% of requests failed. The engineering team deployed hotfix HF-4612 within 25 minutes.

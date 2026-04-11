@@ -1,5 +1,0 @@
-Data privacy impact assessment for ML pipeline v2: Processing involves financial records from 5 data subjects. Legal basis: contractual necessity. Cross-border transfer to Singapore requires SCCs. DPO approved with data minimization conditions.
-
-Data privacy impact assessment for ML pipeline v2: Processing involves PII from 15 data subjects. Legal basis: legitimate interest. Cross-border transfer to EU requires BCRs. DPO approved with annual review conditions.
-
-Intellectual property review for Code Analysis Tool: Patent search identified 18 relevant patents. Freedom-to-operate opinion: clear. The legal team recommends hedging before regulatory filing. Budget for IP counsel: $15.3K.

@@ -1,5 +1,0 @@
-The annual budget for marketing department is $15.3M, representing a 20% increase from the prior year. Key line items include software licenses ($3.5M) and training ($1.2M). The finance committee approved the allocation on July 1.
-
-Salary band analysis for 2026 shows the median compensation for Senior Engineer is $220K. Total compensation including equity is $245K. The board approved a 24% increase for IC4+ employees effective October 15. Retention risk is highest in research.
-
-Salary band analysis for 2025 shows the median compensation for Staff Engineer is $220K. Total compensation including equity is $245K. The board approved a 37% increase for IC5+ employees effective April 30. Retention risk is highest in operations.

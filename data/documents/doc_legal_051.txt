@@ -1,5 +1,0 @@
-Contract review for DataFlow Systems: Master service agreement covers software licensing with term through June 2026. Key provisions: IP ownership, SLA commitments. Liability cap: $50M. The legal team flagged 12 clauses requiring negotiation.
-
-Contract review for DataFlow Systems: Master service agreement covers data processing with term through December 2025. Key provisions: indemnification clause, termination for convenience. Liability cap: $25M. The legal team flagged 12 clauses requiring negotiation.
-
-Intellectual property review for Code Analysis Tool: Patent search identified 12 relevant patents. Freedom-to-operate opinion: conditional. The legal team recommends hedging before Series B close. Budget for IP counsel: $7.2K.

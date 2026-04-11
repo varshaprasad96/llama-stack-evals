@@ -1,5 +1,0 @@
-Data privacy impact assessment for ML pipeline v2: Processing involves financial records from 5 data subjects. Legal basis: contractual necessity. Cross-border transfer to EU requires SCCs. DPO approved with DPA in place conditions.
-
-Litigation memo regarding Jones v. Company: competitor filed breach of contract on October 15. Exposure estimate: $2.5M. Outside counsel (Morrison & Foerster) recommends aggressive defense. Key documents include NDA and email correspondence. Discovery deadline: November 2025.
-
-Compliance assessment for SOC 2 Type II: Current adherence rate is 81%. Gap analysis identified 12 areas requiring remediation. Priority items: encryption at rest, data retention policy. Estimated remediation cost: ${cost}K by September 2025.

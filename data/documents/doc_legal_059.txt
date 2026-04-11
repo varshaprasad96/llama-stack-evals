@@ -1,5 +1,0 @@
-Intellectual property review for AI Assistant: Patent search identified 12 relevant patents. Freedom-to-operate opinion: clear. The legal team recommends rebalancing before public launch. Budget for IP counsel: $7.2K.
-
-Data privacy impact assessment for data lake migration: Processing involves financial records from 7 data subjects. Legal basis: legitimate interest. Cross-border transfer to EU requires adequacy decision. DPO approved with DPA in place conditions.
-
-Data privacy impact assessment for data lake migration: Processing involves health data from 3 data subjects. Legal basis: consent. Cross-border transfer to Singapore requires BCRs. DPO approved with data minimization conditions.

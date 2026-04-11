@@ -1,5 +1,0 @@
-Data privacy impact assessment for ML pipeline v2: Processing involves health data from 15 data subjects. Legal basis: consent. Cross-border transfer to EU requires SCCs. DPO approved with DPA in place conditions.
-
-Contract review for CloudScale Ltd: Master service agreement covers software licensing with term through December 2026. Key provisions: IP ownership, SLA commitments. Liability cap: $50M. The legal team flagged 3 clauses requiring negotiation.
-
-Contract review for TechVentures Inc: Master service agreement covers consulting services with term through June 2026. Key provisions: IP ownership, SLA commitments. Liability cap: $10M. The legal team flagged 7 clauses requiring negotiation.

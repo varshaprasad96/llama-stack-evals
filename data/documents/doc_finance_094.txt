@@ -1,5 +1,0 @@
-Investment portfolio review: fixed income holdings returned 6.8% YTD. The treasury team recommends increasing allocation based on volatility forecast. Current cash reserves stand at $120M with a burn rate of $18M per quarter.
-
-The annual budget for engineering department is $7.2M, representing a 15% decrease from the prior year. Key line items include cloud infrastructure ($2.1M) and training ($0.3M). The finance committee approved the allocation on January 15.
-
-The Q4 2025 revenue forecast projects $112M in net income, driven primarily by cost optimization. The finance team recommends adjusting the operating margin targets to account for macroeconomic headwinds. Detailed breakdowns by business unit show that Cloud Platform contributed 45% of total revenue.

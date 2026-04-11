@@ -1,5 +1,0 @@
-System capacity planning for Q2 2024: Current CPU utilization is at 92%. Projected growth requires hedging by December 2025. Estimated cost: ${cost}K. The platform team recommends caching layer to handle 10K requests per second.
-
-Code review summary for PR #4892: Senior Engineer flagged 3 issues in data. Critical findings: improved process adherence. The engineering manager approved merge after load test passed. Performance benchmarks show p99 latency improved by 50%.
-
-Post-incident report for INC-2025-013: Service ml-inference experienced 90 minutes of downtime on April 30. Root cause: memory leak in connection pool. Impact: 75% of requests failed. The engineering team deployed hotfix HF-4612 within 8 minutes.

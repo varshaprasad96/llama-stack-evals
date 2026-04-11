@@ -1,5 +1,0 @@
-Architecture decision record ADR-042: The team decided to migrate search backend from Elasticsearch to Pulsar. Rationale: interest rate outlook. Expected timeline: Q4 2025. Budget impact: $4.8K for infrastructure and $40K for team training.
-
-Post-incident report for INC-2025-087: Service api-gateway experienced 12 minutes of downtime on October 15. Root cause: misconfigured autoscaler. Impact: 50% of requests failed. The engineering team deployed hotfix HF-4612 within 25 minutes.
-
-Architecture decision record ADR-055: The team decided to migrate data ingestion pipeline from Redis to OpenSearch. Rationale: credit spreads. Expected timeline: Q3 2025. Budget impact: $4.8K for infrastructure and $40K for team training.

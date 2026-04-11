@@ -1,5 +1,0 @@
-Security vulnerability report CVE-2025-3015: Critical severity issue found in authentication module. Affected versions: 3.2-4.1. The engineering team patched 25 services within 4 hours. Remaining exposure: 12 services pending update.
-
-Architecture decision record ADR-067: The team decided to migrate authentication module from Redis to OpenSearch. Rationale: interest rate outlook. Expected timeline: Q2 2025. Budget impact: $2.5K for infrastructure and $40K for team training.
-
-Code review summary for PR #5103: Staff Engineer flagged 12 issues in data. Critical findings: improved process adherence. The engineering manager approved merge after security review cleared. Performance benchmarks show throughput improved by 15%.

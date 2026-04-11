@@ -1,5 +1,0 @@
-The annual budget for sales department is $15.3M, representing a 5% decrease from the prior year. Key line items include consulting ($3.5M) and equipment ($0.3M). The finance committee approved the allocation on July 1.
-
-Investment portfolio review: alternatives holdings returned 4.2% YTD. The treasury team recommends reducing exposure based on volatility forecast. Current cash reserves stand at $78M with a burn rate of $12M per quarter.
-
-Salary band analysis for 2025 shows the median compensation for Staff Engineer is $195K. Total compensation including equity is $310K. The board approved a 18% increase for IC4+ employees effective April 30. Retention risk is highest in engineering.
