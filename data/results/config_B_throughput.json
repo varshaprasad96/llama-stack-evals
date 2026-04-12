@@ -1,0 +1,38 @@
+[
+  {
+    "config": "B",
+    "concurrency": 1,
+    "num_queries": 2,
+    "wall_clock_seconds": 4.093270875047892,
+    "qps": 0.4886068039600725,
+    "mean_latency_ms": 2030.424312571995,
+    "errors": 0
+  },
+  {
+    "config": "B",
+    "concurrency": 5,
+    "num_queries": 10,
+    "wall_clock_seconds": 6.851642124820501,
+    "qps": 1.4595041331441374,
+    "mean_latency_ms": 2558.0412668641657,
+    "errors": 0
+  },
+  {
+    "config": "B",
+    "concurrency": 10,
+    "num_queries": 20,
+    "wall_clock_seconds": 8.999863541917875,
+    "qps": 2.2222559160867,
+    "mean_latency_ms": 2563.7718063080683,
+    "errors": 0
+  },
+  {
+    "config": "B",
+    "concurrency": 25,
+    "num_queries": 50,
+    "wall_clock_seconds": 11.825973791070282,
+    "qps": 4.227981634607941,
+    "mean_latency_ms": 3308.9606516528875,
+    "errors": 0
+  }
+]

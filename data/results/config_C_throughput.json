@@ -1,0 +1,38 @@
+[
+  {
+    "config": "C",
+    "concurrency": 1,
+    "num_queries": 2,
+    "wall_clock_seconds": 10.30926137487404,
+    "qps": 0.19400031944814633,
+    "mean_latency_ms": 5138.926062034443,
+    "errors": 0
+  },
+  {
+    "config": "C",
+    "concurrency": 5,
+    "num_queries": 10,
+    "wall_clock_seconds": 11.865794375073165,
+    "qps": 0.8427585784738781,
+    "mean_latency_ms": 4627.333625010215,
+    "errors": 0
+  },
+  {
+    "config": "C",
+    "concurrency": 10,
+    "num_queries": 20,
+    "wall_clock_seconds": 23.95066541689448,
+    "qps": 0.8350498682133594,
+    "mean_latency_ms": 5654.927352129016,
+    "errors": 0
+  },
+  {
+    "config": "C",
+    "concurrency": 25,
+    "num_queries": 50,
+    "wall_clock_seconds": 23.216215583030134,
+    "qps": 2.1536671134526957,
+    "mean_latency_ms": 5810.427300003357,
+    "errors": 0
+  }
+]

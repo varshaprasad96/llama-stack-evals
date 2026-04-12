@@ -278,6 +278,44 @@ def plot_throughput(all_throughput: dict, figures_dir: str):
     print(f"  Saved {path}")
 
 
+def plot_injection_results(all_injection: dict, figures_dir: str):
+    """Bar chart of prompt injection leakage rates per config."""
+    if not HAS_MATPLOTLIB:
+        return
+
+    fig, ax = plt.subplots(figsize=(8, 5))
+
+    configs = [c for c in CONFIGS if c in all_injection]
+    x = np.arange(len(configs))
+
+    leak_rates = []
+    for c in configs:
+        results = all_injection[c]
+        total = len(results)
+        leaked = sum(1 for r in results if r.get("other_tenant_data_leaked"))
+        leak_rates.append(leaked / total * 100 if total > 0 else 0)
+
+    bars = ax.bar(x, leak_rates, 0.5, color=[CONFIG_COLORS[c] for c in configs], alpha=0.85)
+
+    ax.set_ylabel("Leakage Rate (%)", fontsize=12)
+    ax.set_xlabel("Configuration", fontsize=12)
+    ax.set_title("Prompt Injection Probe: Cross-Tenant Leakage", fontsize=13)
+    ax.set_xticks(x)
+    ax.set_xticklabels([CONFIG_LABELS[c] for c in configs], fontsize=10)
+    ax.set_ylim(0, max(leak_rates) * 1.2 + 5)
+
+    for bar in bars:
+        height = bar.get_height()
+        ax.annotate(f'{height:.1f}%', xy=(bar.get_x() + bar.get_width() / 2, height),
+                    xytext=(0, 3), textcoords="offset points", ha='center', va='bottom', fontsize=10)
+
+    plt.tight_layout()
+    path = os.path.join(figures_dir, "injection_probes.pdf")
+    fig.savefig(path, dpi=300, bbox_inches="tight")
+    plt.close(fig)
+    print(f"  Saved {path}")
+
+
 # ---- Main ----
 
 def main():
@@ -405,6 +443,8 @@ def main():
         plot_latency_cdfs(all_results, args.figures_dir)
         if all_throughput:
             plot_throughput(all_throughput, args.figures_dir)
+        if all_injection:
+            plot_injection_results(all_injection, args.figures_dir)
     else:
         print("\nSkipping figure generation (matplotlib not installed).")
 
