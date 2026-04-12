@@ -350,11 +350,12 @@ def main():
             args.server_url, auth_queries, store_map, config,
         )
 
-    # Save results
-    results_path = os.path.join(results_dir, f"config_{config}_results.json")
-    with open(results_path, "w") as f:
-        json.dump(all_results, f, indent=2)
-    print(f"\nQuery results saved to {results_path} ({len(all_results)} records)")
+    # Save results (only if we ran queries, to avoid overwriting existing data)
+    if all_results:
+        results_path = os.path.join(results_dir, f"config_{config}_results.json")
+        with open(results_path, "w") as f:
+            json.dump(all_results, f, indent=2)
+        print(f"\nQuery results saved to {results_path} ({len(all_results)} records)")
 
     if throughput_results:
         throughput_path = os.path.join(results_dir, f"config_{config}_throughput.json")
