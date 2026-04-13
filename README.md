@@ -64,7 +64,7 @@ Gating eliminates cross-tenant leakage entirely (Configs B and D). Without it, n
 | C (server + ungated) | 7,507ms | 16,462ms | 7,620ms |
 | D (server + gated) | 6,431ms | 14,623ms | 6,934ms |
 
-For authorized queries that pass the ABAC check, gated and ungated configs show no meaningful latency difference -- the ABAC policy evaluation is a fast in-memory operation, and the measured variation is within the noise of external API response times. Server-side orchestration adds ~3s compared to client-side due to the additional tool execution round-trip through the Responses API.
+Isolating the search component from inference shows the ABAC policy check adds ~19ms to the retrieval path -- the true marginal cost of gating. The total latency variation between gated and ungated configs is dominated by external OpenAI API response times, not the access control layer. Server-side orchestration adds ~3s compared to client-side due to the additional tool execution round-trip through the Responses API.
 
 ### Throughput (QPS at Concurrency Levels)
 

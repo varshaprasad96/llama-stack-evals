@@ -65,7 +65,17 @@ Breaking latency down by whether the query was authorized (passed ABAC) vs. deni
 
 Under gated configs, denied queries short-circuit before reaching the inference provider: Config B rejects at the vector store search layer (821ms), and Config D returns zero chunks from file search and skips the expensive LLM call (2,951ms). These are **4-5x faster** than queries that go through the full retrieval + inference path.
 
-For authorized queries that pass the ABAC check, the latency difference between gated and ungated is within the variance of OpenAI response times (std ~2-5s). The ABAC policy evaluation itself is a fast in-memory operation.
+For authorized queries that pass the ABAC check, the total latency difference between gated and ungated is within the variance of OpenAI response times (std ~2-5s). Isolating the retrieval component from inference confirms this:
+
+### Search vs. Inference Breakdown (Client-Side, Authorized Queries)
+
+| Component | Config A (ungated) | Config B (gated) | Delta |
+|-----------|-------------------|------------------|-------|
+| Search latency | 572ms | 591ms | +19ms |
+| Inference latency | 3,636ms | 3,260ms | -376ms |
+| Total | 4,208ms | 3,851ms | -357ms |
+
+The ABAC policy check adds ~19ms to the search path -- the true marginal cost of gating. The total latency difference is dominated by inference variance from the external OpenAI API (configs ran sequentially, not interleaved), not by the access control layer. Server-side configs (C, D) do not expose separate search and inference timings.
 
 ## Interpretation
 
@@ -73,7 +83,7 @@ For authorized queries that pass the ABAC check, the latency difference between 
 
 **Server-side orchestration alone does not prevent leakage.** Config C demonstrates that moving retrieval to the server side without access control still results in near-complete leakage. The server faithfully retrieves the most semantically relevant documents regardless of tenant boundaries.
 
-**ABAC gating adds negligible overhead for authorized queries and saves time on denied ones.** For queries that pass the ABAC check, the code path is identical to ungated -- the policy evaluation (`user in owners namespaces`) adds negligible time relative to the network round-trips to the inference provider. For unauthorized queries, gating provides a substantial latency benefit by failing fast before the expensive retrieval + inference steps.
+**ABAC gating adds ~19ms of retrieval overhead for authorized queries and saves time on denied ones.** Isolating the search component shows the ABAC policy check (`user in owners namespaces`) adds ~19ms to the retrieval path -- trivial relative to the ~3.5s inference round-trip. For unauthorized queries, gating provides a substantial latency benefit by failing fast before the expensive retrieval + inference steps.
 
 **Server-side orchestration adds ~3s of latency** compared to client-side. This is expected: the Responses API executes the `file_search` tool internally, adding a round-trip through the tool execution layer. The latency cost is constant and does not interact with gating.
 
