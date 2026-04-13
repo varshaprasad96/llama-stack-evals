@@ -136,6 +136,21 @@ End-to-end latency measured on OpenShift with vLLM serving Llama-3.2-1B-Instruct
 
 ABAC policy evaluation adds ~15ms to inference (consistent with Experiments 1-3's ~19ms finding). Tenant metadata filtering adds 0.3ms -- effectively zero. Security overhead is a fixed cost independent of inference backend; on faster GPU inference it represents 3.3% vs. <0.5% on slower API-based inference.
 
+### Post-Retrieval Filtering Scaling (Predicate Pushdown Trade-off)
+
+Measures how post-retrieval metadata filtering scales with corpus size on backends that do NOT support predicate pushdown (sqlite-vec). Tests the latency vs recall trade-off at different over-fetch multipliers.
+
+#### Filter Overhead (at 5x multiplier -- Llama Stack default)
+
+| Corpus Size | Gated Latency | Filter Overhead | Recall@5 |
+|------------|--------------|----------------|----------|
+| 100 | 3.79ms | 0.74ms | **1.000** |
+| 1,000 | 3.93ms | 0.79ms | 0.100 |
+| 10,000 | 5.21ms | 1.00ms | 0.010 |
+| 50,000 | 11.43ms | 2.95ms | 0.002 |
+
+**Latency overhead is small** (~1-3ms at 5x multiplier) regardless of corpus size. **Recall degrades** at large corpus sizes because the over-fetched top-k set is contaminated by cross-tenant documents. Backends supporting predicate pushdown (pgvector, Qdrant, Milvus) avoid this by searching within the tenant's partition natively -- Llama Stack's pluggable provider architecture supports both approaches with the same ABAC policies.
+
 ### Figures
 
 - `figures/security_metrics.pdf` -- Grouped bar chart of CTLR and AVR per config
@@ -152,6 +167,7 @@ Detailed writeups for each experiment, including motivation, methodology, and in
 3. [Prompt Injection Probes](experiments/03_prompt_injection_probes.md) -- Adversarial queries testing access control boundaries
 4. [Multitenant Retrieval Benchmarks](experiments/04_multitenant_retrieval_benchmarks.md) -- Controlled retrieval-layer evaluation with synthetic embeddings
 5. [E2E Latency Overhead on GPU](experiments/05_e2e_latency_overhead.md) -- Latency overhead on self-hosted GPU infrastructure (OpenShift + vLLM)
+6. [Predicate Pushdown Scaling](experiments/06_predicate_pushdown_scaling.md) -- Post-retrieval filtering latency and recall trade-off at scale
 
 ## Repo Structure
 
@@ -172,6 +188,7 @@ scripts/
   run_injection_probes.py         # Prompt injection adversarial testing
   analyze_results.py              # Compute metrics and generate figures
   bench_e2e_latency.py            # E2E latency benchmark (vLLM vs Llama Stack)
+  bench_predicate_pushdown.py     # Post-retrieval filtering scaling benchmark
 
 data/
   documents/                      # 300 synthetic documents (generated)
@@ -184,6 +201,7 @@ experiments/                       # Detailed experiment writeups
   03_prompt_injection_probes.md   # Adversarial testing
   04_multitenant_retrieval_benchmarks.md  # Retrieval-layer benchmarks with synthetic embeddings
   05_e2e_latency_overhead.md      # E2E latency overhead on GPU infrastructure
+  06_predicate_pushdown_scaling.md # Post-retrieval filtering scaling
 
 figures/                          # Output PDFs
 ```
