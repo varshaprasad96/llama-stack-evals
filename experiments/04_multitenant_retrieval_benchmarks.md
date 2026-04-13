@@ -44,7 +44,7 @@ All 51 tests use synthetic embeddings and run locally with no external API depen
 | Chunk-level gated | 0 | 12 | **0.0%** |
 | Per-tenant index | 0 | 25 | **0.0%** |
 
-Without gating, over half of retrieved chunks come from the wrong tenant. Both gating strategies eliminate leakage entirely.
+Without gating, over half of retrieved chunks come from the wrong tenant. Both gating strategies eliminate leakage entirely. Chunk-level gating retrieves fewer total chunks (12 vs 25) because cross-tenant documents are filtered out post-retrieval, and some queries return fewer than k=5 results when same-tenant matches are scarce in the top-k.
 
 ### Retrieval Quality
 

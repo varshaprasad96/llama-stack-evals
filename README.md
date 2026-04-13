@@ -40,7 +40,7 @@ We test a 2x2 matrix of configurations against a synthetic multi-tenant workload
 | **Cross-Tenant Leakage Rate (CTLR)** | Fraction of cross-tenant probes that return at least one chunk from another tenant |
 | **Authorization Violation Rate (AVR)** | Fraction of all API calls that return unauthorized data |
 | **E2E Latency (p50, p99)** | End-to-end query latency measured with `time.perf_counter()` |
-| **ABAC Overhead** | `mean(gated_latency) - mean(ungated_latency)` |
+| **ABAC Overhead** | `mean(gated_search_latency) - mean(ungated_search_latency)`, isolating the retrieval component from inference |
 
 ## Results
 
@@ -64,7 +64,7 @@ Gating eliminates cross-tenant leakage entirely (Configs B and D). Without it, n
 | C (server + ungated) | 7,507ms | 16,462ms | 7,620ms |
 | D (server + gated) | 6,431ms | 14,623ms | 6,934ms |
 
-Isolating the search component from inference shows the ABAC policy check adds ~19ms to the retrieval path -- the true marginal cost of gating. The total latency variation between gated and ungated configs is dominated by external OpenAI API response times, not the access control layer. Server-side orchestration adds ~3s compared to client-side due to the additional tool execution round-trip through the Responses API.
+Isolating the search component from inference shows the gated search path adds ~19ms (auth round-trip + ABAC policy evaluation + per-tenant store lookup). The ABAC policy check itself is sub-millisecond; the remainder is network and routing overhead. The total latency variation between gated and ungated configs is dominated by external OpenAI API response times, not the access control layer. Server-side orchestration adds ~3s compared to client-side due to the additional tool execution round-trip through the Responses API.
 
 ### Throughput (QPS at Concurrency Levels)
 

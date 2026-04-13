@@ -36,7 +36,7 @@ Infrastructure was identical to Experiment 1: OpenAI `gpt-4o-mini` for inference
 
 **Throughput scales roughly linearly with concurrency.** All four configs show increasing QPS as concurrency grows, with no signs of bottlenecking at the levels tested. This is expected since the primary bottleneck is the external OpenAI API, and concurrent requests are served in parallel.
 
-**Gating does not degrade throughput.** Config B achieves comparable QPS to Config A across all concurrency levels, and Config D matches or exceeds Config C. The ABAC policy check is an in-memory operation that adds negligible overhead relative to network round-trips.
+**Gating does not degrade throughput.** Config B achieves comparable QPS to Config A across all concurrency levels, and Config D is within the range of Config C. Variation between configs (e.g., D slightly exceeding C at c=25) reflects run-to-run noise from the external API, not a systematic effect of gating -- configs ran sequentially, not interleaved.
 
 **Client-side orchestration achieves ~2x the QPS of server-side at high concurrency.** At c=25, client-side configs reach 4-5 QPS while server-side configs reach 2-3 QPS. This reflects the additional tool execution overhead in the Responses API path. Client-side orchestration parallelizes the search and inference calls more efficiently because the client controls the request flow.
 

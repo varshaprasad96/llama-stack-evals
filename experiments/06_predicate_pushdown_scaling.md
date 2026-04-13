@@ -2,9 +2,7 @@
 
 ## Motivation
 
-Reviewer 203C asked: *"How does the system behave when the vector backend does not support predicate pushdown and filtering must happen post-retrieval? Is there a measurable security or efficiency trade-off?"*
-
-Llama Stack supports multiple vector store backends. Some (pgvector, Qdrant, Milvus) can apply tenant metadata filters natively during vector search (predicate pushdown). Others (sqlite-vec, FAISS) require post-retrieval filtering: Llama Stack over-fetches by a configurable multiplier, then filters in Python.
+Llama Stack supports multiple vector store backends. Some (pgvector, Qdrant, Milvus) can apply tenant metadata filters natively during vector search (predicate pushdown). Others (sqlite-vec, FAISS) require post-retrieval filtering: Llama Stack over-fetches by a configurable multiplier, then filters in Python. A natural question is how this trade-off affects latency and recall at scale.
 
 This experiment measures how post-retrieval filtering scales with corpus size using sqlite-vec, quantifying both the latency overhead and the recall trade-off at different over-fetch ratios. The results clarify when post-retrieval filtering is sufficient and when a pushdown-capable backend is recommended.
 
