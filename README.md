@@ -114,6 +114,21 @@ Chunk-level gating improves precision by 2.2x and MRR from 0.700 to 1.000 -- fil
 
 48-case access control matrix (4 user types × 4 resources × 3 actions): **100% accuracy, 0% false positive rate**. All four adversarial attack patterns (targeted extraction, metadata tampering, OR-filter bypass, exhaustive enumeration) blocked under gating.
 
+### Post-Retrieval Filtering Scaling (Predicate Pushdown Trade-off)
+
+Measures how post-retrieval metadata filtering scales with corpus size on backends that do NOT support predicate pushdown (sqlite-vec). Tests the latency vs recall trade-off at different over-fetch multipliers.
+
+#### Filter Overhead (at 5x multiplier -- Llama Stack default)
+
+| Corpus Size | Gated Latency | Filter Overhead | Recall@5 |
+|------------|--------------|----------------|----------|
+| 100 | 3.79ms | 0.74ms | **1.000** |
+| 1,000 | 3.93ms | 0.79ms | 0.100 |
+| 10,000 | 5.21ms | 1.00ms | 0.010 |
+| 50,000 | 11.43ms | 2.95ms | 0.002 |
+
+**Latency overhead is small** (~1-3ms at 5x multiplier) regardless of corpus size. **Recall degrades** at large corpus sizes because the over-fetched top-k set is contaminated by cross-tenant documents. Backends supporting predicate pushdown (pgvector, Qdrant, Milvus) avoid this by searching within the tenant's partition natively -- Llama Stack's pluggable provider architecture supports both approaches with the same ABAC policies.
+
 ### Figures
 
 - `figures/security_metrics.pdf` -- Grouped bar chart of CTLR and AVR per config
@@ -129,6 +144,7 @@ Detailed writeups for each experiment, including motivation, methodology, and in
 2. [Throughput Scaling](experiments/02_throughput_scaling.md) -- QPS under concurrent load across all configs
 3. [Prompt Injection Probes](experiments/03_prompt_injection_probes.md) -- Adversarial queries testing access control boundaries
 4. [Multitenant Retrieval Benchmarks](experiments/04_multitenant_retrieval_benchmarks.md) -- Controlled retrieval-layer evaluation with synthetic embeddings
+5. [Predicate Pushdown Scaling](experiments/06_predicate_pushdown_scaling.md) -- Post-retrieval filtering latency and recall trade-off at scale
 
 ## Repo Structure
 
@@ -138,6 +154,7 @@ configs/                          # Llama Stack server configs for each experime
   config_b_gated_client.yaml      # Config B: client-side + gated
   config_c_ungated_server.yaml    # Config C: server-side + ungated
   config_d_gated_server.yaml      # Config D: server-side + gated
+  config_e2e_vllm_gpu.yaml        # E2E: vLLM GPU + sentence-transformers
 
 scripts/
   auth_server.py                  # Mock auth endpoint (FastAPI)
@@ -147,6 +164,8 @@ scripts/
   run_experiment.py               # Main experiment runner
   run_injection_probes.py         # Prompt injection adversarial testing
   analyze_results.py              # Compute metrics and generate figures
+  bench_e2e_latency.py            # E2E latency benchmark (vLLM vs Llama Stack)
+  bench_predicate_pushdown.py     # Post-retrieval filtering scaling benchmark
 
 data/
   documents/                      # 300 synthetic documents (generated)
@@ -158,6 +177,8 @@ experiments/                       # Detailed experiment writeups
   02_throughput_scaling.md        # QPS under concurrent load
   03_prompt_injection_probes.md   # Adversarial testing
   04_multitenant_retrieval_benchmarks.md  # Retrieval-layer benchmarks with synthetic embeddings
+  05_e2e_latency_overhead.md      # E2E latency overhead on GPU infrastructure
+  06_predicate_pushdown_scaling.md # Post-retrieval filtering scaling
 
 figures/                          # Output PDFs
 ```
