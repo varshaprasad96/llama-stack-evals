@@ -170,6 +170,18 @@ def setup_vector_store(ls_url: str, emb_model: str, emb_dim: int) -> str | None:
     return vs_id
 
 
+def _warmup_search(ls_url: str, vs_id: str):
+    """Warmup the embedding model by issuing throwaway search requests."""
+    for _ in range(3):
+        try:
+            _post(f"{ls_url}/v1/vector_stores/{vs_id}/search", {
+                "query": "warmup query",
+                "max_num_results": 1,
+            })
+        except Exception:
+            pass
+
+
 def run_search_benchmark(ls_url: str, vs_id: str, num_requests: int) -> dict:
     """Run vector store search with tenant filtering."""
     latencies = []
@@ -260,6 +272,8 @@ def main():
     print("3. Setting up vector store...")
     vs_id = setup_vector_store(args.llama_stack_url, args.emb_model, args.emb_dim)
     if vs_id:
+        print("   Warming up embedding model...")
+        _warmup_search(args.llama_stack_url, vs_id)
         print("4. Vector search (ungated)...")
         r = run_search_ungated_benchmark(args.llama_stack_url, vs_id, args.num_requests)
         results.append(r)

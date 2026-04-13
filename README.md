@@ -122,19 +122,19 @@ End-to-end latency measured on OpenShift with vLLM serving Llama-3.2-1B-Instruct
 
 | Configuration | Median | P95 | N |
 |--------------|--------|-----|---|
-| vLLM Direct (baseline) | 447.8ms | 502.5ms | 50 |
-| Llama Stack (ABAC + routing) | 462.4ms | 556.8ms | 50 |
-| **Security overhead** | **14.7ms** | | **3.3%** |
+| vLLM Direct (baseline) | 447.9ms | 531.5ms | 50 |
+| Llama Stack (ABAC + routing) | 452.6ms | 537.9ms | 50 |
+| **Security overhead** | **4.7ms** | | **1.0%** |
 
 #### Retrieval Filter Overhead
 
 | Configuration | Median | P95 | N |
 |--------------|--------|-----|---|
-| Search (ungated) | 299.0ms | 339.1ms | 50 |
-| Search (tenant-gated) | 299.3ms | 327.9ms | 50 |
-| **Filter overhead** | **0.3ms** | | **0.1%** |
+| Search (ungated) | 283.9ms | 294.3ms | 50 |
+| Search (tenant-gated) | 289.4ms | 306.0ms | 50 |
+| **Filter overhead** | **5.5ms** | | **1.9%** |
 
-ABAC policy evaluation adds ~15ms to inference (consistent with Experiments 1-3's ~19ms finding). Tenant metadata filtering adds 0.3ms -- effectively zero. Security overhead is a fixed cost independent of inference backend; on faster GPU inference it represents 3.3% vs. <0.5% on slower API-based inference.
+Llama Stack's security layers add ~5ms to inference and ~5.5ms to retrieval -- a fixed cost independent of the inference backend. On GPU inference (~448ms), overhead is 1.0%; on slower API-based inference (3-7s in Experiments 1-3), it's <0.5%.
 
 ### Post-Retrieval Filtering Scaling (Predicate Pushdown Trade-off)
 
