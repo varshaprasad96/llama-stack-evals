@@ -114,6 +114,28 @@ Chunk-level gating improves precision by 2.2x and MRR from 0.700 to 1.000 -- fil
 
 48-case access control matrix (4 user types × 4 resources × 3 actions): **100% accuracy, 0% false positive rate**. All four adversarial attack patterns (targeted extraction, metadata tampering, OR-filter bypass, exhaustive enumeration) blocked under gating.
 
+### E2E Latency Overhead on GPU Infrastructure
+
+End-to-end latency measured on OpenShift with vLLM serving Llama-3.2-1B-Instruct on a T4 GPU, comparing direct vLLM access against Llama Stack with ABAC + routing + tenant-scoped retrieval.
+
+#### Inference Overhead
+
+| Configuration | Median | P95 | N |
+|--------------|--------|-----|---|
+| vLLM Direct (baseline) | 447.8ms | 502.5ms | 50 |
+| Llama Stack (ABAC + routing) | 462.4ms | 556.8ms | 50 |
+| **Security overhead** | **14.7ms** | | **3.3%** |
+
+#### Retrieval Filter Overhead
+
+| Configuration | Median | P95 | N |
+|--------------|--------|-----|---|
+| Search (ungated) | 299.0ms | 339.1ms | 50 |
+| Search (tenant-gated) | 299.3ms | 327.9ms | 50 |
+| **Filter overhead** | **0.3ms** | | **0.1%** |
+
+ABAC policy evaluation adds ~15ms to inference (consistent with Experiments 1-3's ~19ms finding). Tenant metadata filtering adds 0.3ms -- effectively zero. Security overhead is a fixed cost independent of inference backend; on faster GPU inference it represents 3.3% vs. <0.5% on slower API-based inference.
+
 ### Figures
 
 - `figures/security_metrics.pdf` -- Grouped bar chart of CTLR and AVR per config
@@ -129,6 +151,7 @@ Detailed writeups for each experiment, including motivation, methodology, and in
 2. [Throughput Scaling](experiments/02_throughput_scaling.md) -- QPS under concurrent load across all configs
 3. [Prompt Injection Probes](experiments/03_prompt_injection_probes.md) -- Adversarial queries testing access control boundaries
 4. [Multitenant Retrieval Benchmarks](experiments/04_multitenant_retrieval_benchmarks.md) -- Controlled retrieval-layer evaluation with synthetic embeddings
+5. [E2E Latency Overhead on GPU](experiments/05_e2e_latency_overhead.md) -- Latency overhead on self-hosted GPU infrastructure (OpenShift + vLLM)
 
 ## Repo Structure
 
@@ -138,6 +161,7 @@ configs/                          # Llama Stack server configs for each experime
   config_b_gated_client.yaml      # Config B: client-side + gated
   config_c_ungated_server.yaml    # Config C: server-side + ungated
   config_d_gated_server.yaml      # Config D: server-side + gated
+  config_e2e_vllm_gpu.yaml        # E2E: vLLM GPU + sentence-transformers
 
 scripts/
   auth_server.py                  # Mock auth endpoint (FastAPI)
@@ -147,6 +171,7 @@ scripts/
   run_experiment.py               # Main experiment runner
   run_injection_probes.py         # Prompt injection adversarial testing
   analyze_results.py              # Compute metrics and generate figures
+  bench_e2e_latency.py            # E2E latency benchmark (vLLM vs Llama Stack)
 
 data/
   documents/                      # 300 synthetic documents (generated)
@@ -158,6 +183,7 @@ experiments/                       # Detailed experiment writeups
   02_throughput_scaling.md        # QPS under concurrent load
   03_prompt_injection_probes.md   # Adversarial testing
   04_multitenant_retrieval_benchmarks.md  # Retrieval-layer benchmarks with synthetic embeddings
+  05_e2e_latency_overhead.md      # E2E latency overhead on GPU infrastructure
 
 figures/                          # Output PDFs
 ```
