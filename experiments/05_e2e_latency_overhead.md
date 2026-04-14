@@ -2,9 +2,9 @@
 
 ## Motivation
 
-Experiments 1-4 measure security properties and use external API-based inference (OpenAI), where API response variance dominates latency. This experiment measures the latency overhead of Llama Stack's security layers on self-hosted GPU infrastructure, isolating the cost of ABAC, routing, and metadata filtering from external API latency.
+Experiments 1-4 measure security properties and use external API-based inference (OpenAI), where API response variance dominates latency. This experiment measures the latency overhead of Llama Stack's routing and provider dispatch layers on self-hosted GPU infrastructure, isolating the proxy cost from external API latency. Authentication is not enabled in this configuration (see `configs/config_e2e_vllm_gpu.yaml`), so the overhead reflects routing + HTTP hop only, not ABAC policy evaluation. Experiments 1-3 measure the full gated path including auth.
 
-The key question: **how much latency does server-side orchestration with tenant isolation add when you control the inference backend?**
+The key question: **how much latency does the Llama Stack proxy layer add when you control the inference backend?**
 
 ## Setup
 
@@ -27,7 +27,7 @@ The key question: **how much latency does server-side orchestration with tenant 
 │  │  vLLM Pod    │     │  Llama Stack Pod          │  │
 │  │  (GPU)       │◄────│  (CPU)                    │  │
 │  │              │     │                           │  │
-│  │  Llama-3.2   │     │  ABAC + Routing           │  │
+│  │  Llama-3.2   │     │  Routing + Dispatch       │  │
 │  │  -1B-Instruct│     │  sqlite-vec               │  │
 │  │              │     │  sentence-transformers    │  │
 │  └──────────────┘     └───────────────────────────┘  │
@@ -38,7 +38,7 @@ The key question: **how much latency does server-side orchestration with tenant 
 
 Two comparisons, each with N=50 requests:
 
-1. **Inference overhead**: Direct vLLM vs. Llama Stack (measures ABAC + routing + provider dispatch)
+1. **Inference overhead**: Direct vLLM vs. Llama Stack (measures routing + provider dispatch; auth not enabled)
 2. **Retrieval filtering overhead**: Ungated search vs. tenant-gated search (measures metadata filter cost)
 
 All requests use the same prompts/queries across configurations to ensure fair comparison.
@@ -63,7 +63,7 @@ All requests use the same prompts/queries across configurations to ensure fair c
 
 **Inference security overhead: 4.7ms (1.0% of baseline)**
 
-The 4.7ms overhead includes ABAC policy evaluation, model routing table lookup, and the internal HTTP hop from Llama Stack to vLLM. ABAC policy evaluation itself is sub-millisecond (validated in Experiment 4's unit benchmarks); the remainder is network and serialization overhead inherent to any proxy architecture.
+The 4.7ms overhead reflects model routing table lookup and the internal HTTP hop from Llama Stack to vLLM. Authentication was not enabled in this configuration, so ABAC policy evaluation is not included. Experiments 1-3, which include auth, measured ~19ms for the full gated search path -- the difference (~14ms) represents the auth server round-trip cost.
 
 ### Retrieval Latency
 
@@ -81,12 +81,12 @@ Metadata filtering adds ~5.5ms to the search path. Both configurations ran after
 | Component | Latency | % of Inference Total |
 |-----------|---------|---------------------|
 | LLM Inference (vLLM, T4 GPU) | 447.9ms | 99.0% |
-| Llama Stack overhead (ABAC + routing) | 4.7ms | 1.0% |
+| Llama Stack overhead (routing + dispatch) | 4.7ms | 1.0% |
 | Tenant metadata filter | 5.5ms | 1.2% |
 
 ## Interpretation
 
-**Security overhead is negligible on self-hosted infrastructure.** At 4.7ms (1.0%), the combined cost of ABAC policy evaluation, model routing, and provider dispatch is dwarfed by LLM inference time.
+**Proxy overhead is negligible on self-hosted infrastructure.** At 4.7ms (1.0%), the cost of model routing and provider dispatch is dwarfed by LLM inference time. With authentication enabled (as in Experiments 1-3), an additional ~14ms is expected for the auth server round-trip, bringing total overhead to ~19ms (~4% of GPU inference) -- still well within acceptable bounds.
 
 **Metadata filtering has minimal practical cost.** The 5.5ms filter overhead includes the metadata comparison and slightly larger result set processing. This confirms Experiment 4's unit-level finding that the per-chunk filter cost is sub-millisecond; the remaining overhead is from the search API's filter parsing and result marshaling.
 
@@ -97,11 +97,13 @@ Metadata filtering adds ~5.5ms to the search path. Both configurations ran after
 | Metric | Exp 1-3 (OpenAI API) | Exp 5 (vLLM on T4) |
 |--------|---------------------|---------------------|
 | Baseline inference | 3,600-7,500ms | 448ms |
-| ABAC overhead | ~19ms | ~5ms |
-| Overhead % | <0.5% | 1.0% |
+| Auth enabled | Yes (custom auth) | No |
+| Gated search path overhead | ~19ms | — |
+| Routing + dispatch overhead | — | ~5ms |
+| Estimated full overhead (routing + auth) | ~19ms | ~19ms (5ms measured + ~14ms auth) |
 | Filter overhead | — | 5.5ms |
 
-The security overhead is consistent in being a small, fixed cost independent of the inference backend.
+The routing + dispatch cost (~5ms) and auth round-trip (~14ms) are additive, fixed costs independent of the inference backend. Together they account for the ~19ms gated search path overhead observed in Experiments 1-3.
 
 ## Configs
 
