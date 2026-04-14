@@ -116,15 +116,15 @@ Chunk-level gating improves precision by 2.2x and MRR from 0.700 to 1.000 -- fil
 
 ### E2E Latency Overhead on GPU Infrastructure
 
-End-to-end latency measured on OpenShift with vLLM serving Llama-3.2-1B-Instruct on a T4 GPU, comparing direct vLLM access against Llama Stack with ABAC + routing + tenant-scoped retrieval.
+End-to-end latency measured on OpenShift with vLLM serving Llama-3.2-1B-Instruct on a T4 GPU, comparing direct vLLM access against Llama Stack with routing and provider dispatch. Authentication was not enabled in this configuration; see Experiments 1-3 for the full gated path including auth (~19ms total).
 
 #### Inference Overhead
 
 | Configuration | Median | P95 | N |
 |--------------|--------|-----|---|
 | vLLM Direct (baseline) | 447.9ms | 531.5ms | 50 |
-| Llama Stack (ABAC + routing) | 452.6ms | 537.9ms | 50 |
-| **Security overhead** | **4.7ms** | | **1.0%** |
+| Llama Stack (routing + dispatch) | 452.6ms | 537.9ms | 50 |
+| **Proxy overhead** | **4.7ms** | | **1.0%** |
 
 #### Retrieval Filter Overhead
 
@@ -134,7 +134,7 @@ End-to-end latency measured on OpenShift with vLLM serving Llama-3.2-1B-Instruct
 | Search (tenant-gated) | 289.4ms | 306.0ms | 50 |
 | **Filter overhead** | **5.5ms** | | **1.9%** |
 
-Llama Stack's security layers add ~5ms to inference and ~5.5ms to retrieval -- a fixed cost independent of the inference backend. On GPU inference (~448ms), overhead is 1.0%; on slower API-based inference (3-7s in Experiments 1-3), it's <0.5%.
+Llama Stack's routing and dispatch adds ~5ms to inference and ~5.5ms for metadata filtering. With authentication enabled (as in Experiments 1-3), an additional ~14ms auth round-trip brings total overhead to ~19ms. Both are fixed costs independent of the inference backend.
 
 ### Post-Retrieval Filtering Scaling (Predicate Pushdown Trade-off)
 
