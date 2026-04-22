@@ -224,29 +224,17 @@ Prerequisites: Python 3.12+, [`uv`](https://docs.astral.sh/uv/), and an `OPENAI_
 Dependencies are pinned in `pyproject.toml` with a `uv.lock` for reproducible installs.
 
 ```bash
-# Install all dependencies (uses uv.lock for exact versions)
-uv sync
+# Regenerate figures from pre-computed results (no API key needed):
+./run_all.sh --analysis-only
 
-# To regenerate figures from pre-computed results (no API key needed):
-uv run python scripts/analyze_results.py
+# Run all 4 configs end-to-end:
+export OPENAI_API_KEY=sk-...
+./run_all.sh
 
-# To re-run experiments from scratch:
-# 1. Generate synthetic data
-uv run python scripts/generate_data.py
-
-# 2. For each config (example: Config D)
-#    Start auth server (gated configs only)
-uv run python scripts/auth_server.py &
-
-#    Start Llama Stack server
-uv run llama stack run configs/config_d_gated_server.yaml &
-
-#    Ingest documents
-uv run python scripts/ingest_data.py --config D
-
-#    Run experiment
-uv run python scripts/run_experiment.py --config D
-
-# 3. After all configs are done, generate figures
-uv run python scripts/analyze_results.py
+# Run a single config:
+./run_all.sh --config D
 ```
+
+The `run_all.sh` script handles dependency installation, data generation, server lifecycle (auth server + Llama Stack), document ingestion, experiment execution, injection probes, and figure generation. See the script header for all options.
+
+For manual step-by-step execution, see the individual experiment writeups in `experiments/`.
