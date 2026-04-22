@@ -1,0 +1,31 @@
+[project]
+name = "llama-stack-evals"
+version = "0.1.0"
+description = "Multitenant RAG security and performance evaluation for Llama Stack"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.12"
+authors = [
+    {name = "Francisco Javier Arceo", email = "farceo@redhat.com"},
+    {name = "Varsha Prasad Narsing", email = "vnarsing@redhat.com"},
+]
+
+dependencies = [
+    "llama-stack>=0.7.0,<0.8",
+    "openai>=2.5.0",
+    "fastapi>=0.115.0,<1.0",
+    "uvicorn>=0.30.0,<1.0",
+    "numpy>=1.26.0,<3.0",
+    "matplotlib>=3.9.0,<4.0",
+    "pydantic>=2.9.0,<3.0",
+]
+
+[project.optional-dependencies]
+# For running analysis only (no Llama Stack server needed)
+analysis = [
+    "numpy>=1.26.0,<3.0",
+    "matplotlib>=3.9.0,<4.0",
+]
+
+[tool.uv]
+dev-dependencies = []

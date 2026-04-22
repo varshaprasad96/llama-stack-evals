@@ -136,28 +136,34 @@ figures/                          # Output PDFs
 
 ## Running the Experiments
 
-Prerequisites: Python 3.12+, `uv`, and an `OPENAI_API_KEY` environment variable.
+Prerequisites: Python 3.12+, [`uv`](https://docs.astral.sh/uv/), and an `OPENAI_API_KEY` environment variable.
+
+Dependencies are pinned in `pyproject.toml` with a `uv.lock` for reproducible installs.
 
 ```bash
-# Install dependencies
-uv pip install llama-stack openai fastapi uvicorn matplotlib numpy --python 3.12
+# Install all dependencies (uses uv.lock for exact versions)
+uv sync
 
-# Generate synthetic data
-uv run --python 3.12 python scripts/generate_data.py
+# To regenerate figures from pre-computed results (no API key needed):
+uv run python scripts/analyze_results.py
 
-# For each config (example: Config D)
-# 1. Start auth server (gated configs only)
-uv run --python 3.12 python scripts/auth_server.py &
+# To re-run experiments from scratch:
+# 1. Generate synthetic data
+uv run python scripts/generate_data.py
 
-# 2. Start Llama Stack server
-uv run --python 3.12 llama stack run configs/config_d_gated_server.yaml &
+# 2. For each config (example: Config D)
+#    Start auth server (gated configs only)
+uv run python scripts/auth_server.py &
 
-# 3. Ingest documents
-uv run --python 3.12 python scripts/ingest_data.py --config D
+#    Start Llama Stack server
+uv run llama stack run configs/config_d_gated_server.yaml &
 
-# 4. Run experiment
-uv run --python 3.12 python scripts/run_experiment.py --config D
+#    Ingest documents
+uv run python scripts/ingest_data.py --config D
 
-# 5. After all configs are done, generate figures
-uv run --python 3.12 python scripts/analyze_results.py
+#    Run experiment
+uv run python scripts/run_experiment.py --config D
+
+# 3. After all configs are done, generate figures
+uv run python scripts/analyze_results.py
 ```
