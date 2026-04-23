@@ -1,8 +1,38 @@
 # Llama Stack Multi-Tenant RAG Security Evaluation
 
+**Paper**: *Securing the Agent: Vendor-Neutral, Multitenant Enterprise Retrieval and Tool Use* (CAIS 2026)
+
+**Artifact repository**: [github.com/varshaprasad96/llama-stack-evals](https://github.com/varshaprasad96/llama-stack-evals)
+
 Retrieval-augmented generation (RAG) systems optimize for relevance but typically ignore authorization: a query from Tenant A can retrieve Tenant B's documents if they happen to be semantically similar. This repo evaluates how Llama Stack's access control and orchestration layers close that gap.
 
 We test a 2x2 matrix of configurations against a synthetic multi-tenant workload, measuring both security (does cross-tenant data leak?) and systems performance (what does access control cost?).
+
+## Requirements
+
+### Software
+
+| Component | Version | Notes |
+|-----------|---------|-------|
+| Python | >= 3.12 | Tested on 3.12.11 |
+| uv | >= 0.7.0 | [Install guide](https://docs.astral.sh/uv/) |
+| Docker | >= 24.0 | Optional, for containerized execution |
+| llama-stack | 0.7.1 | Pinned in `uv.lock` |
+| openai (Python SDK) | 2.32.0 | Pinned in `uv.lock` |
+| OS | macOS or Linux | Tested on macOS 15 (Apple Silicon) and RHEL 9 (x86_64) |
+
+### Hardware
+
+| Experiment | Requirements |
+|-----------|-------------|
+| Experiments 1-3 (2x2 matrix) | Any machine with internet access (uses OpenAI API) |
+| Experiment 4 (synthetic retrieval) | Any machine, ~100MB RAM, no GPU |
+| Experiment 5 (GPU latency) | NVIDIA GPU with >= 4GB VRAM + vLLM |
+| Experiment 6 (predicate pushdown) | Any machine, ~500MB RAM, no GPU |
+
+### Hardware sensitivity
+
+Experiments 1-3 use the OpenAI API for inference, so latency numbers depend on network conditions and API load. The security metrics (CTLR, AVR) are deterministic and hardware-independent. Experiment 4 uses synthetic embeddings and produces identical results on any hardware. Experiment 5 latency will vary with GPU model — our T4 results are specific to that hardware, but the overhead percentage (routing: ~1%, filtering: ~2%) should be consistent across GPUs since it is a fixed cost. Experiment 6 timing scales with CPU speed but the recall trade-off curve is hardware-independent.
 
 ## Experiment Design
 

@@ -2,25 +2,38 @@
 
 This document maps each claim in the paper to the exact command needed to verify or reproduce it.
 
-## Quick verification (5 minutes, no API key, no GPU)
+## Step-by-step quick verification (5 minutes, no API key, no GPU)
+
+### Step 1: Provision the environment
 
 ```bash
 git clone https://github.com/varshaprasad96/llama-stack-evals.git
 cd llama-stack-evals
 uv sync --frozen
+```
+
+**Expected output**: `Installed 107 packages in ...` (takes ~10 seconds)
+
+### Step 2: Run all locally-reproducible experiments
+
+```bash
 ./run_all.sh --analysis-only
 ```
 
-This runs:
-- **Experiments 1-3**: Regenerates figures and summary from pre-computed results (4 PDFs)
-- **Experiment 4**: Runs 80 pytest tests validating cross-tenant leakage, retrieval quality, adversarial scenarios, and ABAC correctness (~6 seconds)
-- **Experiment 6**: Runs predicate pushdown scaling benchmark across 100-50K chunks (~2 minutes)
+**Expected output**:
+- Security metrics table (CTLR=100%/0%/98.3%/0% for configs A/B/C/D)
+- `Saved figures/security_metrics.pdf` (+ 3 more PDFs)
+- `80 passed in ~6s` (Experiment 4 pytest results)
+- Predicate pushdown scaling table with 16 rows (Experiment 6, ~2 minutes)
 
-Or with Docker (no Python needed):
+### Step 3 (alternative): Docker verification
+
 ```bash
 docker build -t llama-stack-evals .
 docker run --rm -v $(pwd)/figures:/eval/figures llama-stack-evals
 ```
+
+**Expected output**: Same metrics table as Step 2. Generated PDFs appear in `figures/`.
 
 ---
 
@@ -172,3 +185,23 @@ The Llama Stack server config used is in `configs/config_e2e_vllm_gpu.yaml`.
 | Experiments 4 + 6 (local) | ~3 minutes | Free |
 | Experiments 1-3 (full) | ~2 hours | ~$5-10 (OpenAI API) |
 | Experiment 5 (GPU) | ~30 minutes setup + 5 min run | GPU instance cost |
+
+---
+
+## Expected results and hardware sensitivity
+
+### Results that are hardware-independent (deterministic)
+
+These produce identical results on any machine:
+- **Security metrics** (CTLR, AVR): 0% or 100% — binary outcomes determined by ABAC policy, not hardware
+- **ABAC correctness** (48-case matrix): 100% accuracy, 0% false positives — policy evaluation logic
+- **Adversarial scenarios** (4 attack patterns): all blocked under gating — deterministic filter behavior
+- **Retrieval quality** (Recall@5, Precision@5, MRR): synthetic embeddings produce identical rankings
+- **Predicate pushdown recall** (Recall@5 at each corpus size): determined by embedding geometry, not speed
+
+### Results that vary with hardware
+
+- **Latency numbers** (Experiments 1-3): Dominated by OpenAI API response time. Expect ±30% variation depending on network conditions and API load. The ABAC overhead delta (~19ms) should be consistent.
+- **GPU overhead** (Experiment 5): Absolute latency depends on GPU model. The overhead percentage (routing: ~1%, filtering: ~2%) should be consistent since it is a fixed cost independent of inference speed.
+- **Predicate pushdown timing** (Experiment 6): Filter overhead in milliseconds scales with CPU speed, but the shape of the curve (flat overhead, declining recall) is hardware-independent.
+- **Throughput** (Experiment 2): QPS depends on network and CPU. The relative pattern (gated ≈ ungated, client ~2x server) should hold across hardware.
