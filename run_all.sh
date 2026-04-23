@@ -53,10 +53,18 @@ run_cmd() {
 # Analysis-only path: regenerate figures from pre-computed results
 # -------------------------------------------------------------------
 if $ANALYSIS_ONLY; then
-    echo "=== Analysis only: regenerating figures from existing results ==="
+    echo "=== Analysis only ==="
+    echo ""
+    echo "--- Regenerating figures from pre-computed results (Experiments 1-3) ---"
     run_cmd uv run python scripts/analyze_results.py
     echo ""
-    echo "Done. Figures saved to figures/"
+    echo "--- Running Experiment 4: Synthetic retrieval benchmarks (80 tests) ---"
+    run_cmd uv run pytest tests/multitenant/ -v
+    echo ""
+    echo "--- Running Experiment 6: Predicate pushdown scaling ---"
+    run_cmd uv run python scripts/bench_predicate_pushdown.py
+    echo ""
+    echo "Done. Figures in figures/. Experiment 5 (GPU latency) results in data/results/e2e_latency_gpu.csv."
     exit 0
 fi
 
@@ -156,7 +164,27 @@ for CONFIG in $CONFIGS; do
     sleep 2
 done
 
+# -------------------------------------------------------------------
+# Experiment 4: Synthetic retrieval benchmarks (no API key needed)
+# -------------------------------------------------------------------
+echo ""
+echo "============================================================"
+echo "  EXPERIMENT 4: Synthetic Retrieval Benchmarks"
+echo "============================================================"
+run_cmd uv run pytest tests/multitenant/ -v
+
+# -------------------------------------------------------------------
+# Experiment 6: Predicate pushdown scaling (no API key needed)
+# -------------------------------------------------------------------
+echo ""
+echo "============================================================"
+echo "  EXPERIMENT 6: Predicate Pushdown Scaling"
+echo "============================================================"
+run_cmd uv run python scripts/bench_predicate_pushdown.py
+
+# -------------------------------------------------------------------
 # Generate figures and summary
+# -------------------------------------------------------------------
 echo ""
 echo "============================================================"
 echo "  GENERATING FIGURES AND SUMMARY"
@@ -167,6 +195,9 @@ echo ""
 echo "============================================================"
 echo "  ALL EXPERIMENTS COMPLETE"
 echo "============================================================"
-echo "Results: data/results/"
-echo "Figures: figures/"
-echo "Summary: data/results/summary.json"
+echo "Results:  data/results/"
+echo "Figures:  figures/"
+echo "Summary:  data/results/summary.json"
+echo ""
+echo "Note: Experiment 5 (GPU latency) requires OpenShift + vLLM."
+echo "Pre-computed results are in data/results/e2e_latency_gpu.csv."
