@@ -206,6 +206,17 @@ experiments/                       # Detailed experiment writeups
 figures/                          # Output PDFs
 ```
 
+## Quick Start (Docker)
+
+Regenerate all figures from pre-computed results — no API key or setup needed:
+
+```bash
+docker build -t llama-stack-evals .
+docker run --rm -v $(pwd)/figures:/eval/figures llama-stack-evals
+```
+
+The generated PDFs will be in `figures/`.
+
 ## Running the Experiments
 
 Prerequisites: Python 3.12+, [`uv`](https://docs.astral.sh/uv/), and an `OPENAI_API_KEY` environment variable.
