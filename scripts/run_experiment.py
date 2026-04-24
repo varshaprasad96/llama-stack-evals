@@ -2,7 +2,7 @@
 Main experiment runner for the 2x2 comparative evaluation.
 
 Runs authorized queries, cross-tenant probes, and throughput tests
-against a running Llama Stack server for a given configuration.
+against a running OGX server for a given configuration.
 
 Configurations:
   A: Client-side orchestration + ungated retrieval

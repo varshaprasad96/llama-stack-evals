@@ -9,7 +9,7 @@
 # Prerequisites:
 #   - Python 3.12+, uv (https://docs.astral.sh/uv/)
 #   - OPENAI_API_KEY environment variable set
-#   - No other services on ports 8321 (Llama Stack) or 9999 (auth server)
+#   - No other services on ports 8321 (OGX) or 9999 (auth server)
 
 set -euo pipefail
 
@@ -123,8 +123,8 @@ for CONFIG in $CONFIGS; do
         sleep 2
     fi
 
-    # Start Llama Stack server
-    echo "  Starting Llama Stack server..."
+    # Start OGX server
+    echo "  Starting OGX server..."
     uv run llama stack run "$CONFIG_FILE" --port 8321 &
     PIDS+=($!)
 

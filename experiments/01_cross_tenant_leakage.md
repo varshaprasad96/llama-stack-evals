@@ -25,7 +25,7 @@ RAG systems retrieve documents based on semantic similarity, not authorization. 
 - **300 authorized queries** (100 per tenant): queries that should retrieve same-tenant documents
 - **300 cross-tenant probes**: queries where a user from one tenant attempts to retrieve another tenant's documents (e.g., a finance user querying for engineering content)
 
-Each query was run once per config. Inference used OpenAI `gpt-4o-mini` via Llama Stack's `remote::openai` provider; embeddings used `text-embedding-3-small`; the vector store was `sqlite-vec`.
+Each query was run once per config. Inference used OpenAI `gpt-4o-mini` via OGX's `remote::openai` provider; embeddings used `text-embedding-3-small`; the vector store was `sqlite-vec`.
 
 ### Metrics
 
@@ -104,7 +104,7 @@ The gated search path adds ~19ms compared to ungated. This includes the round-tr
 # Start auth server (gated configs B, D only)
 uv run --python 3.12 python scripts/auth_server.py &
 
-# Start Llama Stack
+# Start OGX
 uv run --python 3.12 llama stack run configs/config_x_*.yaml &
 
 # Ingest documents

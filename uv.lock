@@ -1088,53 +1088,6 @@ wheels = [
 ]
 
 [[package]]
-name = "llama-stack-evals"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "chardet" },
-    { name = "fastapi" },
-    { name = "llama-stack" },
-    { name = "matplotlib" },
-    { name = "numpy" },
-    { name = "openai" },
-    { name = "pydantic" },
-    { name = "pypdf" },
-    { name = "pytest" },
-    { name = "pytest-asyncio" },
-    { name = "sqlite-vec" },
-    { name = "uvicorn" },
-]
-
-[package.optional-dependencies]
-analysis = [
-    { name = "matplotlib" },
-    { name = "numpy" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "chardet", specifier = ">=5.0.0" },
-    { name = "fastapi", specifier = ">=0.115.0,<1.0" },
-    { name = "llama-stack", specifier = ">=0.7.0,<0.8" },
-    { name = "matplotlib", specifier = ">=3.9.0,<4.0" },
-    { name = "matplotlib", marker = "extra == 'analysis'", specifier = ">=3.9.0,<4.0" },
-    { name = "numpy", specifier = ">=1.26.0,<3.0" },
-    { name = "numpy", marker = "extra == 'analysis'", specifier = ">=1.26.0,<3.0" },
-    { name = "openai", specifier = ">=2.5.0" },
-    { name = "pydantic", specifier = ">=2.9.0,<3.0" },
-    { name = "pypdf", specifier = ">=4.0.0" },
-    { name = "pytest", specifier = ">=8.0.0" },
-    { name = "pytest-asyncio", specifier = ">=0.24.0" },
-    { name = "sqlite-vec", specifier = ">=0.1.0" },
-    { name = "uvicorn", specifier = ">=0.30.0,<1.0" },
-]
-provides-extras = ["analysis"]
-
-[package.metadata.requires-dev]
-dev = []
-
-[[package]]
 name = "markdown-it-py"
 version = "4.0.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1474,6 +1427,53 @@ sdist = { url = "https://files.pythonhosted.org/packages/97/ed/e9c0fa954f0fa7794
 wheels = [
     { url = "https://files.pythonhosted.org/packages/2e/e5/193bca3a95b1fb272a0f0fb02d966a9ba1d10dd264d21143d85625c55de8/oci-2.172.0-py3-none-any.whl", hash = "sha256:61f07c086b0140033ccd57a0632bdd747ce2dbc3cedc198639116dd78510e3ca", size = 34825199, upload-time = "2026-04-21T04:41:26.297Z" },
 ]
+
+[[package]]
+name = "ogx-evals"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "chardet" },
+    { name = "fastapi" },
+    { name = "llama-stack" },
+    { name = "matplotlib" },
+    { name = "numpy" },
+    { name = "openai" },
+    { name = "pydantic" },
+    { name = "pypdf" },
+    { name = "pytest" },
+    { name = "pytest-asyncio" },
+    { name = "sqlite-vec" },
+    { name = "uvicorn" },
+]
+
+[package.optional-dependencies]
+analysis = [
+    { name = "matplotlib" },
+    { name = "numpy" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "chardet", specifier = ">=5.0.0" },
+    { name = "fastapi", specifier = ">=0.115.0,<1.0" },
+    { name = "llama-stack", specifier = ">=0.7.0,<0.8" },
+    { name = "matplotlib", specifier = ">=3.9.0,<4.0" },
+    { name = "matplotlib", marker = "extra == 'analysis'", specifier = ">=3.9.0,<4.0" },
+    { name = "numpy", specifier = ">=1.26.0,<3.0" },
+    { name = "numpy", marker = "extra == 'analysis'", specifier = ">=1.26.0,<3.0" },
+    { name = "openai", specifier = ">=2.5.0" },
+    { name = "pydantic", specifier = ">=2.9.0,<3.0" },
+    { name = "pypdf", specifier = ">=4.0.0" },
+    { name = "pytest", specifier = ">=8.0.0" },
+    { name = "pytest-asyncio", specifier = ">=0.24.0" },
+    { name = "sqlite-vec", specifier = ">=0.1.0" },
+    { name = "uvicorn", specifier = ">=0.30.0,<1.0" },
+]
+provides-extras = ["analysis"]
+
+[package.metadata.requires-dev]
+dev = []
 
 [[package]]
 name = "openai"

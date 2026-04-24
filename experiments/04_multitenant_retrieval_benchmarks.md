@@ -4,7 +4,7 @@
 
 Experiments 1-3 evaluate the end-to-end system with real embeddings and external inference APIs. This experiment complements those results by testing the retrieval layer in isolation using synthetic embeddings with controlled similarity properties. The goal is to precisely quantify the "relevance-authorization gap" -- the observation that semantic similarity (relevance) is insufficient for authorization in multitenant vector stores -- and to measure how different gating strategies affect retrieval quality, not just security.
 
-This experiment was contributed as part of [llamastack/llama-stack#5515](https://github.com/llamastack/llama-stack/pull/5515).
+This experiment was contributed as part of [ogx-ai/ogx#5515](https://github.com/ogx-ai/ogx/pull/5515).
 
 ## Setup
 
@@ -90,7 +90,7 @@ The ABAC evaluation tests four user types (Tenant A, Tenant B, Admin, Unauthoriz
 
 ## Data
 
-- Source PR: [llamastack/llama-stack#5515](https://github.com/llamastack/llama-stack/pull/5515)
+- Source PR: [ogx-ai/ogx#5515](https://github.com/ogx-ai/ogx/pull/5515)
 - Test files:
   - `tests/evals/multitenant/conftest.py` -- shared fixtures, test corpus, synthetic embeddings
   - `tests/evals/multitenant/test_cross_tenant_leakage.py` -- leakage rate measurements

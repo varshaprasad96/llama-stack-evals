@@ -1,7 +1,7 @@
 [project]
-name = "llama-stack-evals"
+name = "ogx-evals"
 version = "0.1.0"
-description = "Multitenant RAG security and performance evaluation for Llama Stack"
+description = "Multitenant RAG security and performance evaluation for OGX"
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.12"
@@ -26,7 +26,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-# For running analysis only (no Llama Stack server needed)
+# For running analysis only (no OGX server needed)
 analysis = [
     "numpy>=1.26.0,<3.0",
     "matplotlib>=3.9.0,<4.0",

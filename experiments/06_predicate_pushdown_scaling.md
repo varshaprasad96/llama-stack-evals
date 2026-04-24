@@ -2,7 +2,7 @@
 
 ## Motivation
 
-Llama Stack supports multiple vector store backends. Some (pgvector, Qdrant, Milvus) can apply tenant metadata filters natively during vector search (predicate pushdown). Others (sqlite-vec, FAISS) require post-retrieval filtering: Llama Stack over-fetches by a configurable multiplier, then filters in Python. A natural question is how this trade-off affects latency and recall at scale.
+OGX supports multiple vector store backends. Some (pgvector, Qdrant, Milvus) can apply tenant metadata filters natively during vector search (predicate pushdown). Others (sqlite-vec, FAISS) require post-retrieval filtering: OGX over-fetches by a configurable multiplier, then filters in Python. A natural question is how this trade-off affects latency and recall at scale.
 
 This experiment measures how post-retrieval filtering scales with corpus size using sqlite-vec, quantifying both the latency overhead and the recall trade-off at different over-fetch ratios. The results clarify when post-retrieval filtering is sufficient and when a pushdown-capable backend is recommended.
 
@@ -23,7 +23,7 @@ For each corpus size, we test four over-fetch multipliers:
 | Multiplier | Chunks fetched | Description |
 |-----------|---------------|-------------|
 | 1x | 5 | No over-fetch (baseline) |
-| 5x | 25 | Llama Stack default (`CHUNK_MULTIPLIER`) |
+| 5x | 25 | OGX default (`CHUNK_MULTIPLIER`) |
 | 10x | 50 | Moderate over-fetch |
 | 20x | 100 | Aggressive over-fetch |
 
@@ -60,7 +60,7 @@ sqlite-vec (inline, no external dependencies). This backend does NOT support pre
 | 50,000 | 10x | 50 | 8.43ms | 14.06ms | 5.63ms | 0.002 |
 | 50,000 | 20x | 100 | 8.20ms | 20.79ms | 12.59ms | 0.002 |
 
-### Summary by Corpus Size (at 5x multiplier -- Llama Stack default)
+### Summary by Corpus Size (at 5x multiplier -- OGX default)
 
 | Corpus Size | Gated Latency | Filter Overhead | Recall@5 |
 |------------|--------------|----------------|----------|
@@ -81,7 +81,7 @@ The filtering logic itself (metadata comparison in Python) costs <0.01ms per chu
 
 This is the key trade-off. With 2 tenants and a 50/50 split, roughly half the top-k results belong to the wrong tenant. At small corpus sizes (100 chunks), a 5x over-fetch (25 chunks) is sufficient to find all 5 relevant documents. At 50K chunks, even a 20x over-fetch (100 chunks) fails to recover relevant documents because the cross-tenant similarity pushes thousands of wrong-tenant chunks above the relevant ones.
 
-This recall degradation is NOT a limitation of Llama Stack's filtering -- it's a limitation of any post-retrieval filtering approach on a shared index. The filter correctly blocks unauthorized chunks; it simply can't recover chunks that weren't in the initial over-fetched set.
+This recall degradation is NOT a limitation of OGX's filtering -- it's a limitation of any post-retrieval filtering approach on a shared index. The filter correctly blocks unauthorized chunks; it simply can't recover chunks that weren't in the initial over-fetched set.
 
 ### Predicate pushdown eliminates the recall trade-off
 
@@ -91,7 +91,7 @@ Backends that support predicate pushdown (pgvector, Qdrant, Milvus, Elasticsearc
 - No over-fetch needed (multiplier = 1x)
 - Zero filtering overhead
 
-Llama Stack's architecture separates the **policy layer** (ABAC rules derived from authenticated user attributes) from the **execution layer** (how the backend applies the filter). The same ABAC policy works across all backends -- only the distribution config changes:
+OGX's architecture separates the **policy layer** (ABAC rules derived from authenticated user attributes) from the **execution layer** (how the backend applies the filter). The same ABAC policy works across all backends -- only the distribution config changes:
 
 ```yaml
 # sqlite-vec (post-retrieval filtering)
