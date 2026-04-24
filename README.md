@@ -4,6 +4,8 @@
 
 **Artifact repository**: [github.com/varshaprasad96/ogx-evals](https://github.com/varshaprasad96/ogx-evals)
 
+**Artifact DOI**: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19743797.svg)](https://doi.org/10.5281/zenodo.19743797)
+
 Retrieval-augmented generation (RAG) systems optimize for relevance but typically ignore authorization: a query from Tenant A can retrieve Tenant B's documents if they happen to be semantically similar. This repo evaluates how OGX's access control and orchestration layers close that gap.
 
 We test a 2x2 matrix of configurations against a synthetic multi-tenant workload, measuring both security (does cross-tenant data leak?) and systems performance (what does access control cost?).
