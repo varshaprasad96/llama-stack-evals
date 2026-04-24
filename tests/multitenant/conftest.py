@@ -8,7 +8,7 @@
 Shared fixtures for multitenant security and retrieval evaluations.
 
 This module provides controlled test corpora, synthetic embeddings, and
-vector store fixtures for evaluating cross-tenant isolation in Llama Stack.
+vector store fixtures for evaluating cross-tenant isolation in OGX.
 
 Embedding design:
     Each topic (revenue, hiring, compliance, strategy, confidential) gets an
@@ -319,7 +319,7 @@ async def tenant_b_vector_index(tmp_path):
 
 @pytest.fixture
 def default_abac_policy():
-    """The default ABAC policy used by Llama Stack."""
+    """The default ABAC policy used by OGX."""
     return default_policy()
 
 

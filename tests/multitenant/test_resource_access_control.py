@@ -7,7 +7,7 @@
 """
 Resource-level ABAC evaluation for multitenant isolation.
 
-Tests Llama Stack's attribute-based access control at the resource level
+Tests OGX's attribute-based access control at the resource level
 (vector stores, models, etc.) — independent of chunk-level metadata filtering.
 
 Metrics produced:

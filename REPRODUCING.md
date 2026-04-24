@@ -7,8 +7,8 @@ This document maps each claim in the paper to the exact command needed to verify
 ### Step 1: Provision the environment
 
 ```bash
-git clone https://github.com/varshaprasad96/llama-stack-evals.git
-cd llama-stack-evals
+git clone https://github.com/varshaprasad96/ogx-evals.git
+cd ogx-evals
 uv sync --frozen
 ```
 
@@ -29,8 +29,8 @@ uv sync --frozen
 ### Step 3 (alternative): Docker verification
 
 ```bash
-docker build -t llama-stack-evals .
-docker run --rm -v $(pwd)/figures:/eval/figures llama-stack-evals
+docker build -t ogx-evals .
+docker run --rm -v $(pwd)/figures:/eval/figures ogx-evals
 ```
 
 **Expected output**: Same metrics table as Step 2. Generated PDFs appear in `figures/`.
@@ -105,7 +105,7 @@ To run a single config:
 
 ## Reproducing Experiment 5 (GPU infrastructure)
 
-Experiment 5 measures Llama Stack's routing and filtering overhead on self-hosted GPU infrastructure. The pre-computed results are in `data/results/e2e_latency_gpu.csv`.
+Experiment 5 measures OGX's routing and filtering overhead on self-hosted GPU infrastructure. The pre-computed results are in `data/results/e2e_latency_gpu.csv`.
 
 ### Verify pre-computed results
 
@@ -123,7 +123,7 @@ print('All percentile invariants hold.')
 
 ### Reproduce on any machine with a GPU
 
-The benchmark script works with any vLLM instance and Llama Stack deployment, not just OpenShift. You need:
+The benchmark script works with any vLLM instance and OGX deployment, not just OpenShift. You need:
 
 1. A GPU that can serve a small LLM (any NVIDIA GPU with >= 4GB VRAM)
 2. A HuggingFace account with access to `meta-llama/Llama-3.2-1B-Instruct`
@@ -134,7 +134,7 @@ pip install vllm
 vllm serve meta-llama/Llama-3.2-1B-Instruct \
     --max-model-len 2048 --port 8000
 
-# Terminal 2: Start Llama Stack
+# Terminal 2: Start OGX
 pip install llama-stack
 llama stack run configs/config_e2e_vllm_gpu.yaml --port 8321
 
@@ -158,9 +158,9 @@ The results in the paper were collected on:
 | Inference | vLLM serving meta-llama/Llama-3.2-1B-Instruct |
 | Embeddings | nomic-ai/nomic-embed-text-v1.5 via inline::sentence-transformers |
 | Vector store | inline::sqlite-vec |
-| Llama Stack | v0.7.1 (distribution-starter image) |
+| OGX | v0.7.1 (distribution-starter image) |
 
-The Llama Stack server config used is in `configs/config_e2e_vllm_gpu.yaml`.
+The OGX server config used is in `configs/config_e2e_vllm_gpu.yaml`.
 
 ---
 

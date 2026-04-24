@@ -2,9 +2,9 @@
 
 ## Motivation
 
-Experiments 1-4 measure security properties and use external API-based inference (OpenAI), where API response variance dominates latency. This experiment measures the latency overhead of Llama Stack's routing and provider dispatch layers on self-hosted GPU infrastructure, isolating the proxy cost from external API latency. Authentication is not enabled in this configuration (see `configs/config_e2e_vllm_gpu.yaml`), so the overhead reflects routing + HTTP hop only, not ABAC policy evaluation. Experiments 1-3 measure the full gated path including auth.
+Experiments 1-4 measure security properties and use external API-based inference (OpenAI), where API response variance dominates latency. This experiment measures the latency overhead of OGX's routing and provider dispatch layers on self-hosted GPU infrastructure, isolating the proxy cost from external API latency. Authentication is not enabled in this configuration (see `configs/config_e2e_vllm_gpu.yaml`), so the overhead reflects routing + HTTP hop only, not ABAC policy evaluation. Experiments 1-3 measure the full gated path including auth.
 
-The key question: **how much latency does the Llama Stack proxy layer add when you control the inference backend?**
+The key question: **how much latency does the OGX proxy layer add when you control the inference backend?**
 
 ## Setup
 
@@ -13,9 +13,9 @@ The key question: **how much latency does the Llama Stack proxy layer add when y
 - **Platform**: Red Hat OpenShift 4.21 on AWS (`g4dn.2xlarge` instance)
 - **GPU**: NVIDIA T4 (16GB VRAM, Turing architecture)
 - **Inference**: vLLM serving `meta-llama/Llama-3.2-1B-Instruct` on GPU
-- **Embeddings**: `nomic-ai/nomic-embed-text-v1.5` via Llama Stack's `inline::sentence-transformers` provider (CPU)
+- **Embeddings**: `nomic-ai/nomic-embed-text-v1.5` via OGX's `inline::sentence-transformers` provider (CPU)
 - **Vector store**: `inline::sqlite-vec` with tenant-scoped documents
-- **Llama Stack**: v0.7.1 (`distribution-starter` image), inference-only + vector_io providers
+- **OGX**: v0.7.1 (`distribution-starter` image), inference-only + vector_io providers
 
 ### Deployment Topology
 
@@ -24,7 +24,7 @@ The key question: **how much latency does the Llama Stack proxy layer add when y
 │  OpenShift Cluster (g4dn.2xlarge, T4 GPU)            │
 │                                                      │
 │  ┌──────────────┐     ┌───────────────────────────┐  │
-│  │  vLLM Pod    │     │  Llama Stack Pod          │  │
+│  │  vLLM Pod    │     │  OGX Pod          │  │
 │  │  (GPU)       │◄────│  (CPU)                    │  │
 │  │              │     │                           │  │
 │  │  Llama-3.2   │     │  Routing + Dispatch       │  │
@@ -38,7 +38,7 @@ The key question: **how much latency does the Llama Stack proxy layer add when y
 
 Two comparisons, each with N=50 requests:
 
-1. **Inference overhead**: Direct vLLM vs. Llama Stack (measures routing + provider dispatch; auth not enabled)
+1. **Inference overhead**: Direct vLLM vs. OGX (measures routing + provider dispatch; auth not enabled)
 2. **Retrieval filtering overhead**: Ungated search vs. tenant-gated search (measures metadata filter cost)
 
 All requests use the same prompts/queries across configurations to ensure fair comparison.
@@ -47,8 +47,8 @@ All requests use the same prompts/queries across configurations to ensure fair c
 
 | Path | Description |
 |------|-------------|
-| vLLM Direct | `POST /v1/chat/completions` directly to vLLM (no Llama Stack) |
-| LS Inference | `POST /v1/chat/completions` through Llama Stack → vLLM |
+| vLLM Direct | `POST /v1/chat/completions` directly to vLLM (no OGX) |
+| LS Inference | `POST /v1/chat/completions` through OGX → vLLM |
 | Search (ungated) | `POST /v1/vector_stores/{id}/search` without tenant filter |
 | Search (gated) | Same endpoint with `{"type": "eq", "key": "tenant_id", "value": "tenant-a"}` filter |
 
@@ -59,11 +59,11 @@ All requests use the same prompts/queries across configurations to ensure fair c
 | Configuration | Median | Mean | P95 | P99 | StdDev | N |
 |--------------|--------|------|-----|-----|--------|---|
 | vLLM Direct (baseline) | 447.9ms | 421.4ms | 531.5ms | 535.9ms | 65.7ms | 50 |
-| Llama Stack Inference | 452.6ms | 427.4ms | 537.9ms | 554.4ms | 71.5ms | 50 |
+| OGX Inference | 452.6ms | 427.4ms | 537.9ms | 554.4ms | 71.5ms | 50 |
 
 **Inference security overhead: 4.7ms (1.0% of baseline)**
 
-The 4.7ms overhead reflects model routing table lookup and the internal HTTP hop from Llama Stack to vLLM. Authentication was not enabled in this configuration, so ABAC policy evaluation is not included. Experiments 1-3, which include auth, measured ~19ms for the full gated search path -- the difference (~14ms) represents the auth server round-trip cost.
+The 4.7ms overhead reflects model routing table lookup and the internal HTTP hop from OGX to vLLM. Authentication was not enabled in this configuration, so ABAC policy evaluation is not included. Experiments 1-3, which include auth, measured ~19ms for the full gated search path -- the difference (~14ms) represents the auth server round-trip cost.
 
 ### Retrieval Latency
 
@@ -81,7 +81,7 @@ Metadata filtering adds ~5.5ms to the search path. Both configurations ran after
 | Component | Latency | % of Inference Total |
 |-----------|---------|---------------------|
 | LLM Inference (vLLM, T4 GPU) | 447.9ms | 99.0% |
-| Llama Stack overhead (routing + dispatch) | 4.7ms | 1.0% |
+| OGX overhead (routing + dispatch) | 4.7ms | 1.0% |
 | Tenant metadata filter | 5.5ms | 1.2% |
 
 ## Interpretation
@@ -107,7 +107,7 @@ The routing + dispatch cost (~5ms) and auth round-trip (~14ms) are additive, fix
 
 ## Configs
 
-- [`configs/config_e2e_vllm_gpu.yaml`](../configs/config_e2e_vllm_gpu.yaml) -- Llama Stack config pointing to vLLM with sentence-transformers embeddings
+- [`configs/config_e2e_vllm_gpu.yaml`](../configs/config_e2e_vllm_gpu.yaml) -- OGX config pointing to vLLM with sentence-transformers embeddings
 
 ## Data
 
@@ -119,8 +119,8 @@ The routing + dispatch cost (~5ms) and auth round-trip (~14ms) are additive, fix
 ```bash
 # Prerequisites: OpenShift cluster with GPU node, vLLM serving Llama-3.2-1B-Instruct
 
-# 1. Deploy vLLM (see configs/config_e2e_vllm_gpu.yaml for Llama Stack config)
-# 2. Deploy Llama Stack with the provided config
+# 1. Deploy vLLM (see configs/config_e2e_vllm_gpu.yaml for OGX config)
+# 2. Deploy OGX with the provided config
 # 3. Port-forward both services:
 oc port-forward -n vllm svc/vllm 8000:8000 &
 oc port-forward -n llama-stack-eval svc/llama-stack 8321:8321 &

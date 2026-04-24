@@ -12,7 +12,7 @@ The batch size at each concurrency level was `concurrency * 2` queries (i.e., 2,
 
 All queries were authorized (i.e., each tenant queried its own vector store), so every request went through the full retrieval + inference path under all configs. Zero errors were recorded across all concurrency levels. This ensures an apples-to-apples comparison: the throughput difference between gated and ungated reflects only the ABAC policy check overhead, not the effect of denied queries short-circuiting.
 
-Infrastructure was identical to Experiment 1: OpenAI `gpt-4o-mini` for inference, `text-embedding-3-small` for embeddings, `sqlite-vec` for vector storage, all running locally via Llama Stack.
+Infrastructure was identical to Experiment 1: OpenAI `gpt-4o-mini` for inference, `text-embedding-3-small` for embeddings, `sqlite-vec` for vector storage, all running locally via OGX.
 
 ## Results
 

@@ -1,8 +1,8 @@
 """
-Mock custom auth server for Llama Stack experiments.
+Mock custom auth server for OGX experiments.
 
 Maps bearer tokens of the form "token-{tenant}-{user_idx}" to tenant identities.
-Implements the custom auth provider protocol expected by Llama Stack:
+Implements the custom auth provider protocol expected by OGX:
   POST /auth with {"api_key": "...", "request": {"path": "...", "headers": {...}}}
   Returns {"principal": "...", "attributes": {"namespaces": [...]}}
 

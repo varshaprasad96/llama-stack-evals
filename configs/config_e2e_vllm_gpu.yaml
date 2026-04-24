@@ -1,9 +1,9 @@
-# Config E2E: Llama Stack with vLLM GPU inference + sentence-transformers embeddings
+# Config E2E: OGX with vLLM GPU inference + sentence-transformers embeddings
 # Used for end-to-end latency benchmarks on OpenShift (Experiment 5)
 #
 # Infrastructure:
 #   - vLLM serving meta-llama/Llama-3.2-1B-Instruct on NVIDIA T4 GPU
-#   - Llama Stack running on CPU with inline sentence-transformers and sqlite-vec
+#   - OGX running on CPU with inline sentence-transformers and sqlite-vec
 #   - OpenShift 4.21, g4dn.2xlarge instance
 version: "2"
 image_name: starter

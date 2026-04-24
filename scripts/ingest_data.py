@@ -1,5 +1,5 @@
 """
-Ingest synthetic documents into Llama Stack vector stores.
+Ingest synthetic documents into OGX vector stores.
 
 For ungated configs (A, C): Creates a single shared vector store and uploads all 300 documents.
 For gated configs (B, D): Creates 3 per-tenant vector stores, each via a tenant-authenticated
@@ -25,7 +25,7 @@ GATED_CONFIGS = {"B", "D"}
 
 
 def get_client(server_url: str, tenant: str | None = None, user_idx: int = 0) -> OpenAI:
-    """Create an OpenAI client pointing at Llama Stack."""
+    """Create an OpenAI client pointing at OGX."""
     if tenant:
         api_key = f"token-{tenant}-{user_idx}"
     else:
@@ -175,11 +175,11 @@ def ingest_gated(server_url: str, data_dir: str) -> dict:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Ingest documents into Llama Stack")
+    parser = argparse.ArgumentParser(description="Ingest documents into OGX")
     parser.add_argument("--config", type=str, required=True, choices=["A", "B", "C", "D"],
                         help="Experiment configuration")
     parser.add_argument("--server-url", type=str, default="http://localhost:8321",
-                        help="Llama Stack server URL")
+                        help="OGX server URL")
     parser.add_argument("--data-dir", type=str, default="data",
                         help="Data directory with generated documents")
     args = parser.parse_args()

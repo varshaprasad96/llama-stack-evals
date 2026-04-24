@@ -1,7 +1,7 @@
 FROM python:3.12-slim
 
 LABEL maintainer="farceo@redhat.com, vnarsing@redhat.com"
-LABEL description="Llama Stack multitenant RAG security evaluation - artifact for paper review"
+LABEL description="OGX multitenant RAG security evaluation - artifact for paper review"
 
 # Install uv for dependency management
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /usr/local/bin/uv

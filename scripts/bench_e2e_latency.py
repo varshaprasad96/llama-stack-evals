@@ -6,12 +6,12 @@
 # the root directory of this source tree.
 
 """
-End-to-end latency benchmark for Llama Stack on OpenShift.
+End-to-end latency benchmark for OGX on OpenShift.
 
 Measures real request latency through the full stack:
   1. Direct vLLM inference (baseline, no security layers)
-  2. Llama Stack inference (with routing, ABAC, provider dispatch)
-  3. Llama Stack vector store search (with tenant metadata filtering)
+  2. OGX inference (with routing, ABAC, provider dispatch)
+  3. OGX vector store search (with tenant metadata filtering)
 
 Usage:
     python tests/evals/multitenant/bench_e2e_latency.py \
@@ -262,8 +262,8 @@ def main():
     results.append(r)
     print(f"   Median: {r['median']:.1f}ms, P95: {r['p95']:.1f}ms")
 
-    # 2. Llama Stack inference
-    print("2. Llama Stack inference (routing + ABAC + dispatch)...")
+    # 2. OGX inference
+    print("2. OGX inference (routing + ABAC + dispatch)...")
     r = run_inference_benchmark(f"{args.llama_stack_url}/v1/chat/completions", args.ls_model, args.num_requests, "LS Inference", args.max_tokens)
     results.append(r)
     print(f"   Median: {r['median']:.1f}ms, P95: {r['p95']:.1f}ms")
